@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 2
 Title "Kicad_JE_uP_DAC"
 Date "2019-05-18"
 Rev "Rev A"
@@ -503,12 +503,6 @@ F 3 "~" H 10850 750 50  0001 C CNN
 	1    10850 750 
 	-1   0    0    1   
 $EndComp
-$Sheet
-S 10000 3250 1000 1750
-U 5CD6EBF4
-F0 "KicadJE-EU1-PT2399_sub" 50
-F1 "KicadJE-EU1-PT2399_sub.sch" 50
-$EndSheet
 $Comp
 L Connector:AudioJack2 J102
 U 1 1 5CD77C03
@@ -1579,10 +1573,4 @@ F 3 "" H 1575 3175 50  0001 C CNN
 	1    1575 3175
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 5000 5250 2000 1000
-U 5CEBAECA
-F0 "AJ_VCO_Formant" 50
-F1 "AJ_VCO_Formant.sch" 50
-$EndSheet
 $EndSCHEMATC

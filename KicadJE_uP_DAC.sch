@@ -1573,4 +1573,15 @@ F 3 "" H 1575 3175 50  0001 C CNN
 	1    1575 3175
 	1    0    0    -1  
 $EndComp
+$Comp
+L Analog_DAC:MCP4822 U?
+U 1 1 5CE0D72D
+P 8900 4025
+F 0 "U?" H 8900 4606 50  0000 C CNN
+F 1 "MCP4822" H 8900 4515 50  0000 C CNN
+F 2 "" H 9700 3725 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002249B.pdf" H 9700 3725 50  0001 C CNN
+	1    8900 4025
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
