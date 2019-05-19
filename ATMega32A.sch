@@ -372,7 +372,7 @@ Text GLabel 7250 3100 2    50   Input ~ 0
 Text GLabel 7250 3200 2    50   Input ~ 0
 32_3_PWM
 Text GLabel 7250 3300 2    50   Input ~ 0
-32_4_PWM
+32_4_SS_PWM
 Text GLabel 7250 3400 2    50   Input ~ 0
 32_5_MOSI
 Text GLabel 4750 3925 0    50   Input ~ 0
@@ -722,7 +722,7 @@ Wire Wire Line
 Text HLabel 6900 3200 2    50   Input ~ 0
 3_PWM
 Text HLabel 6900 3300 2    50   Input ~ 0
-4_PWM
+4_SS_PWM
 Text HLabel 6900 3400 2    50   Input ~ 0
 5_MOSI
 Text HLabel 6900 3500 2    50   Input ~ 0

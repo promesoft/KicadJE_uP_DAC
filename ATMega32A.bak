@@ -157,9 +157,9 @@ Wire Wire Line
 	4425 3625 4425 4025
 Connection ~ 4425 4025
 Text GLabel 4600 4125 3    50   Input ~ 0
-reset
+32_reset
 Text GLabel 5400 2000 0    50   Input ~ 0
-reset
+32_reset
 Wire Wire Line
 	5400 2000 5650 2000
 $Comp
@@ -339,80 +339,54 @@ Wire Wire Line
 Wire Wire Line
 	4600 4125 4600 4025
 Connection ~ 4600 4025
-Text GLabel 6850 4900 2    50   Input ~ 0
-10_INT0
-Text GLabel 6850 5000 2    50   Input ~ 0
-11_INT1
-Text GLabel 6850 5100 2    50   Input ~ 0
-12_PWM
-Text GLabel 6850 5200 2    50   Input ~ 0
-13_PWM
-Text GLabel 6850 5300 2    50   Input ~ 0
-14_PWM
-Text GLabel 6850 5400 2    50   Input ~ 0
-15_PWM
-Text GLabel 6850 4800 2    50   Input ~ 0
-9_Tx
+Text GLabel 7250 4900 2    50   Input ~ 0
+32_10_INT0
+Text GLabel 7250 5000 2    50   Input ~ 0
+32_11_INT1
+Text GLabel 7250 5100 2    50   Input ~ 0
+32_12_PWM
+Text GLabel 7250 5200 2    50   Input ~ 0
+32_13_PWM
+Text GLabel 7250 5300 2    50   Input ~ 0
+32_14_PWM
+Text GLabel 7250 5400 2    50   Input ~ 0
+32_15_PWM
+Text GLabel 7250 4800 2    50   Input ~ 0
+32_9_Tx
 Wire Wire Line
 	4700 4925 5000 4925
-Text GLabel 6850 4700 2    50   Input ~ 0
-8_Rx
-Text GLabel 6850 3800 2    50   Input ~ 0
-16_SCL
-Text GLabel 6850 3900 2    50   Input ~ 0
-17_SDA
-Text GLabel 6850 4000 2    50   Input ~ 0
-18
-Text GLabel 6850 4100 2    50   Input ~ 0
-19
-Text GLabel 6850 4200 2    50   Input ~ 0
-20
-Text GLabel 6850 4300 2    50   Input ~ 0
-21
-Text GLabel 6850 4400 2    50   Input ~ 0
-22
-Text GLabel 6850 4500 2    50   Input ~ 0
-23
+Text GLabel 7250 4700 2    50   Input ~ 0
+32_8_Rx
+Text GLabel 7250 3800 2    50   Input ~ 0
+32_16_SCL
+Text GLabel 7250 3900 2    50   Input ~ 0
+32_17_SDA
 Wire Wire Line
 	4425 4725 5000 4725
-Text GLabel 6850 2900 2    50   Input ~ 0
-0_LED
-Text GLabel 6850 3000 2    50   Input ~ 0
-1
-Text GLabel 6850 3100 2    50   Input ~ 0
-2_INT2
-Text GLabel 6850 3200 2    50   Input ~ 0
-3_PWM
-Text GLabel 6850 3300 2    50   Input ~ 0
-4_PWM
-Text GLabel 6850 3400 2    50   Input ~ 0
-5_MOSI
+Text GLabel 7250 2900 2    50   Input ~ 0
+32_0_LED
+Text GLabel 7250 3000 2    50   Input ~ 0
+32_1
+Text GLabel 7250 3100 2    50   Input ~ 0
+32_2_INT2
+Text GLabel 7250 3200 2    50   Input ~ 0
+32_3_PWM
+Text GLabel 7250 3300 2    50   Input ~ 0
+32_4_SS_PWM
+Text GLabel 7250 3400 2    50   Input ~ 0
+32_5_MOSI
 Text GLabel 4750 3925 0    50   Input ~ 0
-7_SCK
+32_7_SCK
 Wire Wire Line
 	4750 3925 4825 3925
 Text GLabel 4750 3725 0    50   Input ~ 0
-6_MISO
+32_6_MISO
 Wire Wire Line
 	4750 3725 4825 3725
 Text GLabel 4750 3825 0    50   Input ~ 0
-5_MOSI
+32_5_MOSI
 Wire Wire Line
 	4750 3825 4825 3825
-Text GLabel 7100 2100 2    50   Input ~ 0
-25_A1
-Text GLabel 7100 2200 2    50   Input ~ 0
-26_A2
-Text GLabel 7100 2300 2    50   Input ~ 0
-27_A3
-Text GLabel 7100 2400 2    50   Input ~ 0
-28_A4
-Text GLabel 7100 2500 2    50   Input ~ 0
-29_A5
-Text GLabel 7100 2600 2    50   Input ~ 0
-30_A6
-Text GLabel 7100 2700 2    50   Input ~ 0
-31_A7
 $Comp
 L Device:R R?
 U 1 1 5CD5023A
@@ -426,18 +400,16 @@ F 3 "~" H 6575 1375 50  0001 C CNN
 	1    6575 1375
 	0    -1   -1   0   
 $EndComp
-Text GLabel 6850 3600 2    50   Input ~ 0
-7_SCK
-Text GLabel 6850 3500 2    50   Input ~ 0
-6_MISO
+Text GLabel 7250 3600 2    50   Input ~ 0
+32_7_SCK
+Text GLabel 7250 3500 2    50   Input ~ 0
+32_6_MISO
 Text GLabel 4550 1325 0    50   Input ~ 0
 0_LED
-Text GLabel 7100 2000 2    50   Input ~ 0
-24_A0
 Text GLabel 4700 4925 0    50   Input ~ 0
-8_Rx
+32_8_Rx
 Text GLabel 4700 4825 0    50   Input ~ 0
-9_Tx
+32_9_Tx
 Text Notes 4325 6025 0    50   ~ 0
 Annotation according to \nhttps://github.com/MCUdude/MightyCore
 Wire Wire Line
@@ -633,126 +605,6 @@ Wire Wire Line
 	1675 1600 1775 1600
 Connection ~ 1675 1600
 $Comp
-L Device:C C?
-U 1 1 5CD57652
-P 1550 2225
-AR Path="/5CD57652" Ref="C?"  Part="1" 
-AR Path="/5CD3F059/5CD57652" Ref="C206"  Part="1" 
-F 0 "C206" H 1425 2350 50  0000 L CNN
-F 1 "100n" H 1450 2150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1588 2075 50  0001 C CNN
-F 3 "~" H 1550 2225 50  0001 C CNN
-	1    1550 2225
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5CD57658
-P 1325 2225
-AR Path="/5CD57658" Ref="C?"  Part="1" 
-AR Path="/5CD3F059/5CD57658" Ref="C205"  Part="1" 
-F 0 "C205" H 1200 2350 50  0000 L CNN
-F 1 "100n" H 1200 2150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1363 2075 50  0001 C CNN
-F 3 "~" H 1325 2225 50  0001 C CNN
-	1    1325 2225
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1325 2075 1425 2075
-Connection ~ 1325 2375
-Wire Wire Line
-	1325 2375 1550 2375
-$Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
-U 1 1 5CD57661
-P 1325 2375
-AR Path="/5CD57661" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5CD57661" Ref="#PWR0211"  Part="1" 
-F 0 "#PWR0211" H 1325 2125 50  0001 C CNN
-F 1 "GND" H 1330 2202 50  0000 C CNN
-F 2 "" H 1325 2375 50  0001 C CNN
-F 3 "" H 1325 2375 50  0001 C CNN
-	1    1325 2375
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
-U 1 1 5CD57667
-P 1425 2075
-AR Path="/5CD57667" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5CD57667" Ref="#PWR0209"  Part="1" 
-F 0 "#PWR0209" H 1425 1925 50  0001 C CNN
-F 1 "+12V" H 1550 2150 50  0000 C CNN
-F 2 "" H 1425 2075 50  0001 C CNN
-F 3 "" H 1425 2075 50  0001 C CNN
-	1    1425 2075
-	1    0    0    -1  
-$EndComp
-Connection ~ 1425 2075
-Wire Wire Line
-	1425 2075 1550 2075
-$Comp
-L Device:C C?
-U 1 1 5CD5766F
-P 2075 2225
-AR Path="/5CD5766F" Ref="C?"  Part="1" 
-AR Path="/5CD3F059/5CD5766F" Ref="C208"  Part="1" 
-F 0 "C208" H 1950 2350 50  0000 L CNN
-F 1 "100n" H 1975 2150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2113 2075 50  0001 C CNN
-F 3 "~" H 2075 2225 50  0001 C CNN
-	1    2075 2225
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5CD57675
-P 1850 2225
-AR Path="/5CD57675" Ref="C?"  Part="1" 
-AR Path="/5CD3F059/5CD57675" Ref="C207"  Part="1" 
-F 0 "C207" H 1725 2350 50  0000 L CNN
-F 1 "100n" H 1725 2150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1888 2075 50  0001 C CNN
-F 3 "~" H 1850 2225 50  0001 C CNN
-	1    1850 2225
-	-1   0    0    1   
-$EndComp
-Connection ~ 1850 2375
-Wire Wire Line
-	1850 2375 2075 2375
-$Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
-U 1 1 5CD5767D
-P 1850 2375
-AR Path="/5CD5767D" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5CD5767D" Ref="#PWR0212"  Part="1" 
-F 0 "#PWR0212" H 1850 2125 50  0001 C CNN
-F 1 "GND" H 1855 2202 50  0000 C CNN
-F 2 "" H 1850 2375 50  0001 C CNN
-F 3 "" H 1850 2375 50  0001 C CNN
-	1    1850 2375
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 2075 1950 2075
-$Comp
-L power:-12V #PWR?
-U 1 1 5CD57684
-P 1950 2075
-AR Path="/5CD57684" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5CD57684" Ref="#PWR0210"  Part="1" 
-F 0 "#PWR0210" H 1950 2175 50  0001 C CNN
-F 1 "-12V" H 1775 2150 50  0000 C CNN
-F 2 "" H 1950 2075 50  0001 C CNN
-F 3 "" H 1950 2075 50  0001 C CNN
-	1    1950 2075
-	1    0    0    -1  
-$EndComp
-Connection ~ 1950 2075
-Wire Wire Line
-	1950 2075 2075 2075
-$Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5DB8AC7E
 P 1450 1300
@@ -777,30 +629,6 @@ $EndComp
 Connection ~ 2125 1300
 Wire Wire Line
 	2125 1300 2175 1300
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5DB8C43F
-P 1325 2075
-F 0 "#FLG0103" H 1325 2150 50  0001 C CNN
-F 1 "PWR_FLAG" H 1325 2248 50  0000 C CNN
-F 2 "" H 1325 2075 50  0001 C CNN
-F 3 "~" H 1325 2075 50  0001 C CNN
-	1    1325 2075
-	1    0    0    -1  
-$EndComp
-Connection ~ 1325 2075
-$Comp
-L power:PWR_FLAG #FLG0104
-U 1 1 5DB8C811
-P 2075 2075
-F 0 "#FLG0104" H 2075 2150 50  0001 C CNN
-F 1 "PWR_FLAG" H 2075 2248 50  0000 C CNN
-F 2 "" H 2075 2075 50  0001 C CNN
-F 3 "~" H 2075 2075 50  0001 C CNN
-	1    2075 2075
-	1    0    0    -1  
-$EndComp
-Connection ~ 2075 2075
 Text HLabel 6850 2000 2    50   Input ~ 0
 24_A0
 Text HLabel 6850 2100 2    50   Input ~ 0
@@ -817,4 +645,88 @@ Text HLabel 6850 2600 2    50   Input ~ 0
 30_A6
 Text HLabel 6850 2700 2    50   Input ~ 0
 31_A7
+Text HLabel 6900 2900 2    50   Input ~ 0
+0_LED
+Text HLabel 6900 3000 2    50   Input ~ 0
+1
+Text HLabel 6850 3800 2    50   Input ~ 0
+16_SCL
+Text HLabel 6850 3900 2    50   Input ~ 0
+17_SDA
+Text HLabel 6850 4000 2    50   Input ~ 0
+18
+Text HLabel 6850 4100 2    50   Input ~ 0
+19
+Text HLabel 6850 4200 2    50   Input ~ 0
+20
+Text HLabel 6850 4300 2    50   Input ~ 0
+21
+Text HLabel 6850 4400 2    50   Input ~ 0
+22
+Text HLabel 6850 4500 2    50   Input ~ 0
+23
+Wire Wire Line
+	6850 3800 7250 3800
+Wire Wire Line
+	7250 3900 6850 3900
+Wire Wire Line
+	6850 4700 7250 4700
+Wire Wire Line
+	7250 4800 6850 4800
+Wire Wire Line
+	6850 4900 7250 4900
+Wire Wire Line
+	7250 5000 6850 5000
+Wire Wire Line
+	6850 5100 7250 5100
+Wire Wire Line
+	7250 5200 6850 5200
+Wire Wire Line
+	6850 5300 7250 5300
+Wire Wire Line
+	7250 5400 6850 5400
+Text HLabel 6875 4700 2    50   Input ~ 0
+8_Rx
+Text HLabel 6875 4800 2    50   Input ~ 0
+9_Tx
+Text HLabel 6875 5000 2    50   Input ~ 0
+11_INT1
+Text HLabel 6875 5100 2    50   Input ~ 0
+12_PWM
+Text HLabel 6875 5200 2    50   Input ~ 0
+13_PWM
+Text HLabel 6875 5300 2    50   Input ~ 0
+14_PWM
+Text HLabel 6875 5400 2    50   Input ~ 0
+15_PWM
+Text HLabel 6875 4900 2    50   Input ~ 0
+10_INT0
+Text HLabel 6900 3100 2    50   Input ~ 0
+2_INT2
+Wire Wire Line
+	6850 2900 7250 2900
+Wire Wire Line
+	6850 3000 7250 3000
+Wire Wire Line
+	6850 3100 7250 3100
+Wire Wire Line
+	6850 3200 7250 3200
+Wire Wire Line
+	6850 3300 7250 3300
+Wire Wire Line
+	6850 3400 7250 3400
+Wire Wire Line
+	6850 3500 7250 3500
+Wire Wire Line
+	6850 3600 7250 3600
+Text HLabel 6900 3200 2    50   Input ~ 0
+3_PWM
+Text HLabel 6900 3300 2    50   Input ~ 0
+4_SS_PWM
+Text HLabel 6900 3400 2    50   Input ~ 0
+5_MOSI
+Text HLabel 6900 3500 2    50   Input ~ 0
+6_MISO
+Text HLabel 6900 3600 2    50   Input ~ 0
+7_SCK
 $EndSCHEMATC
