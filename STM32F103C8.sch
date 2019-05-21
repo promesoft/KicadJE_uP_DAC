@@ -629,19 +629,19 @@ STM32_PA8
 Text HLabel 4125 4050 2    50   Input ~ 0
 STM32_PA9
 Text HLabel 4125 4150 2    50   Input ~ 0
-STM32_PA10
+STM32_USB_P_PA10
 Text HLabel 4125 4250 2    50   Input ~ 0
-STM32_PA11
+STM32_USB_N_PA11
 Text HLabel 4125 4350 2    50   Input ~ 0
 STM32_PA12
 Text HLabel 4125 4450 2    50   Input ~ 0
-STM32_PA13
+STM32_SWDIO_PA13
 Text HLabel 4125 4550 2    50   Input ~ 0
-STM32_PA14
+STM32_SWCLK_PA14
 Text HLabel 4125 4650 2    50   Input ~ 0
 STM32_PA15
 Text HLabel 2825 2750 0    50   Input ~ 0
-STM32_PC13
+STM32_LED_PC13
 Text HLabel 2825 2850 0    50   Input ~ 0
 STM32_PC14
 Text HLabel 2825 2950 0    50   Input ~ 0
@@ -751,9 +751,9 @@ F 3 "~" H 8125 4400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text HLabel 7175 4550 0    50   Input ~ 0
-STM32_PA11
+STM32_USB_N_PA11
 Text HLabel 7175 4450 0    50   Input ~ 0
-STM32_PA12
+STM32_USB_N_PA12
 Wire Wire Line
 	7175 4450 7250 4450
 $Comp
@@ -884,7 +884,7 @@ $EndComp
 Wire Wire Line
 	7625 4450 7675 4450
 Text HLabel 7200 3225 0    50   Input ~ 0
-STM32_PC13
+STM32_LED_PC13
 Wire Wire Line
 	7200 3225 7325 3225
 Wire Wire Line
