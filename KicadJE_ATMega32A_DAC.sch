@@ -178,7 +178,7 @@ F32 "7_SCK" I L 3025 5800 50
 F33 "4_SS_PWM" I L 3025 5575 50 
 $EndSheet
 Text GLabel 2850 3075 3    50   Input ~ 0
-0
+C2_0
 Wire Wire Line
 	900  2825 975  2825
 $Comp
@@ -785,15 +785,15 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5CE712B9
-P 2625 800
+P 2525 800
 AR Path="/5CE712B9" Ref="C?"  Part="1" 
 AR Path="/5CD3F059/5CE712B9" Ref="C?"  Part="1" 
 AR Path="/5CE3E7A9/5CE712B9" Ref="C201"  Part="1" 
-F 0 "C201" H 2500 925 50  0000 L CNN
-F 1 "1u" H 2500 725 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2663 650 50  0001 C CNN
-F 3 "~" H 2625 800 50  0001 C CNN
-	1    2625 800 
+F 0 "C201" H 2400 925 50  0000 L CNN
+F 1 "1u" H 2400 725 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2563 650 50  0001 C CNN
+F 3 "~" H 2525 800 50  0001 C CNN
+	1    2525 800 
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -827,15 +827,15 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5CE712D0
-P 2625 1100
+P 2525 1100
 AR Path="/5CE712D0" Ref="C?"  Part="1" 
 AR Path="/5CD3F059/5CE712D0" Ref="C?"  Part="1" 
 AR Path="/5CE3E7A9/5CE712D0" Ref="C204"  Part="1" 
-F 0 "C204" H 2500 1225 50  0000 L CNN
-F 1 "100n" H 2525 1025 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2663 950 50  0001 C CNN
-F 3 "~" H 2625 1100 50  0001 C CNN
-	1    2625 1100
+F 0 "C204" H 2400 1225 50  0000 L CNN
+F 1 "100n" H 2425 1025 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2563 950 50  0001 C CNN
+F 3 "~" H 2525 1100 50  0001 C CNN
+	1    2525 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1912,25 +1912,15 @@ Wire Wire Line
 Wire Wire Line
 	1950 6900 1425 6900
 Wire Wire Line
-	8800 900  9325 900 
+	2400 950  2525 950 
 Wire Wire Line
-	2400 950  2850 950 
+	2625 1250 2750 1250
 Wire Wire Line
-	2625 650  3100 650 
+	1275 2075 1275 2325
 Wire Wire Line
-	2625 1250 3100 1250
+	2075 2075 2075 2325
 Wire Wire Line
-	9175 1350 9325 1350
-Wire Wire Line
-	9450 2400 9975 2400
-Wire Wire Line
-	9825 2850 9975 2850
-Wire Wire Line
-	1275 2075 1275 3075
-Wire Wire Line
-	2075 2075 2075 3075
-Wire Wire Line
-	2850 2075 2850 3075
+	2850 2075 2850 2325
 Text Label 9375 4700 0    50   ~ 0
 1_noninv
 Text Label 9400 5975 0    50   ~ 0
@@ -1950,10 +1940,10 @@ SDI
 Text Label 2225 5575 0    50   ~ 0
 SCK
 $Comp
-L Device:Jumper_NC_Small JP?
+L Device:Jumper_NC_Small JP203
 U 1 1 5D23F56B
 P 2775 5725
-F 0 "JP?" H 2475 5775 50  0000 C CNN
+F 0 "JP203" H 2475 5775 50  0000 C CNN
 F 1 "MISO" H 2650 5775 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2775 5725 50  0001 C CNN
 F 3 "~" H 2775 5725 50  0001 C CNN
@@ -1986,4 +1976,74 @@ Text GLabel 5400 6900 2    39   Input ~ 0
 R2_20
 Text GLabel 5400 6975 2    39   Input ~ 0
 R3_21
+Connection ~ 2525 950 
+Wire Wire Line
+	2525 950  2850 950 
+Wire Wire Line
+	2525 1250 2625 1250
+Connection ~ 2625 1250
+Connection ~ 2850 1250
+Wire Wire Line
+	2850 1250 3100 1250
+Connection ~ 2750 1250
+Wire Wire Line
+	2750 1250 2850 1250
+Wire Wire Line
+	2625 650  2725 650 
+Connection ~ 2850 650 
+Wire Wire Line
+	2850 650  3100 650 
+Connection ~ 2725 650 
+Wire Wire Line
+	2725 650  2850 650 
+Wire Wire Line
+	2525 650  2625 650 
+Connection ~ 2625 650 
+Connection ~ 1275 2325
+Wire Wire Line
+	1275 2325 1275 2575
+Connection ~ 1275 2575
+Wire Wire Line
+	1275 2575 1275 2825
+Connection ~ 1275 2825
+Wire Wire Line
+	1275 2825 1275 3075
+Connection ~ 2075 2325
+Wire Wire Line
+	2075 2325 2075 2575
+Connection ~ 2075 2575
+Wire Wire Line
+	2075 2575 2075 2825
+Connection ~ 2075 2825
+Wire Wire Line
+	2075 2825 2075 3075
+Connection ~ 2850 2325
+Wire Wire Line
+	2850 2325 2850 2575
+Connection ~ 2850 2575
+Wire Wire Line
+	2850 2575 2850 2825
+Connection ~ 2850 2825
+Wire Wire Line
+	2850 2825 2850 3075
+Wire Wire Line
+	9450 2400 9725 2400
+Connection ~ 9725 2400
+Wire Wire Line
+	9725 2400 9975 2400
+Wire Wire Line
+	9825 2850 9925 2850
+Connection ~ 9925 2850
+Wire Wire Line
+	9925 2850 9975 2850
+Wire Wire Line
+	8800 900  9075 900 
+Connection ~ 9075 900 
+Wire Wire Line
+	9075 900  9325 900 
+Wire Wire Line
+	9175 1350 9275 1350
+Connection ~ 9275 1350
+Wire Wire Line
+	9275 1350 9325 1350
 $EndSCHEMATC
