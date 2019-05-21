@@ -1,4 +1,4 @@
-update=11/05/2019 09:13:09
+update=21/05/2019 20:43:32
 version=1
 last_client=kicad
 [general]
@@ -15,14 +15,14 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=KicadJE_ADSR_Mega32.net
+LastNetListRead=KicadJE_uP_DAC.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.2
+MinTrackWidth=0.15
 MinViaDiameter=0.4
 MinViaDrill=0.3
 MinMicroViaDiameter=0.2
@@ -57,7 +57,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.051
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
 Name=Power
