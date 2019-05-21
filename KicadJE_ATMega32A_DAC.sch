@@ -378,17 +378,17 @@ OUT1
 Text GLabel 10250 2075 0    50   Input ~ 0
 OUT2
 Text GLabel 900  2075 0    50   Input ~ 0
-18
+R0_18
 Text GLabel 900  2325 0    50   Input ~ 0
-19
+R1_19
 Text GLabel 900  2575 0    50   Input ~ 0
-20
+R2_20
 Text GLabel 900  2825 0    50   Input ~ 0
-21
+R3_21
 Text GLabel 1275 3075 3    50   Input ~ 0
-22
+C0_22
 Text GLabel 2075 3075 3    50   Input ~ 0
-23
+C1_23
 Text GLabel 1425 6900 0    50   Input ~ 0
 PWM12
 $Comp
@@ -741,22 +741,6 @@ F 3 "~" H 2200 6900 50  0001 C CNN
 	1    2200 6900
 	0    1    -1   0   
 $EndComp
-Text GLabel 1700 2575 0    50   Input ~ 0
-20
-Text GLabel 1700 2825 0    50   Input ~ 0
-21
-Text GLabel 1700 2325 0    50   Input ~ 0
-19
-Text GLabel 2475 2575 0    50   Input ~ 0
-20
-Text GLabel 2475 2825 0    50   Input ~ 0
-21
-Text GLabel 2475 2325 0    50   Input ~ 0
-19
-Text GLabel 1700 2075 0    50   Input ~ 0
-18
-Text GLabel 2475 2075 0    50   Input ~ 0
-18
 Wire Wire Line
 	10400 2300 10400 2750
 $Comp
@@ -915,21 +899,10 @@ L Device:Jumper_NC_Small JP204
 U 1 1 5CF0FB40
 P 2775 5800
 F 0 "JP204" H 2475 5850 50  0000 C CNN
-F 1 "JMP" H 2650 5850 50  0000 C CNN
+F 1 "SCK" H 2650 5850 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2775 5800 50  0001 C CNN
 F 3 "~" H 2775 5800 50  0001 C CNN
 	1    2775 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP203
-U 1 1 5CF0FDB3
-P 2775 5725
-F 0 "JP203" H 2475 5775 50  0000 C CNN
-F 1 "JMP" H 2650 5775 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2775 5725 50  0001 C CNN
-F 3 "~" H 2775 5725 50  0001 C CNN
-	1    2775 5725
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -937,7 +910,7 @@ L Device:Jumper_NC_Small JP202
 U 1 1 5CF100A7
 P 2775 5650
 F 0 "JP202" H 2475 5700 50  0000 C CNN
-F 1 "JMP" H 2650 5700 50  0000 C CNN
+F 1 "MOSI" H 2650 5700 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2775 5650 50  0001 C CNN
 F 3 "~" H 2775 5650 50  0001 C CNN
 	1    2775 5650
@@ -948,7 +921,7 @@ L Device:Jumper_NC_Small JP201
 U 1 1 5CF10382
 P 2775 5575
 F 0 "JP201" H 2475 5625 50  0000 C CNN
-F 1 "JMP" H 2650 5625 50  0000 C CNN
+F 1 "SS" H 2650 5625 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2775 5575 50  0001 C CNN
 F 3 "~" H 2775 5575 50  0001 C CNN
 	1    2775 5575
@@ -958,8 +931,6 @@ Wire Wire Line
 	2875 5575 3025 5575
 Wire Wire Line
 	2875 5650 3025 5650
-Wire Wire Line
-	2875 5725 3025 5725
 Wire Wire Line
 	2875 5800 3025 5800
 Wire Wire Line
@@ -1017,10 +988,10 @@ F 3 "" H 1700 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL072 U203
+L Amplifier_Operational:TL072 U201
 U 2 1 5CF6156F
 P 9000 5875
-F 0 "U203" H 9125 5625 50  0000 C CNN
+F 0 "U201" H 9125 5625 50  0000 C CNN
 F 1 "TL072" H 9100 5700 50  0000 C CNN
 F 2 "AJ:AJ_SO-8_5.3x6.2mm_P1.27mm" H 9000 5875 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9000 5875 50  0001 C CNN
@@ -1319,13 +1290,13 @@ Wire Wire Line
 	8625 5875 8700 5875
 $Comp
 L Amplifier_Operational:TL072 U201
-U 2 1 5D4DCC0D
+U 1 1 5D4DCC0D
 P 8975 4600
 F 0 "U201" H 9100 4350 50  0000 C CNN
 F 1 "TL072" H 9075 4425 50  0000 C CNN
 F 2 "AJ:AJ_SO-8_5.3x6.2mm_P1.27mm" H 8975 4600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8975 4600 50  0001 C CNN
-	2    8975 4600
+	1    8975 4600
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1804,20 +1775,12 @@ Wire Wire Line
 	2850 5275 3025 5275
 Wire Wire Line
 	2850 5350 3025 5350
-Text GLabel 5400 6750 2    39   Input ~ 0
-18
-Text GLabel 5400 6825 2    39   Input ~ 0
-19
-Text GLabel 5400 6900 2    39   Input ~ 0
-20
-Text GLabel 5400 6975 2    39   Input ~ 0
-21
 Text GLabel 2950 4850 1    50   Input ~ 0
-0
+C2_0
 Text GLabel 5400 7050 2    39   Input ~ 0
-22
+C0_22
 Text GLabel 5400 7125 2    39   Input ~ 0
-23
+C1_23
 $Comp
 L Device:R R?
 U 1 1 5D7FE8AA
@@ -1968,4 +1931,59 @@ Wire Wire Line
 	2075 2075 2075 3075
 Wire Wire Line
 	2850 2075 2850 3075
+Text Label 9375 4700 0    50   ~ 0
+1_noninv
+Text Label 9400 5975 0    50   ~ 0
+2_noninv
+Text Label 9375 5775 0    50   ~ 0
+2_inv
+Text Label 9350 4500 0    50   ~ 0
+1_inv
+Text Label 8600 4475 0    50   ~ 0
+1_out
+Text Label 8625 5750 0    50   ~ 0
+2_out
+Text Label 2225 5875 0    50   ~ 0
+SS
+Text Label 2225 5775 0    50   ~ 0
+SDI
+Text Label 2225 5575 0    50   ~ 0
+SCK
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5D23F56B
+P 2775 5725
+F 0 "JP?" H 2475 5775 50  0000 C CNN
+F 1 "MISO" H 2650 5775 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2775 5725 50  0001 C CNN
+F 3 "~" H 2775 5725 50  0001 C CNN
+	1    2775 5725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 5725 3025 5725
+Text GLabel 1700 2075 0    50   Input ~ 0
+R0_18
+Text GLabel 1700 2325 0    50   Input ~ 0
+R1_19
+Text GLabel 1700 2575 0    50   Input ~ 0
+R2_20
+Text GLabel 1700 2825 0    50   Input ~ 0
+R3_21
+Text GLabel 2475 2075 0    50   Input ~ 0
+R0_18
+Text GLabel 2475 2325 0    50   Input ~ 0
+R1_19
+Text GLabel 2475 2575 0    50   Input ~ 0
+R2_20
+Text GLabel 2475 2825 0    50   Input ~ 0
+R3_21
+Text GLabel 5400 6750 2    39   Input ~ 0
+R0_18
+Text GLabel 5400 6825 2    39   Input ~ 0
+R1_19
+Text GLabel 5400 6900 2    39   Input ~ 0
+R2_20
+Text GLabel 5400 6975 2    39   Input ~ 0
+R3_21
 $EndSCHEMATC
