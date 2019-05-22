@@ -855,15 +855,15 @@ $EndComp
 $Comp
 L power:-12V #PWR?
 U 1 1 5CE712E5
-P 2750 1250
+P 2525 1250
 AR Path="/5CE712E5" Ref="#PWR?"  Part="1" 
 AR Path="/5CD3F059/5CE712E5" Ref="#PWR?"  Part="1" 
 AR Path="/5CE3E7A9/5CE712E5" Ref="#PWR0215"  Part="1" 
-F 0 "#PWR0215" H 2750 1350 50  0001 C CNN
-F 1 "-12V" H 2575 1325 50  0000 C CNN
-F 2 "" H 2750 1250 50  0001 C CNN
-F 3 "" H 2750 1250 50  0001 C CNN
-	1    2750 1250
+F 0 "#PWR0215" H 2525 1350 50  0001 C CNN
+F 1 "-12V" H 2350 1325 50  0000 C CNN
+F 2 "" H 2525 1250 50  0001 C CNN
+F 3 "" H 2525 1250 50  0001 C CNN
+	1    2525 1250
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1914,8 +1914,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 950  2525 950 
 Wire Wire Line
-	2625 1250 2750 1250
-Wire Wire Line
 	1275 2075 1275 2325
 Wire Wire Line
 	2075 2075 2075 2325
@@ -1978,16 +1976,11 @@ Text GLabel 5400 6975 2    39   Input ~ 0
 R3_21
 Connection ~ 2525 950 
 Wire Wire Line
-	2525 950  2850 950 
-Wire Wire Line
 	2525 1250 2625 1250
 Connection ~ 2625 1250
 Connection ~ 2850 1250
 Wire Wire Line
 	2850 1250 3100 1250
-Connection ~ 2750 1250
-Wire Wire Line
-	2750 1250 2850 1250
 Wire Wire Line
 	2625 650  2725 650 
 Connection ~ 2850 650 
@@ -2046,4 +2039,24 @@ Wire Wire Line
 Connection ~ 9275 1350
 Wire Wire Line
 	9275 1350 9325 1350
+Connection ~ 2525 1250
+Wire Wire Line
+	2625 1250 2850 1250
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D433FC3
+P 2700 950
+AR Path="/5D433FC3" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D433FC3" Ref="#PWR?"  Part="1" 
+AR Path="/5CE3E7A9/5D433FC3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2700 700 50  0001 C CNN
+F 1 "GNDA" H 2875 900 50  0000 C CNN
+F 2 "" H 2700 950 50  0001 C CNN
+F 3 "" H 2700 950 50  0001 C CNN
+	1    2700 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 950  2850 950 
+Connection ~ 2850 950 
 $EndSCHEMATC
