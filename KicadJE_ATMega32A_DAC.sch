@@ -744,20 +744,6 @@ $EndComp
 Wire Wire Line
 	10400 2300 10400 2750
 $Comp
-L power:GNDA #PWR?
-U 1 1 5CDD4247
-P 9075 1200
-AR Path="/5CDD4247" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5CDD4247" Ref="#PWR?"  Part="1" 
-AR Path="/5CE3E7A9/5CDD4247" Ref="#PWR0214"  Part="1" 
-F 0 "#PWR0214" H 9075 950 50  0001 C CNN
-F 1 "GNDA" H 9250 1150 50  0000 C CNN
-F 2 "" H 9075 1200 50  0001 C CNN
-F 3 "" H 9075 1200 50  0001 C CNN
-	1    9075 1200
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Analog_DAC:MCP4822 U202
 U 1 1 5CE0D72D
 P 1700 5675
@@ -827,29 +813,29 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5CE712D0
-P 2525 1100
+P 2850 1100
 AR Path="/5CE712D0" Ref="C?"  Part="1" 
 AR Path="/5CD3F059/5CE712D0" Ref="C?"  Part="1" 
 AR Path="/5CE3E7A9/5CE712D0" Ref="C204"  Part="1" 
-F 0 "C204" H 2400 1225 50  0000 L CNN
-F 1 "100n" H 2425 1025 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2563 950 50  0001 C CNN
-F 3 "~" H 2525 1100 50  0001 C CNN
-	1    2525 1100
+F 0 "C204" H 2725 1225 50  0000 L CNN
+F 1 "100n" H 2750 1025 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2888 950 50  0001 C CNN
+F 3 "~" H 2850 1100 50  0001 C CNN
+	1    2850 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5CE712D6
-P 2850 1100
+P 2525 1100
 AR Path="/5CE712D6" Ref="C?"  Part="1" 
 AR Path="/5CD3F059/5CE712D6" Ref="C?"  Part="1" 
 AR Path="/5CE3E7A9/5CE712D6" Ref="C205"  Part="1" 
-F 0 "C205" H 2725 1225 50  0000 L CNN
-F 1 "1u" H 2725 1025 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2888 950 50  0001 C CNN
-F 3 "~" H 2850 1100 50  0001 C CNN
-	1    2850 1100
+F 0 "C205" H 2400 1225 50  0000 L CNN
+F 1 "1u" H 2400 1025 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2563 950 50  0001 C CNN
+F 3 "~" H 2525 1100 50  0001 C CNN
+	1    2525 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1502,20 +1488,6 @@ F 3 "~" H 9475 1350 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L power:GNDA #PWR?
-U 1 1 5D605339
-P 9275 1650
-AR Path="/5D605339" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5D605339" Ref="#PWR?"  Part="1" 
-AR Path="/5CE3E7A9/5D605339" Ref="#PWR0219"  Part="1" 
-F 0 "#PWR0219" H 9275 1400 50  0001 C CNN
-F 1 "GNDA" H 9450 1600 50  0000 C CNN
-F 2 "" H 9275 1650 50  0001 C CNN
-F 3 "" H 9275 1650 50  0001 C CNN
-	1    9275 1650
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Envelope-cache-2018-08-04-13-00-04:+5V #PWR0209
 U 1 1 5D605324
 P 9275 1050
@@ -1937,19 +1909,6 @@ Text Label 2225 5775 0    50   ~ 0
 SDI
 Text Label 2225 5575 0    50   ~ 0
 SCK
-$Comp
-L Device:Jumper_NC_Small JP203
-U 1 1 5D23F56B
-P 2775 5725
-F 0 "JP203" H 2475 5775 50  0000 C CNN
-F 1 "MISO" H 2650 5775 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2775 5725 50  0001 C CNN
-F 3 "~" H 2775 5725 50  0001 C CNN
-	1    2775 5725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2875 5725 3025 5725
 Text GLabel 1700 2075 0    50   Input ~ 0
 R0_18
 Text GLabel 1700 2325 0    50   Input ~ 0
@@ -1974,13 +1933,9 @@ Text GLabel 5400 6900 2    39   Input ~ 0
 R2_20
 Text GLabel 5400 6975 2    39   Input ~ 0
 R3_21
-Connection ~ 2525 950 
 Wire Wire Line
 	2525 1250 2625 1250
 Connection ~ 2625 1250
-Connection ~ 2850 1250
-Wire Wire Line
-	2850 1250 3100 1250
 Wire Wire Line
 	2625 650  2725 650 
 Connection ~ 2850 650 
@@ -2039,17 +1994,14 @@ Wire Wire Line
 Connection ~ 9275 1350
 Wire Wire Line
 	9275 1350 9325 1350
-Connection ~ 2525 1250
-Wire Wire Line
-	2625 1250 2850 1250
 $Comp
 L power:GNDA #PWR?
 U 1 1 5D433FC3
 P 2700 950
 AR Path="/5D433FC3" Ref="#PWR?"  Part="1" 
 AR Path="/5CD3F059/5D433FC3" Ref="#PWR?"  Part="1" 
-AR Path="/5CE3E7A9/5D433FC3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2700 700 50  0001 C CNN
+AR Path="/5CE3E7A9/5D433FC3" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 2700 700 50  0001 C CNN
 F 1 "GNDA" H 2875 900 50  0000 C CNN
 F 2 "" H 2700 950 50  0001 C CNN
 F 3 "" H 2700 950 50  0001 C CNN
@@ -2058,5 +2010,34 @@ F 3 "" H 2700 950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 950  2850 950 
+Wire Wire Line
+	2625 1250 2850 1250
 Connection ~ 2850 950 
+Connection ~ 2850 1250
+Wire Wire Line
+	2850 1250 3100 1250
+Connection ~ 2525 950 
+Connection ~ 2525 1250
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5D4C4D4B
+P 9275 1650
+F 0 "#PWR?" H 9275 1400 50  0001 C CNN
+F 1 "GND" H 9150 1600 50  0000 C CNN
+F 2 "" H 9275 1650 50  0001 C CNN
+F 3 "" H 9275 1650 50  0001 C CNN
+	1    9275 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5D4C4F62
+P 9075 1200
+F 0 "#PWR?" H 9075 950 50  0001 C CNN
+F 1 "GND" H 8950 1150 50  0000 C CNN
+F 2 "" H 9075 1200 50  0001 C CNN
+F 3 "" H 9075 1200 50  0001 C CNN
+	1    9075 1200
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
