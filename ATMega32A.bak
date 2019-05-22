@@ -731,13 +731,19 @@ Text HLabel 6900 3500 2    50   Input ~ 0
 Text HLabel 6900 3600 2    50   Input ~ 0
 7_SCK
 Wire Wire Line
-	5400 2500 5650 2500
-Wire Wire Line
-	5400 2200 5650 2200
-Wire Wire Line
 	2075 1300 2175 1300
 Wire Wire Line
 	1225 1300 1675 1300
 Wire Wire Line
 	1225 1600 1775 1600
+Wire Wire Line
+	5400 2500 5475 2500
+Connection ~ 5475 2500
+Wire Wire Line
+	5475 2500 5650 2500
+Wire Wire Line
+	5400 2200 5475 2200
+Connection ~ 5475 2200
+Wire Wire Line
+	5475 2200 5650 2200
 $EndSCHEMATC
