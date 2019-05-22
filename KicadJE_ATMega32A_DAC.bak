@@ -1912,17 +1912,9 @@ Wire Wire Line
 Wire Wire Line
 	1950 6900 1425 6900
 Wire Wire Line
-	8800 900  9325 900 
-Wire Wire Line
 	2400 950  2525 950 
 Wire Wire Line
 	2625 1250 2750 1250
-Wire Wire Line
-	9175 1350 9325 1350
-Wire Wire Line
-	9450 2400 9975 2400
-Wire Wire Line
-	9825 2850 9975 2850
 Wire Wire Line
 	1275 2075 1275 2325
 Wire Wire Line
@@ -2034,4 +2026,24 @@ Wire Wire Line
 Connection ~ 2850 2825
 Wire Wire Line
 	2850 2825 2850 3075
+Wire Wire Line
+	9450 2400 9725 2400
+Connection ~ 9725 2400
+Wire Wire Line
+	9725 2400 9975 2400
+Wire Wire Line
+	9825 2850 9925 2850
+Connection ~ 9925 2850
+Wire Wire Line
+	9925 2850 9975 2850
+Wire Wire Line
+	8800 900  9075 900 
+Connection ~ 9075 900 
+Wire Wire Line
+	9075 900  9325 900 
+Wire Wire Line
+	9175 1350 9275 1350
+Connection ~ 9275 1350
+Wire Wire Line
+	9275 1350 9325 1350
 $EndSCHEMATC
