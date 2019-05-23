@@ -589,9 +589,9 @@ STM32_PB11
 Text HLabel 2825 4150 0    50   Input ~ 0
 STM32_PB10
 Text HLabel 2825 4050 0    50   Input ~ 0
-STM32_SDA1_PB9
+STM32_SDA1_PWM_PB9
 Text HLabel 2825 3950 0    50   Input ~ 0
-STM32_SCL1_PB8
+STM32_SCL1_PWM_PB8
 Text HLabel 2825 3850 0    50   Input ~ 0
 STM32_SDA1_RX1_PB7
 Text HLabel 2825 3650 0    50   Input ~ 0
