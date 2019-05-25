@@ -1943,9 +1943,9 @@ F 3 "~" H 6275 3275 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6100 3925 5700 3925
-Text GLabel 4525 3925 0    50   Input ~ 0
-PWM_PA9
 Text GLabel 4550 2650 0    50   Input ~ 0
+PWM_PA9
+Text GLabel 4525 3925 0    50   Input ~ 0
 PWM_PA8
 Connection ~ 5250 3925
 Wire Wire Line
@@ -2028,9 +2028,9 @@ F 3 "~" H 7025 3825 50  0001 C CNN
 	1    7025 3825
 	0    -1   1    0   
 $EndComp
-Text GLabel 7275 2550 2    50   Input ~ 0
-STM32_OUT3
 Text GLabel 7225 3825 2    50   Input ~ 0
+STM32_OUT3
+Text GLabel 7275 2550 2    50   Input ~ 0
 STM32_OUT4
 Wire Wire Line
 	7225 3825 7175 3825
