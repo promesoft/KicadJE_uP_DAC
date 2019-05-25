@@ -483,10 +483,10 @@ Text GLabel 8950 3475 0    50   Input ~ 0
 STM32_IN1
 Connection ~ 10325 3825
 Connection ~ 10325 3375
-Text GLabel 3750 2550 2    50   Input ~ 0
-OUT1
 Text GLabel 3700 3825 2    50   Input ~ 0
-OUT2
+STM32_OUT1
+Text GLabel 3750 2550 2    50   Input ~ 0
+STM32_OUT2
 Wire Wire Line
 	3700 3825 3650 3825
 Wire Wire Line
@@ -1943,9 +1943,9 @@ F 3 "~" H 6275 3275 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6100 3925 5700 3925
-Text GLabel 4525 3925 0    50   Input ~ 0
-PWM_PA9
 Text GLabel 4550 2650 0    50   Input ~ 0
+PWM_PA9
+Text GLabel 4525 3925 0    50   Input ~ 0
 PWM_PA8
 Connection ~ 5250 3925
 Wire Wire Line
@@ -2028,10 +2028,10 @@ F 3 "~" H 7025 3825 50  0001 C CNN
 	1    7025 3825
 	0    -1   1    0   
 $EndComp
-Text GLabel 7275 2550 2    50   Input ~ 0
-OUT3
 Text GLabel 7225 3825 2    50   Input ~ 0
-OUT4
+STM32_OUT3
+Text GLabel 7275 2550 2    50   Input ~ 0
+STM32_OUT4
 Wire Wire Line
 	7225 3825 7175 3825
 Wire Wire Line
@@ -2652,9 +2652,9 @@ Connection ~ 6325 7125
 Wire Wire Line
 	6050 7225 6225 7225
 Connection ~ 6225 7225
-Text GLabel 1000 3925 0    50   Input ~ 0
-STM_DACB
 Text GLabel 1025 2650 0    50   Input ~ 0
+STM_DACB
+Text GLabel 1000 3925 0    50   Input ~ 0
 STM_DACA
 $Comp
 L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
@@ -2753,7 +2753,7 @@ P 3350 6400
 AR Path="/5CE3E7A9/5D5634C3" Ref="JP?"  Part="1" 
 AR Path="/5CE53731/5D5634C3" Ref="JP406"  Part="1" 
 F 0 "JP406" H 3050 6450 50  0000 C CNN
-F 1 "PWM_1" H 3225 6450 50  0000 C CNN
+F 1 "PWM1" H 3225 6450 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3350 6400 50  0001 C CNN
 F 3 "~" H 3350 6400 50  0001 C CNN
 	1    3350 6400
@@ -2766,7 +2766,7 @@ P 3350 6500
 AR Path="/5CE3E7A9/5D563A96" Ref="JP?"  Part="1" 
 AR Path="/5CE53731/5D563A96" Ref="JP407"  Part="1" 
 F 0 "JP407" H 3050 6550 50  0000 C CNN
-F 1 "PWM_2" H 3225 6550 50  0000 C CNN
+F 1 "PWM2" H 3225 6550 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3350 6500 50  0001 C CNN
 F 3 "~" H 3350 6500 50  0001 C CNN
 	1    3350 6500
