@@ -291,20 +291,6 @@ Connection ~ 10325 1125
 Wire Wire Line
 	10325 3375 10325 3825
 $Comp
-L power:GNDA #PWR?
-U 1 1 5CE656C0
-P 9000 1225
-AR Path="/5CE656C0" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5CE656C0" Ref="#PWR?"  Part="1" 
-AR Path="/5CE53731/5CE656C0" Ref="#PWR0412"  Part="1" 
-F 0 "#PWR0412" H 9000 975 50  0001 C CNN
-F 1 "GNDA" H 9150 1175 50  0000 C CNN
-F 2 "" H 9000 1225 50  0001 C CNN
-F 3 "" H 9000 1225 50  0001 C CNN
-	1    9000 1225
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Amplifier_Operational:TL072 U?
 U 2 1 5CE656C6
 P 2875 3825
@@ -730,20 +716,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9330 1375 50  0
 F 3 "~" H 9400 1375 50  0001 C CNN
 	1    9400 1375
 	0    1    -1   0   
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5CE6578E
-P 9200 1675
-AR Path="/5CE6578E" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5CE6578E" Ref="#PWR?"  Part="1" 
-AR Path="/5CE53731/5CE6578E" Ref="#PWR0421"  Part="1" 
-F 0 "#PWR0421" H 9200 1425 50  0001 C CNN
-F 1 "GNDA" H 9375 1625 50  0000 C CNN
-F 2 "" H 9200 1675 50  0001 C CNN
-F 3 "" H 9200 1675 50  0001 C CNN
-	1    9200 1675
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:D D?
@@ -2798,4 +2770,30 @@ Wire Wire Line
 	4425 6350 4425 6600
 Text GLabel 6175 1600 3    39   Input ~ 0
 PA15_C2
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5DB28C50
+P 9200 1675
+AR Path="/5DB28C50" Ref="#PWR?"  Part="1" 
+AR Path="/5CE53731/5DB28C50" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 9200 1425 50  0001 C CNN
+F 1 "GND" H 9205 1502 50  0000 C CNN
+F 2 "" H 9200 1675 50  0001 C CNN
+F 3 "" H 9200 1675 50  0001 C CNN
+	1    9200 1675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5DB5255D
+P 9000 1225
+AR Path="/5DB5255D" Ref="#PWR?"  Part="1" 
+AR Path="/5CE53731/5DB5255D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9000 975 50  0001 C CNN
+F 1 "GND" H 9005 1052 50  0000 C CNN
+F 2 "" H 9000 1225 50  0001 C CNN
+F 3 "" H 9000 1225 50  0001 C CNN
+	1    9000 1225
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
