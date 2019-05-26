@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "Kicad_JE_uP_DAC"
 Date "2019-05-18"
 Rev "Rev A"
@@ -25,5 +25,11 @@ S 5000 2500 1250 2500
 U 5CE53731
 F0 "KicadJE_STM32F0" 50
 F1 "KicadJE_STM32F0.sch" 50
+$EndSheet
+$Sheet
+S 7500 2500 1250 2500
+U 5DD87D87
+F0 "TH_555_VCO1" 50
+F1 "TH_555_VCO1.sch" 50
 $EndSheet
 $EndSCHEMATC
