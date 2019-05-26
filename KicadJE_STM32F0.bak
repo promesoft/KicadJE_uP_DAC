@@ -1182,215 +1182,22 @@ Wire Wire Line
 	3300 1425 3050 1425
 Connection ~ 3050 1425
 Wire Wire Line
-	4225 1350 4300 1350
-$Comp
-L Device:LED D?
-U 1 1 5CE82C3E
-P 4450 600
-AR Path="/5CE82C3E" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C3E" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C3E" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C3E" Ref="D401"  Part="1" 
-F 0 "D401" H 4450 500 50  0000 C CNN
-F 1 "LED" H 4625 550 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 4450 600 50  0001 C CNN
-F 3 "~" H 4450 600 50  0001 C CNN
-	1    4450 600 
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4225 600  4300 600 
-Wire Wire Line
-	4225 850  4300 850 
-Wire Wire Line
-	4225 1100 4300 1100
-Wire Wire Line
-	5025 1350 5100 1350
-Wire Wire Line
-	5025 600  5100 600 
-Wire Wire Line
-	5025 850  5100 850 
-Wire Wire Line
-	5025 1100 5100 1100
-Wire Wire Line
-	5800 1350 5875 1350
-Wire Wire Line
-	5800 600  5875 600 
-Wire Wire Line
-	5800 850  5875 850 
-Wire Wire Line
-	5800 1100 5875 1100
-$Comp
-L Device:LED D?
-U 1 1 5CE82C4F
-P 4450 850
-AR Path="/5CE82C4F" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C4F" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C4F" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C4F" Ref="D405"  Part="1" 
-F 0 "D405" H 4475 750 50  0000 C CNN
-F 1 "LED" H 4600 825 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 4450 850 50  0001 C CNN
-F 3 "~" H 4450 850 50  0001 C CNN
-	1    4450 850 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5CE82C55
-P 4450 1100
-AR Path="/5CE82C55" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C55" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C55" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C55" Ref="D410"  Part="1" 
-F 0 "D410" H 4475 975 50  0000 C CNN
-F 1 "LED" H 4600 1050 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 4450 1100 50  0001 C CNN
-F 3 "~" H 4450 1100 50  0001 C CNN
-	1    4450 1100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5CE82C5B
-P 4450 1350
-AR Path="/5CE82C5B" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C5B" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C5B" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C5B" Ref="D415"  Part="1" 
-F 0 "D415" H 4500 1475 50  0000 C CNN
-F 1 "LED" H 4600 1400 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 4450 1350 50  0001 C CNN
-F 3 "~" H 4450 1350 50  0001 C CNN
-	1    4450 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5CE82C61
-P 5250 1350
-AR Path="/5CE82C61" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C61" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C61" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C61" Ref="D416"  Part="1" 
-F 0 "D416" H 5275 1450 50  0000 C CNN
-F 1 "LED" H 5250 1550 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 5250 1350 50  0001 C CNN
-F 3 "~" H 5250 1350 50  0001 C CNN
-	1    5250 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5CE82C67
-P 5250 1100
-AR Path="/5CE82C67" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C67" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C67" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C67" Ref="D411"  Part="1" 
-F 0 "D411" H 5250 1000 50  0000 C CNN
-F 1 "LED" H 5275 1200 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 5250 1100 50  0001 C CNN
-F 3 "~" H 5250 1100 50  0001 C CNN
-	1    5250 1100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5CE82C6D
-P 5250 850
-AR Path="/5CE82C6D" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C6D" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C6D" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C6D" Ref="D406"  Part="1" 
-F 0 "D406" H 5375 750 50  0000 C CNN
-F 1 "LED" H 5375 900 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 5250 850 50  0001 C CNN
-F 3 "~" H 5250 850 50  0001 C CNN
-	1    5250 850 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5CE82C73
-P 5250 600
-AR Path="/5CE82C73" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C73" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C73" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C73" Ref="D402"  Part="1" 
-F 0 "D402" H 5275 400 50  0000 C CNN
-F 1 "LED" H 5300 475 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 5250 600 50  0001 C CNN
-F 3 "~" H 5250 600 50  0001 C CNN
-	1    5250 600 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5CE82C79
-P 6025 1350
-AR Path="/5CE82C79" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C79" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C79" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C79" Ref="D417"  Part="1" 
-F 0 "D417" H 6025 1200 50  0000 C CNN
-F 1 "LED" H 6075 1275 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 6025 1350 50  0001 C CNN
-F 3 "~" H 6025 1350 50  0001 C CNN
-	1    6025 1350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5CE82C7F
-P 6025 1100
-AR Path="/5CE82C7F" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C7F" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C7F" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C7F" Ref="D412"  Part="1" 
-F 0 "D412" H 6025 950 50  0000 C CNN
-F 1 "LED" H 6075 1025 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 6025 1100 50  0001 C CNN
-F 3 "~" H 6025 1100 50  0001 C CNN
-	1    6025 1100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5CE82C85
-P 6025 850
-AR Path="/5CE82C85" Ref="D?"  Part="1" 
-AR Path="/5CD3F059/5CE82C85" Ref="D?"  Part="1" 
-AR Path="/5CE3E7A9/5CE82C85" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C85" Ref="D407"  Part="1" 
-F 0 "D407" H 6075 700 50  0000 C CNN
-F 1 "LED" H 6025 775 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 6025 850 50  0001 C CNN
-F 3 "~" H 6025 850 50  0001 C CNN
-	1    6025 850 
-	-1   0    0    1   
-$EndComp
+	5125 750  5200 750 
 $Comp
 L Device:LED D?
 U 1 1 5CE82C8B
-P 6025 600
+P 5350 750
 AR Path="/5CE82C8B" Ref="D?"  Part="1" 
 AR Path="/5CD3F059/5CE82C8B" Ref="D?"  Part="1" 
 AR Path="/5CE3E7A9/5CE82C8B" Ref="D?"  Part="1" 
-AR Path="/5CE53731/5CE82C8B" Ref="D403"  Part="1" 
-F 0 "D403" H 6025 425 50  0000 C CNN
-F 1 "LED" H 6025 500 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 6025 600 50  0001 C CNN
-F 3 "~" H 6025 600 50  0001 C CNN
-	1    6025 600 
+AR Path="/5CE53731/5CE82C8B" Ref="D401"  Part="1" 
+F 0 "D401" H 5350 575 50  0000 C CNN
+F 1 "LED" H 5350 650 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5350 750 50  0001 C CNN
+F 3 "~" H 5350 750 50  0001 C CNN
+	1    5350 750 
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4600 600  4600 850 
-Wire Wire Line
-	5400 600  5400 850 
-Wire Wire Line
-	6175 600  6175 850 
 $Comp
 L Analog_DAC:MCP4822 U?
 U 1 1 5CE93C41
@@ -1730,33 +1537,6 @@ Wire Notes Line
 	600  4575 5350 4575
 Wire Notes Line
 	5350 4575 5350 7750
-Connection ~ 4600 850 
-Wire Wire Line
-	4600 850  4600 1100
-Connection ~ 4600 1100
-Wire Wire Line
-	4600 1100 4600 1350
-Connection ~ 4600 1350
-Wire Wire Line
-	4600 1350 4600 1600
-Connection ~ 5400 850 
-Wire Wire Line
-	5400 850  5400 1100
-Connection ~ 5400 1100
-Wire Wire Line
-	5400 1100 5400 1350
-Connection ~ 5400 1350
-Wire Wire Line
-	5400 1350 5400 1600
-Connection ~ 6175 850 
-Wire Wire Line
-	6175 850  6175 1100
-Connection ~ 6175 1100
-Wire Wire Line
-	6175 1100 6175 1350
-Connection ~ 6175 1350
-Wire Wire Line
-	6175 1350 6175 1600
 Text GLabel 10175 2575 0    50   Input ~ 0
 STM32_OUT3
 Text GLabel 10175 2975 0    50   Input ~ 0
@@ -2305,119 +2085,29 @@ F 3 "~" H 10050 3925 50  0001 C CNN
 	1    10050 3925
 	0    1    -1   0   
 $EndComp
-Text GLabel 3850 5525 2    39   Input ~ 0
+Text GLabel 3325 5600 2    39   Input ~ 0
 PB0_R0
-Text GLabel 3850 5725 2    39   Input ~ 0
+Text GLabel 3325 5800 2    39   Input ~ 0
 PB2_R2
-Text GLabel 3850 5925 2    39   Input ~ 0
+Text GLabel 3325 6000 2    39   Input ~ 0
 PB4_C0
-Text GLabel 3850 6025 2    39   Input ~ 0
+Text GLabel 3325 6100 2    39   Input ~ 0
 PB5_C1
 Wire Wire Line
-	3850 5625 3775 5625
+	3325 5700 3250 5700
 Wire Wire Line
-	3850 5825 3775 5825
+	3325 5900 3250 5900
 Wire Wire Line
-	3850 6025 3775 6025
-$Comp
-L Device:R_Small R?
-U 1 1 5D0151BE
-P 3675 5525
-AR Path="/5D0151BE" Ref="R?"  Part="1" 
-AR Path="/5CD3F059/5D0151BE" Ref="R?"  Part="1" 
-AR Path="/5CE3E7A9/5D0151BE" Ref="R?"  Part="1" 
-AR Path="/5CE53731/5D0151BE" Ref="R429"  Part="1" 
-F 0 "R429" V 3675 5525 39  0000 C CNN
-F 1 "100R" V 3725 5350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3605 5525 50  0001 C CNN
-F 3 "~" H 3675 5525 50  0001 C CNN
-	1    3675 5525
-	0    -1   -1   0   
-$EndComp
+	3325 6100 3250 6100
 Wire Wire Line
-	3775 5525 3850 5525
-$Comp
-L Device:R_Small R?
-U 1 1 5D0151C5
-P 3675 5625
-AR Path="/5D0151C5" Ref="R?"  Part="1" 
-AR Path="/5CD3F059/5D0151C5" Ref="R?"  Part="1" 
-AR Path="/5CE3E7A9/5D0151C5" Ref="R?"  Part="1" 
-AR Path="/5CE53731/5D0151C5" Ref="R430"  Part="1" 
-F 0 "R430" V 3675 5625 39  0000 C CNN
-F 1 "100R" V 3725 5450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3605 5625 50  0001 C CNN
-F 3 "~" H 3675 5625 50  0001 C CNN
-	1    3675 5625
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5D0151CB
-P 3675 5725
-AR Path="/5D0151CB" Ref="R?"  Part="1" 
-AR Path="/5CD3F059/5D0151CB" Ref="R?"  Part="1" 
-AR Path="/5CE3E7A9/5D0151CB" Ref="R?"  Part="1" 
-AR Path="/5CE53731/5D0151CB" Ref="R431"  Part="1" 
-F 0 "R431" V 3675 5725 39  0000 C CNN
-F 1 "100R" V 3725 5550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3605 5725 50  0001 C CNN
-F 3 "~" H 3675 5725 50  0001 C CNN
-	1    3675 5725
-	0    -1   -1   0   
-$EndComp
+	3250 5600 3325 5600
 Wire Wire Line
-	3775 5725 3850 5725
-$Comp
-L Device:R_Small R?
-U 1 1 5D0151D2
-P 3675 5825
-AR Path="/5D0151D2" Ref="R?"  Part="1" 
-AR Path="/5CD3F059/5D0151D2" Ref="R?"  Part="1" 
-AR Path="/5CE3E7A9/5D0151D2" Ref="R?"  Part="1" 
-AR Path="/5CE53731/5D0151D2" Ref="R432"  Part="1" 
-F 0 "R432" V 3675 5825 39  0000 C CNN
-F 1 "100R" V 3725 5650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3605 5825 50  0001 C CNN
-F 3 "~" H 3675 5825 50  0001 C CNN
-	1    3675 5825
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5D0151D8
-P 3675 5925
-AR Path="/5D0151D8" Ref="R?"  Part="1" 
-AR Path="/5CD3F059/5D0151D8" Ref="R?"  Part="1" 
-AR Path="/5CE3E7A9/5D0151D8" Ref="R?"  Part="1" 
-AR Path="/5CE53731/5D0151D8" Ref="R433"  Part="1" 
-F 0 "R433" V 3675 5925 39  0000 C CNN
-F 1 "100R" V 3725 5750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3605 5925 50  0001 C CNN
-F 3 "~" H 3675 5925 50  0001 C CNN
-	1    3675 5925
-	0    -1   -1   0   
-$EndComp
+	3250 5800 3325 5800
 Wire Wire Line
-	3775 5925 3850 5925
-$Comp
-L Device:R_Small R?
-U 1 1 5D0151DF
-P 3675 6025
-AR Path="/5D0151DF" Ref="R?"  Part="1" 
-AR Path="/5CD3F059/5D0151DF" Ref="R?"  Part="1" 
-AR Path="/5CE3E7A9/5D0151DF" Ref="R?"  Part="1" 
-AR Path="/5CE53731/5D0151DF" Ref="R434"  Part="1" 
-F 0 "R434" V 3675 6025 39  0000 C CNN
-F 1 "100R" V 3725 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3605 6025 50  0001 C CNN
-F 3 "~" H 3675 6025 50  0001 C CNN
-	1    3675 6025
-	0    -1   -1   0   
-$EndComp
-Text GLabel 3850 5625 2    39   Input ~ 0
+	3250 6000 3325 6000
+Text GLabel 3325 5700 2    39   Input ~ 0
 PB1_R1
-Text GLabel 3850 5825 2    39   Input ~ 0
+Text GLabel 3325 5900 2    39   Input ~ 0
 PB3_R3
 $Comp
 L Device:Jumper_NC_Small JP?
@@ -2450,51 +2140,23 @@ Wire Wire Line
 Wire Wire Line
 	1350 6500 1350 6600
 Connection ~ 1350 6500
-Text GLabel 4225 600  0    39   Input ~ 0
-PB0_R0
-Text GLabel 4225 1100 0    39   Input ~ 0
-PB2_R2
-Text GLabel 4600 1600 3    39   Input ~ 0
-PB4_C0
-Text GLabel 5400 1600 3    39   Input ~ 0
-PB5_C1
-Text GLabel 4225 850  0    39   Input ~ 0
-PB1_R1
-Text GLabel 4225 1350 0    39   Input ~ 0
-PB3_R3
-Text GLabel 5025 600  0    39   Input ~ 0
-PB0_R0
-Text GLabel 5025 1100 0    39   Input ~ 0
-PB2_R2
-Text GLabel 5025 850  0    39   Input ~ 0
-PB1_R1
-Text GLabel 5025 1350 0    39   Input ~ 0
-PB3_R3
-Text GLabel 5800 600  0    39   Input ~ 0
-PB0_R0
-Text GLabel 5800 1100 0    39   Input ~ 0
-PB2_R2
-Text GLabel 5800 850  0    39   Input ~ 0
-PB1_R1
-Text GLabel 5800 1350 0    39   Input ~ 0
-PB3_R3
-Text GLabel 1200 7100 0    39   Input ~ 0
+Text GLabel 1475 7100 0    39   Input ~ 0
 PA15_C2
 Wire Wire Line
-	1200 7100 1275 7100
+	1475 7100 1550 7100
 $Comp
 L Device:R_Small R?
 U 1 1 5D10D6AF
-P 1375 7100
+P 5025 750
 AR Path="/5D10D6AF" Ref="R?"  Part="1" 
 AR Path="/5CD3F059/5D10D6AF" Ref="R?"  Part="1" 
 AR Path="/5CE3E7A9/5D10D6AF" Ref="R?"  Part="1" 
 AR Path="/5CE53731/5D10D6AF" Ref="R437"  Part="1" 
-F 0 "R437" V 1375 7100 39  0000 C CNN
-F 1 "100R" V 1425 6925 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1305 7100 50  0001 C CNN
-F 3 "~" H 1375 7100 50  0001 C CNN
-	1    1375 7100
+F 0 "R437" V 5025 750 39  0000 C CNN
+F 1 "820R" V 5125 725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4955 750 50  0001 C CNN
+F 3 "~" H 5025 750 50  0001 C CNN
+	1    5025 750 
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -2703,19 +2365,19 @@ $EndComp
 $Comp
 L Device:Jumper_NC_Small JP?
 U 1 1 5D563A96
-P 3350 6500
+P 3450 6500
 AR Path="/5CE3E7A9/5D563A96" Ref="JP?"  Part="1" 
 AR Path="/5CE53731/5D563A96" Ref="JP407"  Part="1" 
-F 0 "JP407" H 3050 6550 50  0000 C CNN
-F 1 "PWM2" H 3225 6550 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3350 6500 50  0001 C CNN
-F 3 "~" H 3350 6500 50  0001 C CNN
-	1    3350 6500
+F 0 "JP407" H 3150 6550 50  0000 C CNN
+F 1 "PWM2" H 3325 6550 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3450 6500 50  0001 C CNN
+F 3 "~" H 3450 6500 50  0001 C CNN
+	1    3450 6500
 	-1   0    0    -1  
 $EndComp
 Text GLabel 3450 6400 2    50   Input ~ 0
 STM_DACA
-Text GLabel 3450 6500 2    50   Input ~ 0
+Text GLabel 3550 6500 2    39   Input ~ 0
 STM_DACB
 $Comp
 L Amplifier_Operational:TL072 U?
@@ -2768,8 +2430,6 @@ F 3 "" H 4425 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4425 6350 4425 6600
-Text GLabel 6175 1600 3    39   Input ~ 0
-PA15_C2
 $Comp
 L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
 U 1 1 5DB28C50
@@ -2788,12 +2448,44 @@ L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
 U 1 1 5DB5255D
 P 9000 1225
 AR Path="/5DB5255D" Ref="#PWR?"  Part="1" 
-AR Path="/5CE53731/5DB5255D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9000 975 50  0001 C CNN
+AR Path="/5CE53731/5DB5255D" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 9000 975 50  0001 C CNN
 F 1 "GND" H 9005 1052 50  0000 C CNN
 F 2 "" H 9000 1225 50  0001 C CNN
 F 3 "" H 9000 1225 50  0001 C CNN
 	1    9000 1225
 	-1   0    0    -1  
 $EndComp
+Text GLabel 3350 6575 2    39   Input ~ 0
+PB9_PWM
+Wire Wire Line
+	3250 6500 3300 6500
+Wire Wire Line
+	3350 6575 3300 6575
+Wire Wire Line
+	3300 6575 3300 6500
+Connection ~ 3300 6500
+Wire Wire Line
+	3300 6500 3350 6500
+Text GLabel 4850 750  0    39   Input ~ 0
+PB9_PWM
+Wire Wire Line
+	4850 750  4925 750 
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5DCB7DB1
+P 5625 875
+AR Path="/5DCB7DB1" Ref="#PWR?"  Part="1" 
+AR Path="/5CE53731/5DCB7DB1" Ref="#PWR0412"  Part="1" 
+F 0 "#PWR0412" H 5625 625 50  0001 C CNN
+F 1 "GND" H 5630 702 50  0000 C CNN
+F 2 "" H 5625 875 50  0001 C CNN
+F 3 "" H 5625 875 50  0001 C CNN
+	1    5625 875 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 750  5625 750 
+Wire Wire Line
+	5625 750  5625 875 
 $EndSCHEMATC

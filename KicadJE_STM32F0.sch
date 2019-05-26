@@ -1117,35 +1117,7 @@ $EndComp
 Connection ~ 2950 1425
 Wire Wire Line
 	2950 1425 2825 1425
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5CE76D20
-P 2825 825
-AR Path="/5CD3F059/5CE76D20" Ref="#FLG?"  Part="1" 
-AR Path="/5CE76D20" Ref="#FLG?"  Part="1" 
-AR Path="/5CE53731/5CE76D20" Ref="#FLG0401"  Part="1" 
-F 0 "#FLG0401" H 2825 900 50  0001 C CNN
-F 1 "PWR_FLAG" H 2825 998 50  0000 C CNN
-F 2 "" H 2825 825 50  0001 C CNN
-F 3 "~" H 2825 825 50  0001 C CNN
-	1    2825 825 
-	1    0    0    -1  
-$EndComp
 Connection ~ 2825 825 
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5CE76D27
-P 2825 1425
-AR Path="/5CD3F059/5CE76D27" Ref="#FLG?"  Part="1" 
-AR Path="/5CE76D27" Ref="#FLG?"  Part="1" 
-AR Path="/5CE53731/5CE76D27" Ref="#FLG0402"  Part="1" 
-F 0 "#FLG0402" H 2825 1500 50  0001 C CNN
-F 1 "PWR_FLAG" H 2825 1598 50  0000 C CNN
-F 2 "" H 2825 1425 50  0001 C CNN
-F 3 "~" H 2825 1425 50  0001 C CNN
-	1    2825 1425
-	-1   0    0    1   
-$EndComp
 Connection ~ 2825 1425
 $Comp
 L Device:C C?

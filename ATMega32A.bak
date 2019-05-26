@@ -414,8 +414,6 @@ Text GLabel 7250 3600 2    50   Input ~ 0
 32_7_SCK
 Text GLabel 7250 3500 2    50   Input ~ 0
 32_6_MISO
-Text GLabel 4550 1325 0    50   Input ~ 0
-0_LED
 Text GLabel 4700 4925 0    50   Input ~ 0
 32_8_Rx
 Text GLabel 4700 4825 0    50   Input ~ 0
@@ -501,7 +499,7 @@ AR Path="/5CD57617" Ref="#PWR?"  Part="1"
 AR Path="/5CD3F059/5CD57617" Ref="#PWR?"  Part="1" 
 AR Path="/5CE3E7A9/5CD3F059/5CD57617" Ref="#PWR0304"  Part="1" 
 F 0 "#PWR0304" H 2175 1150 50  0001 C CNN
-F 1 "+5VA" H 2190 1473 50  0000 C CNN
+F 1 "+5VA" H 2300 1350 50  0000 C CNN
 F 2 "" H 2175 1300 50  0001 C CNN
 F 3 "" H 2175 1300 50  0001 C CNN
 	1    2175 1300
@@ -624,7 +622,7 @@ L power:PWR_FLAG #FLG0302
 U 1 1 5DB8B32C
 P 2125 1300
 F 0 "#FLG0302" H 2125 1375 50  0001 C CNN
-F 1 "PWR_FLAG" H 2125 1473 50  0000 C CNN
+F 1 "PWR_FLAG" H 2575 1250 50  0000 C CNN
 F 2 "" H 2125 1300 50  0001 C CNN
 F 3 "~" H 2125 1300 50  0001 C CNN
 	1    2125 1300
@@ -731,7 +729,7 @@ Text HLabel 6900 3500 2    50   Input ~ 0
 Text HLabel 6900 3600 2    50   Input ~ 0
 7_SCK
 Wire Wire Line
-	2075 1300 2175 1300
+	2075 1300 2125 1300
 Wire Wire Line
 	1225 1300 1450 1300
 Wire Wire Line
@@ -755,4 +753,11 @@ Wire Wire Line
 Connection ~ 1450 1300
 Wire Wire Line
 	1450 1300 1675 1300
+Text GLabel 4550 1325 0    50   Input ~ 0
+32_0_LED
+Connection ~ 2175 1300
+Connection ~ 2125 1300
+Wire Wire Line
+	2125 1300 2175 1300
+Connection ~ 2175 1600
 $EndSCHEMATC

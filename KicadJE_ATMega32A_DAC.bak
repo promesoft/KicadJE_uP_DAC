@@ -747,8 +747,8 @@ $Comp
 L Analog_DAC:MCP4822 U202
 U 1 1 5CE0D72D
 P 1700 5675
-F 0 "U202" H 1700 6256 50  0000 C CNN
-F 1 "MCP4822" H 1700 6165 50  0000 C CNN
+F 0 "U202" H 1425 6025 50  0000 C CNN
+F 1 "MCP4822" H 1975 6025 50  0000 C CNN
 F 2 "AJ:AJ_SO-8_5.3x6.2mm_P1.27mm" H 2500 5375 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002249B.pdf" H 2500 5375 50  0001 C CNN
 	1    1700 5675
@@ -2040,4 +2040,103 @@ F 3 "" H 9075 1200 50  0001 C CNN
 	1    9075 1200
 	-1   0    0    -1  
 $EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5DCE9363
+P 2850 950
+AR Path="/5CD3F059/5DCE9363" Ref="#FLG?"  Part="1" 
+AR Path="/5DCE9363" Ref="#FLG?"  Part="1" 
+AR Path="/5CE3E7A9/5DCE9363" Ref="#FLG0101"  Part="1" 
+F 0 "#FLG0101" H 2850 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 2850 1123 50  0000 C CNN
+F 2 "" H 2850 950 50  0001 C CNN
+F 3 "~" H 2850 950 50  0001 C CNN
+	1    2850 950 
+	0    1    1    0   
+$EndComp
+Text GLabel 1400 4075 0    50   Input ~ 0
+PWM12
+$Comp
+L Device:Jumper_NC_Small JP203
+U 1 1 5DCEB6AC
+P 1550 4075
+F 0 "JP203" H 1250 4125 50  0000 C CNN
+F 1 "PWM1" H 1425 4125 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 1550 4075 50  0001 C CNN
+F 3 "~" H 1550 4075 50  0001 C CNN
+	1    1550 4075
+	1    0    0    -1  
+$EndComp
+Text GLabel 1750 4075 2    50   Input ~ 0
+DACA
+Wire Wire Line
+	1400 4075 1450 4075
+Wire Wire Line
+	1650 4075 1750 4075
+$Comp
+L Device:C C?
+U 1 1 5DD00F28
+P 2500 7325
+AR Path="/5DD00F28" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5DD00F28" Ref="C?"  Part="1" 
+AR Path="/5CE3E7A9/5DD00F28" Ref="C213"  Part="1" 
+F 0 "C213" H 2375 7450 50  0000 L CNN
+F 1 "100n" H 2175 7325 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2538 7175 50  0001 C CNN
+F 3 "~" H 2500 7325 50  0001 C CNN
+	1    2500 7325
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2600 7125 2500 7125
+Wire Wire Line
+	2500 7175 2500 7125
+$Comp
+L Device:R R?
+U 1 1 5DD00F35
+P 2750 7125
+AR Path="/5DD00F35" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5DD00F35" Ref="R?"  Part="1" 
+AR Path="/5CE3E7A9/5DD00F35" Ref="R223"  Part="1" 
+F 0 "R223" V 2543 7125 50  0000 C CNN
+F 1 "1k" V 2634 7125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2680 7125 50  0001 C CNN
+F 3 "~" H 2750 7125 50  0001 C CNN
+	1    2750 7125
+	0    1    -1   0   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR0108
+U 1 1 5DD00F40
+P 2500 7475
+F 0 "#PWR0108" H 2500 7225 50  0001 C CNN
+F 1 "GND" H 2505 7302 50  0000 C CNN
+F 2 "" H 2500 7475 50  0001 C CNN
+F 3 "" H 2500 7475 50  0001 C CNN
+	1    2500 7475
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 7125 3025 7125
+Text GLabel 2500 7125 0    50   Input ~ 0
+PWM15
+Text GLabel 1750 4225 2    50   Input ~ 0
+DACB
+$Comp
+L Device:Jumper_NC_Small JP205
+U 1 1 5DD19CF1
+P 1550 4225
+F 0 "JP205" H 1250 4275 50  0000 C CNN
+F 1 "PWM2" H 1425 4275 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 1550 4225 50  0001 C CNN
+F 3 "~" H 1550 4225 50  0001 C CNN
+	1    1550 4225
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 4225 0    50   Input ~ 0
+PWM15
+Wire Wire Line
+	1400 4225 1450 4225
+Wire Wire Line
+	1650 4225 1750 4225
 $EndSCHEMATC
