@@ -853,61 +853,21 @@ $EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 5DDDDF45
-P 6525 5975
+P 10525 3300
 AR Path="/5DDDDF45" Ref="#PWR?"  Part="1" 
 AR Path="/5CD3F059/5DDDDF45" Ref="#PWR?"  Part="1" 
 AR Path="/5CEBAECA/5DDDDF45" Ref="#PWR?"  Part="1" 
 AR Path="/5DD87D87/5DDB8911/5DDDDF45" Ref="#PWR?"  Part="1" 
 AR Path="/5DD87D87/5DDDDF45" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6525 5725 50  0001 C CNN
-F 1 "GNDA" H 6600 5825 50  0000 C CNN
-F 2 "" H 6525 5975 50  0001 C CNN
-F 3 "" H 6525 5975 50  0001 C CNN
-	1    6525 5975
+F 0 "#PWR?" H 10525 3050 50  0001 C CNN
+F 1 "GNDA" H 10600 3150 50  0000 C CNN
+F 2 "" H 10525 3300 50  0001 C CNN
+F 3 "" H 10525 3300 50  0001 C CNN
+	1    10525 3300
 	1    0    0    -1  
-$EndComp
-$Comp
-L UMX1N:UMX1N Q?
-U 1 1 5DDDDF50
-P 7325 5225
-AR Path="/5DD87D87/5DDB8911/5DDDDF50" Ref="Q?"  Part="1" 
-AR Path="/5DD87D87/5DDDDF50" Ref="Q?"  Part="1" 
-F 0 "Q?" H 7469 5271 50  0000 L CNN
-F 1 "UMX1N" H 7450 5175 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 7325 5225 50  0001 L BNN
-F 3 "" H 7325 5225 50  0001 L BNN
-F 4 "None" H 7325 5225 50  0001 L BNN "Field4"
-F 5 "None" H 7325 5225 50  0001 L BNN "Field5"
-F 6 "UMX1N" H 7325 5225 50  0001 L BNN "Field6"
-F 7 "" H 7325 5225 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 7325 5225 50  0001 L BNN "Field8"
-	1    7325 5225
-	1    0    0    -1  
-$EndComp
-$Comp
-L UMX1N:UMX1N Q?
-U 2 1 5DDDDF5B
-P 8125 5225
-AR Path="/5DD87D87/5DDB8911/5DDDDF5B" Ref="Q?"  Part="2" 
-AR Path="/5DD87D87/5DDDDF5B" Ref="Q?"  Part="2" 
-F 0 "Q?" H 8268 5271 50  0000 L CNN
-F 1 "UMX1N" H 8250 5175 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 8125 5225 50  0001 L BNN
-F 3 "" H 8125 5225 50  0001 L BNN
-F 4 "None" H 8125 5225 50  0001 L BNN "Field4"
-F 5 "None" H 8125 5225 50  0001 L BNN "Field5"
-F 6 "UMX1N" H 8125 5225 50  0001 L BNN "Field6"
-F 7 "" H 8125 5225 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 8125 5225 50  0001 L BNN "Field8"
-	2    8125 5225
-	-1   0    0    -1  
 $EndComp
 Text Label 4350 1275 0    50   ~ 0
-inv6
-Text Label 7425 5000 0    50   ~ 0
-c1
-Text Label 7500 5425 0    50   ~ 0
-e1
+inv13
 $Comp
 L Device:R R?
 U 1 1 5DDDDF64
@@ -996,8 +956,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9100 1525 50  0001 C CNN
 	2    9050 1325
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	7425 5425 7725 5425
 $Comp
 L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
 U 1 1 5DDDDF9F
@@ -1016,80 +974,10 @@ F 3 "" H 10050 3425 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10050 3475 10050 3425
-$Comp
-L Device:C C?
-U 1 1 5DDDDFA6
-P 6950 5425
-AR Path="/5DDDDFA6" Ref="C?"  Part="1" 
-AR Path="/5CD3F059/5DDDDFA6" Ref="C?"  Part="1" 
-AR Path="/5CEBAECA/5DDDDFA6" Ref="C?"  Part="1" 
-AR Path="/5DD87D87/5DDB8911/5DDDDFA6" Ref="C?"  Part="1" 
-AR Path="/5DD87D87/5DDDDFA6" Ref="C?"  Part="1" 
-F 0 "C?" V 7050 5275 50  0000 L CNN
-F 1 "100p" V 7000 5500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6988 5275 50  0001 C CNN
-F 3 "~" H 6950 5425 50  0001 C CNN
-	1    6950 5425
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	7175 5850 7250 5850
+	10525 3300 10525 3275
 Wire Wire Line
-	7250 5850 7250 5425
-Wire Wire Line
-	7250 5425 7100 5425
-$Comp
-L Device:R R?
-U 1 1 5DDDDFB2
-P 7725 5600
-AR Path="/5DDDDFB2" Ref="R?"  Part="1" 
-AR Path="/5CD3F059/5DDDDFB2" Ref="R?"  Part="1" 
-AR Path="/5CEBAECA/5DDDDFB2" Ref="R?"  Part="1" 
-AR Path="/5DD87D87/5DDB8911/5DDDDFB2" Ref="R?"  Part="1" 
-AR Path="/5DD87D87/5DDDDFB2" Ref="R?"  Part="1" 
-F 0 "R?" V 7518 5600 50  0000 C CNN
-F 1 "56k" V 7609 5600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7655 5600 50  0001 C CNN
-F 3 "~" H 7725 5600 50  0001 C CNN
-	1    7725 5600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7725 5450 7725 5425
-Connection ~ 7725 5425
-Wire Wire Line
-	7725 5425 8025 5425
-Wire Wire Line
-	7250 5850 7725 5850
-Wire Wire Line
-	7725 5850 7725 5750
-Connection ~ 7250 5850
-Wire Wire Line
-	6525 5975 6525 5950
-Wire Wire Line
-	6525 5950 6575 5950
-$Comp
-L power:GNDA #PWR?
-U 1 1 5DDDDFC0
-P 8400 5375
-AR Path="/5DDDDFC0" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5DDDDFC0" Ref="#PWR?"  Part="1" 
-AR Path="/5CEBAECA/5DDDDFC0" Ref="#PWR?"  Part="1" 
-AR Path="/5DD87D87/5DDB8911/5DDDDFC0" Ref="#PWR?"  Part="1" 
-AR Path="/5DD87D87/5DDDDFC0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8400 5125 50  0001 C CNN
-F 1 "GNDA" H 8575 5325 50  0000 C CNN
-F 2 "" H 8400 5375 50  0001 C CNN
-F 3 "" H 8400 5375 50  0001 C CNN
-	1    8400 5375
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8225 5225 8400 5225
-Wire Wire Line
-	8400 5225 8400 5375
-Text GLabel 8150 4925 2    50   Input ~ 0
-VCO_Exp
+	10525 3275 10575 3275
 Wire Notes Line
 	625  5650 5350 5650
 Wire Notes Line
@@ -1098,12 +986,6 @@ Wire Notes Line
 	5350 7675 625  7675
 Wire Notes Line
 	625  7675 625  5650
-Wire Wire Line
-	7425 4925 7425 5025
-Wire Wire Line
-	8025 4925 8150 4925
-Wire Wire Line
-	8025 4925 8025 5025
 $Comp
 L power:GNDA #PWR?
 U 1 1 5DDE2B39
@@ -1802,7 +1684,7 @@ AR Path="/5CD3F059/5E00640C" Ref="C?"  Part="1"
 AR Path="/5CE53731/5E00640C" Ref="C?"  Part="1" 
 AR Path="/5DD87D87/5E00640C" Ref="C?"  Part="1" 
 F 0 "C?" H 9625 1725 50  0000 L CNN
-F 1 "10n" H 9650 1525 50  0000 L CNN
+F 1 "22n" H 9650 1525 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9788 1450 50  0001 C CNN
 F 3 "~" H 9750 1600 50  0001 C CNN
 	1    9750 1600
@@ -1916,15 +1798,15 @@ F 3 "~" H 10475 2700 50  0001 C CNN
 $EndComp
 $Comp
 L Amplifier_Operational:TL074 U?
-U 2 1 5E07867B
+U 4 1 5E07867B
 P 4725 1650
 AR Path="/5DD87D87/5DDB8911/5E07867B" Ref="U?"  Part="2" 
-AR Path="/5DD87D87/5E07867B" Ref="U?"  Part="2" 
+AR Path="/5DD87D87/5E07867B" Ref="U?"  Part="4" 
 F 0 "U?" H 4750 1450 50  0000 C CNN
 F 1 "TL074" H 4725 1374 50  0000 C CNN
 F 2 "" H 4675 1750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4775 1850 50  0001 C CNN
-	2    4725 1650
+	4    4725 1650
 	1    0    0    1   
 $EndComp
 $Comp
@@ -2092,4 +1974,8 @@ Wire Wire Line
 Connection ~ 4350 1550
 Text GLabel 5550 1650 2    39   Input ~ 0
 555_Dis
+Text Label 8675 775  0    50   ~ 0
+inv6
+Text Label 10000 825  0    50   ~ 0
+inv9
 $EndSCHEMATC
