@@ -14,11 +14,16 @@ https://github.com/MCUdude/MightyCore
 ## STM32
 
 ## Simple 555 VCO
+
+### Own Projects
 https://github.com/promesoft/KicadFormantVCO
 
 https://github.com/promesoft/KicadJE_LFO_1
 
+### Intro about 555
 https://www.electronics-tutorials.ws/waveforms/555_oscillator.html
 
 ### Thomas Henry 555 VCO
+Nice comprehensive VCO
+
 ![](TH_vco555_0001.jpg)
