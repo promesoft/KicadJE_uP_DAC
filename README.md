@@ -1,7 +1,7 @@
 # KicadJE_uP_DAC
 Eurorack DAC output - Use for DDS/DCO - LFO - ADSR - Effects unit
 
-![](KicadJE_uP_DAC_Top1.png)
+![](KicadJE_uP_DAC_Top3.png)
 
 
 
