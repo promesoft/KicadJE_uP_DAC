@@ -14,4 +14,7 @@ https://github.com/MCUdude/MightyCore
 ## STM32
 
 ## Thomas Henry 555 VCO
+
 ![](TH_vco555_0001.jpg)
+
+https://github.com/promesoft/KicadJE_LFO_1
