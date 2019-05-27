@@ -18,3 +18,5 @@ https://github.com/MCUdude/MightyCore
 ![](TH_vco555_0001.jpg)
 
 https://github.com/promesoft/KicadJE_LFO_1
+
+https://www.electronics-tutorials.ws/waveforms/555_oscillator.html
