@@ -13,10 +13,12 @@ Eurorack DAC output - Use for DDS/DCO - LFO - ADSR - Effects unit
 https://github.com/MCUdude/MightyCore
 ## STM32
 
-## Thomas Henry 555 VCO
-
-![](TH_vco555_0001.jpg)
+## Simple 555 VCO
+https://github.com/promesoft/KicadFormantVCO
 
 https://github.com/promesoft/KicadJE_LFO_1
 
 https://www.electronics-tutorials.ws/waveforms/555_oscillator.html
+
+### Thomas Henry 555 VCO
+![](TH_vco555_0001.jpg)
