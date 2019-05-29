@@ -841,7 +841,7 @@ AR Path="/5DD87D87/5DDB8911/5DDDDF97" Ref="U?"  Part="2"
 AR Path="/5DD87D87/5DDDDF97" Ref="U602"  Part="2" 
 F 0 "U602" H 9075 1125 50  0000 C CNN
 F 1 "TL074" H 9050 1049 50  0000 C CNN
-F 2 "" H 9000 1425 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9000 1425 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9100 1525 50  0001 C CNN
 	2    9050 1325
 	1    0    0    1   
@@ -1842,7 +1842,7 @@ AR Path="/5DD87D87/5DDB8911/5E12F789" Ref="U?"  Part="1"
 AR Path="/5DD87D87/5E12F789" Ref="U603"  Part="1" 
 F 0 "U603" H 9875 2875 50  0000 C CNN
 F 1 "TL074" H 9850 2799 50  0000 C CNN
-F 2 "" H 9800 3175 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9800 3175 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9900 3275 50  0001 C CNN
 	1    9850 3075
 	1    0    0    1   

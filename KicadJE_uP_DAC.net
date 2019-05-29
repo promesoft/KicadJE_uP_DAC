@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\anders\Documents\KiCad\Projects\KicadJE_uP_DAC\KicadJE_uP_DAC.sch)
-    (date "29/05/2019 22:12:12")
+    (date "29/05/2019 22:13:57")
     (tool "Eeschema (5.1.0)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1665,6 +1665,7 @@
       (tstamp 5DDDDF64))
     (comp (ref U602)
       (value TL074)
+      (footprint Package_SO:SOIC-14_3.9x8.7mm_P1.27mm)
       (datasheet http://www.ti.com/lit/ds/symlink/tl071.pdf)
       (libsource (lib Amplifier_Operational) (part TL074) (description "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"))
       (sheetpath (names /TH_555_VCO1/) (tstamps /5DD87D87/))
@@ -1897,7 +1898,7 @@
       (tstamp 5E12F77F))
     (comp (ref U603)
       (value TL074)
-      (footprint AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm)
+      (footprint Package_SO:SOIC-14_3.9x8.7mm_P1.27mm)
       (datasheet http://www.ti.com/lit/ds/symlink/tl071.pdf)
       (libsource (lib Amplifier_Operational) (part TL074) (description "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"))
       (sheetpath (names /TH_555_VCO1/) (tstamps /5DD87D87/))
