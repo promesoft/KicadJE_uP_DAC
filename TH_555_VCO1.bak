@@ -1811,10 +1811,6 @@ F 3 "~" H 9175 2525 50  0001 C CNN
 	1    9175 2525
 	0    -1   -1   0   
 $EndComp
-Text Label 5125 1650 0    50   ~ 0
-602outD
-Text Label 9025 2525 0    50   ~ 0
-602outD
 Text GLabel 9425 3175 0    39   Input ~ 0
 555_Dis
 Wire Wire Line
@@ -2032,7 +2028,7 @@ AR Path="/5CEBAECA/5E21E990" Ref="R?"  Part="1"
 AR Path="/5DD87D87/5DDB8911/5E21E990" Ref="R?"  Part="1" 
 AR Path="/5DD87D87/5E21E990" Ref="R635"  Part="1" 
 F 0 "R635" V 8668 5625 50  0000 C CNN
-F 1 "100k" V 8759 5625 50  0000 C CNN
+F 1 "120k" V 8759 5625 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8805 5625 50  0001 C CNN
 F 3 "~" H 8875 5625 50  0001 C CNN
 	1    8875 5625
@@ -2054,7 +2050,7 @@ AR Path="/5CEBAECA/5E21E99D" Ref="R?"  Part="1"
 AR Path="/5DD87D87/5DDB8911/5E21E99D" Ref="R?"  Part="1" 
 AR Path="/5DD87D87/5E21E99D" Ref="R634"  Part="1" 
 F 0 "R634" V 8068 5625 50  0000 C CNN
-F 1 "150k" V 8159 5625 50  0000 C CNN
+F 1 "OPEN" V 8159 5625 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8205 5625 50  0001 C CNN
 F 3 "~" H 8275 5625 50  0001 C CNN
 	1    8275 5625
@@ -2089,7 +2085,7 @@ AR Path="/5CD3F059/5E21E9B4" Ref="#PWR?"  Part="1"
 AR Path="/5CE53731/5E21E9B4" Ref="#PWR?"  Part="1" 
 AR Path="/5DD87D87/5E21E9B4" Ref="#PWR0623"  Part="1" 
 F 0 "#PWR0623" H 8025 5750 50  0001 C CNN
-F 1 "-12V" H 7850 5725 50  0000 C CNN
+F 1 "-12V" H 8100 5450 50  0000 C CNN
 F 2 "" H 8025 5650 50  0001 C CNN
 F 3 "" H 8025 5650 50  0001 C CNN
 	1    8025 5650
@@ -2285,4 +2281,14 @@ $EndComp
 Wire Wire Line
 	3275 1400 3400 1400
 Connection ~ 3275 1400
+Text GLabel 9025 2525 0    50   Input ~ 0
+602_Out_D
+Text GLabel 5125 1650 3    50   Input ~ 0
+602_Out_D
+Text Label 9400 3675 0    50   ~ 0
+603invB
+Text Label 9450 2525 0    50   ~ 0
+603invA
+Text Label 1475 6125 0    50   ~ 0
+602invA
 $EndSCHEMATC
