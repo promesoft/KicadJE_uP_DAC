@@ -328,22 +328,6 @@ Wire Wire Line
 	4900 6475 4900 6600
 $Comp
 L Connector:AudioJack2 J?
-U 1 1 5DD948CA
-P 6275 6825
-AR Path="/5DD948CA" Ref="J?"  Part="1" 
-AR Path="/5D60ED9A/5DD948CA" Ref="J?"  Part="1" 
-AR Path="/5CD6EBF4/5DD948CA" Ref="J?"  Part="1" 
-AR Path="/5CE53731/5DD948CA" Ref="J?"  Part="1" 
-AR Path="/5DD87D87/5DD948CA" Ref="J607"  Part="1" 
-F 0 "J607" H 6042 6896 50  0000 R CNN
-F 1 "Sine" H 6042 6805 50  0000 R CNN
-F 2 "AJ-Dropbox-Kicad:PJ301SM" H 6275 6825 50  0001 C CNN
-F 3 "~" H 6275 6825 50  0001 C CNN
-	1    6275 6825
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack2 J?
 U 1 1 5DD948D0
 P 6275 7225
 AR Path="/5DD948D0" Ref="J?"  Part="1" 
@@ -2270,4 +2254,19 @@ F 3 "" H 925 1075 50  0001 C CNN
 	1    925  1075
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5E3D265D
+P 1325 4175
+AR Path="/5E3D265D" Ref="#PWR?"  Part="1" 
+AR Path="/5CE53731/5E3D265D" Ref="#PWR?"  Part="1" 
+AR Path="/5DD87D87/5E3D265D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1325 3925 50  0001 C CNN
+F 1 "GND" H 1330 4002 50  0000 C CNN
+F 2 "" H 1325 4175 50  0001 C CNN
+F 3 "" H 1325 4175 50  0001 C CNN
+	1    1325 4175
+	1    0    0    -1  
+$EndComp
+Connection ~ 1325 4175
 $EndSCHEMATC
