@@ -15,48 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Eurorack:Doepfer_Power_16pin P?
-U 1 1 5DD8FB20
-P 1275 1175
-AR Path="/5DD8FB20" Ref="P?"  Part="1" 
-AR Path="/5CE53731/5DD8FB20" Ref="P?"  Part="1" 
-AR Path="/5DD87D87/5DD8FB20" Ref="P601"  Part="1" 
-F 0 "P601" H 1825 675 50  0000 C CNN
-F 1 "Doepfer_Power_16pin" H 1400 1725 50  0000 C CNN
-F 2 "Connectors_IDC:IDC-Header_2x08_Pitch2.54mm_Straight" H 1275 1175 50  0001 C CNN
-F 3 "" H 1275 1175 50  0001 C CNN
-	1    1275 1175
-	-1   0    0    1   
-$EndComp
-$Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
-U 1 1 5DD8FB26
-P 1625 975
-AR Path="/5DD8FB26" Ref="#PWR?"  Part="1" 
-AR Path="/5CE53731/5DD8FB26" Ref="#PWR?"  Part="1" 
-AR Path="/5DD87D87/5DD8FB26" Ref="#PWR0606"  Part="1" 
-F 0 "#PWR0606" H 1625 825 50  0001 C CNN
-F 1 "+5V" V 1640 1103 50  0000 L CNN
-F 2 "" H 1625 975 50  0001 C CNN
-F 3 "" H 1625 975 50  0001 C CNN
-	1    1625 975 
-	0    1    -1   0   
-$EndComp
-$Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
-U 1 1 5DD8FB2C
-P 925 975
-AR Path="/5DD8FB2C" Ref="#PWR?"  Part="1" 
-AR Path="/5CE53731/5DD8FB2C" Ref="#PWR?"  Part="1" 
-AR Path="/5DD87D87/5DD8FB2C" Ref="#PWR0605"  Part="1" 
-F 0 "#PWR0605" H 925 825 50  0001 C CNN
-F 1 "+5V" V 940 1103 50  0000 L CNN
-F 2 "" H 925 975 50  0001 C CNN
-F 3 "" H 925 975 50  0001 C CNN
-	1    925  975 
-	0    -1   1    0   
-$EndComp
-$Comp
 L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
 U 1 1 5DD8FB32
 P 1625 1075
@@ -69,20 +27,6 @@ F 2 "" H 1625 1075 50  0001 C CNN
 F 3 "" H 1625 1075 50  0001 C CNN
 	1    1625 1075
 	0    1    1    0   
-$EndComp
-$Comp
-L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
-U 1 1 5DD8FB38
-P 925 1075
-AR Path="/5DD8FB38" Ref="#PWR?"  Part="1" 
-AR Path="/5CE53731/5DD8FB38" Ref="#PWR?"  Part="1" 
-AR Path="/5DD87D87/5DD8FB38" Ref="#PWR0607"  Part="1" 
-F 0 "#PWR0607" H 925 925 50  0001 C CNN
-F 1 "+12V" V 940 1203 50  0000 L CNN
-F 2 "" H 925 1075 50  0001 C CNN
-F 3 "" H 925 1075 50  0001 C CNN
-	1    925  1075
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:-12V #PWR?
@@ -1627,8 +1571,6 @@ Wire Wire Line
 Text GLabel 10750 1225 2    39   Input ~ 0
 555_In
 Wire Notes Line
-	525  525  525  2100
-Wire Notes Line
 	525  2100 11150 2100
 Wire Notes Line
 	11150 2100 11150 525 
@@ -2301,4 +2243,31 @@ Wire Wire Line
 	10525 5525 10525 5600
 Text GLabel 10525 5525 2    39   Input ~ 0
 555_Pulse
+$Comp
+L Eurorack:Doepfer_Power_10pin P?
+U 1 1 5E362A15
+P 1275 1375
+F 0 "P?" H 1275 1940 50  0000 C CNN
+F 1 "Doepfer_Power_10pin" H 1275 1849 50  0000 C CNN
+F 2 "Connectors_IDC:IDC-Header_2x05_Pitch2.54mm_Straight" H 1275 1375 50  0001 C CNN
+F 3 "" H 1275 1375 50  0001 C CNN
+	1    1275 1375
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	525  525  525  2100
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
+U 1 1 5DD8FB38
+P 925 1075
+AR Path="/5DD8FB38" Ref="#PWR?"  Part="1" 
+AR Path="/5CE53731/5DD8FB38" Ref="#PWR?"  Part="1" 
+AR Path="/5DD87D87/5DD8FB38" Ref="#PWR0607"  Part="1" 
+F 0 "#PWR0607" H 925 925 50  0001 C CNN
+F 1 "+12V" V 940 1203 50  0000 L CNN
+F 2 "" H 925 1075 50  0001 C CNN
+F 3 "" H 925 1075 50  0001 C CNN
+	1    925  1075
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
