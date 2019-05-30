@@ -328,22 +328,6 @@ Wire Wire Line
 	4900 6475 4900 6600
 $Comp
 L Connector:AudioJack2 J?
-U 1 1 5DD948CA
-P 6275 6825
-AR Path="/5DD948CA" Ref="J?"  Part="1" 
-AR Path="/5D60ED9A/5DD948CA" Ref="J?"  Part="1" 
-AR Path="/5CD6EBF4/5DD948CA" Ref="J?"  Part="1" 
-AR Path="/5CE53731/5DD948CA" Ref="J?"  Part="1" 
-AR Path="/5DD87D87/5DD948CA" Ref="J607"  Part="1" 
-F 0 "J607" H 6042 6896 50  0000 R CNN
-F 1 "Sine" H 6042 6805 50  0000 R CNN
-F 2 "AJ-Dropbox-Kicad:PJ301SM" H 6275 6825 50  0001 C CNN
-F 3 "~" H 6275 6825 50  0001 C CNN
-	1    6275 6825
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack2 J?
 U 1 1 5DD948D0
 P 6275 7225
 AR Path="/5DD948D0" Ref="J?"  Part="1" 
@@ -378,7 +362,7 @@ AR Path="/5CD6EBF4/5DD948E3" Ref="RV?"  Part="1"
 AR Path="/5CE53731/5DD948E3" Ref="RV?"  Part="1" 
 AR Path="/5DD87D87/5DD948E3" Ref="RV603"  Part="1" 
 F 0 "RV603" V 7500 6000 50  0000 R CNN
-F 1 "100k CV1" V 7575 5975 50  0000 R CNN
+F 1 "100k PWM" V 7575 5975 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 7675 5900 50  0001 C CNN
 F 3 "~" H 7675 5900 50  0001 C CNN
 	1    7675 5900
@@ -2270,4 +2254,35 @@ F 3 "" H 925 1075 50  0001 C CNN
 	1    925  1075
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5E3D265D
+P 1325 4175
+AR Path="/5E3D265D" Ref="#PWR?"  Part="1" 
+AR Path="/5CE53731/5E3D265D" Ref="#PWR?"  Part="1" 
+AR Path="/5DD87D87/5E3D265D" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 1325 3925 50  0001 C CNN
+F 1 "GND" H 1330 4002 50  0000 C CNN
+F 2 "" H 1325 4175 50  0001 C CNN
+F 3 "" H 1325 4175 50  0001 C CNN
+	1    1325 4175
+	1    0    0    -1  
+$EndComp
+Connection ~ 1325 4175
+$Comp
+L Amplifier_Operational:TL074 U?
+U 5 1 5E3ED959
+P 3300 1100
+AR Path="/5DD87D87/5DDB8911/5E3ED959" Ref="U?"  Part="1" 
+AR Path="/5DD87D87/5E3ED959" Ref="U604"  Part="5" 
+F 0 "U604" H 3325 900 50  0000 C CNN
+F 1 "TL074" H 3300 824 50  0000 C CNN
+F 2 "" H 3250 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3350 1300 50  0001 C CNN
+	5    3300 1100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3275 1400 3400 1400
+Connection ~ 3275 1400
 $EndSCHEMATC
