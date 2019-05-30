@@ -685,7 +685,7 @@ F 3 "~" H 8675 1625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4350 1275 0    50   ~ 0
-inv13
+602invD
 $Comp
 L Device:R R?
 U 1 1 5DDDDF64
@@ -1741,9 +1741,9 @@ Connection ~ 4350 1550
 Text GLabel 5550 1650 2    39   Input ~ 0
 555_Dis
 Text Label 8675 775  0    50   ~ 0
-inv6
+602invB
 Text Label 10000 825  0    50   ~ 0
-inv9
+602invC
 $Comp
 L Device:R R?
 U 1 1 5E12F77F
@@ -1812,9 +1812,9 @@ F 3 "~" H 9175 2525 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 5125 1650 0    50   ~ 0
-out14
+602outD
 Text Label 9025 2525 0    50   ~ 0
-out14
+602outD
 Text GLabel 9425 3175 0    39   Input ~ 0
 555_Dis
 Wire Wire Line
@@ -1988,7 +1988,7 @@ Wire Notes Line
 Text GLabel 9000 5100 0    39   Input ~ 0
 555_Tri_Direct
 Text Label 8550 5625 0    50   ~ 0
-inv13
+603invD
 $Comp
 L Amplifier_Operational:TL074 U?
 U 4 1 5E21E979
