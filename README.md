@@ -10,8 +10,8 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | ------------- | ------------- | ------------- |
 | create material  | sch/pcb | OK  |
 | | gerber | OK |
-| production  |   | Waiting for ATMega32A ADSR test |
-|  | produced | No |
+| production  |   | Ordered |
+|  | produced | Pending |
 |  | delivered |  |
 ## Preliminary validation
 | Test  | Detail | Status |
