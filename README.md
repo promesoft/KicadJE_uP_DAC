@@ -42,7 +42,7 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 
 # Pictures
 
-![](KicadJE_uP_DAC_Top3.png)
+![](KicadJE_uP_DAC_Top4.png)
 
 
 
