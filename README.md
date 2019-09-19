@@ -17,7 +17,9 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | Test  | Detail | Status |
 | ------------- | ------------- | ------------- |
 | Initial Inspection | |  |
-| Initial Technical Test |  |  |
+| Initial Technical Test | ATMega32A DAC |  |
+| Initial Technical Test | STM32 DAC |  |
+| Initial Technical Test | VCO555 |  |
 | Initial Product Test | ATMega32A DAC |  |
 | Initial Product Test | STM32 DAC |  |
 | Initial Product Test | VCO555 |  |
