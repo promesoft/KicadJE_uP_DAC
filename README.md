@@ -12,7 +12,7 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | | gerber | OK |
 | production  |   | Ordered |
 |  | produced | Pending |
-|  | delivered |  |
+|  | delivered | in the mail |
 ## Preliminary validation
 | Test  | Detail | Status |
 | ------------- | ------------- | ------------- |
