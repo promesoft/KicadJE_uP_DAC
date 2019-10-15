@@ -1,0 +1,2548 @@
+EESchema Schematic File Version 4
+LIBS:KicadJE_uP_DAC-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title "Kicad_JE_ADSR_Mega32"
+Date "2019-05-13"
+Rev "Rev A, B, C"
+Comp "Johansen Engineering"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5CD81487
+P 3125 3950
+AR Path="/5CD81487" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CD81487" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CD81487" Ref="R404"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD81487" Ref="R?"  Part="1" 
+F 0 "R?" V 2918 3950 50  0000 C CNN
+F 1 "1M" V 3009 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3055 3950 50  0001 C CNN
+F 3 "~" H 3125 3950 50  0001 C CNN
+	1    3125 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD8148D
+P 3075 5200
+AR Path="/5CD8148D" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CD8148D" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD8148D" Ref="#PWR0417"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD8148D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3075 4950 50  0001 C CNN
+F 1 "GNDA" H 3150 5050 50  0000 C CNN
+F 2 "" H 3075 5200 50  0001 C CNN
+F 3 "" H 3075 5200 50  0001 C CNN
+	1    3075 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Eurorack:Doepfer_Power_16pin P?
+U 1 1 5CD83FA3
+P 1325 1100
+AR Path="/5CD83FA3" Ref="P?"  Part="1" 
+AR Path="/5CEBAECA/5CD83FA3" Ref="P401"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD83FA3" Ref="P?"  Part="1" 
+F 0 "P?" H 1875 600 50  0000 C CNN
+F 1 "Doepfer_Power_16pin" H 1450 1650 50  0000 C CNN
+F 2 "Connectors_IDC:IDC-Header_2x08_Pitch2.54mm_Straight" H 1325 1100 50  0001 C CNN
+F 3 "" H 1325 1100 50  0001 C CNN
+	1    1325 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD83FA9
+P 1675 900
+AR Path="/5CD83FA9" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD83FA9" Ref="#PWR0404"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD83FA9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1675 750 50  0001 C CNN
+F 1 "+5V" V 1690 1028 50  0000 L CNN
+F 2 "" H 1675 900 50  0001 C CNN
+F 3 "" H 1675 900 50  0001 C CNN
+	1    1675 900 
+	0    1    -1   0   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD83FAF
+P 975 900
+AR Path="/5CD83FAF" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD83FAF" Ref="#PWR0403"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD83FAF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 975 750 50  0001 C CNN
+F 1 "+5V" V 990 1028 50  0000 L CNN
+F 2 "" H 975 900 50  0001 C CNN
+F 3 "" H 975 900 50  0001 C CNN
+	1    975  900 
+	0    -1   1    0   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
+U 1 1 5CD83FB5
+P 1675 1000
+AR Path="/5CD83FB5" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD83FB5" Ref="#PWR0408"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD83FB5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1675 850 50  0001 C CNN
+F 1 "+12V" V 1690 1128 50  0000 L CNN
+F 2 "" H 1675 1000 50  0001 C CNN
+F 3 "" H 1675 1000 50  0001 C CNN
+	1    1675 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
+U 1 1 5CD83FBB
+P 975 1000
+AR Path="/5CD83FBB" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD83FBB" Ref="#PWR0407"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD83FBB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 975 850 50  0001 C CNN
+F 1 "+12V" V 990 1128 50  0000 L CNN
+F 2 "" H 975 1000 50  0001 C CNN
+F 3 "" H 975 1000 50  0001 C CNN
+	1    975  1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5CD83FC1
+P 1675 1400
+AR Path="/5CD83FC1" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD83FC1" Ref="#PWR0414"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD83FC1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1675 1500 50  0001 C CNN
+F 1 "-12V" V 1690 1528 50  0000 L CNN
+F 2 "" H 1675 1400 50  0001 C CNN
+F 3 "" H 1675 1400 50  0001 C CNN
+	1    1675 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5CD83FC7
+P 975 1400
+AR Path="/5CD83FC7" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD83FC7" Ref="#PWR0413"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD83FC7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 975 1500 50  0001 C CNN
+F 1 "-12V" V 990 1528 50  0000 L CNN
+F 2 "" H 975 1400 50  0001 C CNN
+F 3 "" H 975 1400 50  0001 C CNN
+	1    975  1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD83FCD
+P 1825 1200
+AR Path="/5CD83FCD" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD83FCD" Ref="#PWR0410"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD83FCD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1825 950 50  0001 C CNN
+F 1 "GND" H 1830 1027 50  0000 C CNN
+F 2 "" H 1825 1200 50  0001 C CNN
+F 3 "" H 1825 1200 50  0001 C CNN
+	1    1825 1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD83FD3
+P 825 1200
+AR Path="/5CD83FD3" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD83FD3" Ref="#PWR0409"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD83FD3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 825 950 50  0001 C CNN
+F 1 "GND" H 830 1027 50  0000 C CNN
+F 2 "" H 825 1200 50  0001 C CNN
+F 3 "" H 825 1200 50  0001 C CNN
+	1    825  1200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	825  1200 925  1200
+Wire Wire Line
+	1675 1200 1725 1200
+Wire Wire Line
+	1675 1300 1725 1300
+Wire Wire Line
+	1725 1300 1725 1200
+Connection ~ 1725 1200
+Wire Wire Line
+	1725 1200 1825 1200
+Wire Wire Line
+	1675 1100 1725 1100
+Wire Wire Line
+	1725 1100 1725 1200
+Wire Wire Line
+	975  1300 925  1300
+Wire Wire Line
+	925  1300 925  1200
+Connection ~ 925  1200
+Wire Wire Line
+	925  1200 975  1200
+Wire Wire Line
+	975  1100 925  1100
+Wire Wire Line
+	925  1100 925  1200
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD89E2A
+P 2450 625
+AR Path="/5CD89E2A" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CD89E2A" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E2A" Ref="#PWR0401"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E2A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2450 475 50  0001 C CNN
+F 1 "+5V" H 2465 798 50  0000 C CNN
+F 2 "" H 2450 625 50  0001 C CNN
+F 3 "" H 2450 625 50  0001 C CNN
+	1    2450 625 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CD89E30
+P 2700 650
+AR Path="/5CD89E30" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CD89E30" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E30" Ref="R401"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E30" Ref="R?"  Part="1" 
+F 0 "R?" V 2493 650 50  0000 C CNN
+F 1 "0R" V 2584 650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2630 650 50  0001 C CNN
+F 3 "~" H 2700 650 50  0001 C CNN
+	1    2700 650 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 625  2450 650 
+Wire Wire Line
+	2550 650  2450 650 
+$Comp
+L power:+5VA #PWR?
+U 1 1 5CD89E3A
+P 3400 650
+AR Path="/5CD89E3A" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CD89E3A" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E3A" Ref="#PWR0402"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E3A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3400 500 50  0001 C CNN
+F 1 "+5VA" H 3415 823 50  0000 C CNN
+F 2 "" H 3400 650 50  0001 C CNN
+F 3 "" H 3400 650 50  0001 C CNN
+	1    3400 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD89E40
+P 3000 1175
+AR Path="/5CD89E40" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5CD89E40" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E40" Ref="C404"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E40" Ref="C?"  Part="1" 
+F 0 "C?" H 2875 1300 50  0000 L CNN
+F 1 "100n" H 3100 1075 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3038 1025 50  0001 C CNN
+F 3 "~" H 3000 1175 50  0001 C CNN
+	1    3000 1175
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD89E5F
+P 3400 1650
+AR Path="/5CD89E5F" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CD89E5F" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E5F" Ref="#PWR0406"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E5F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3400 1400 50  0001 C CNN
+F 1 "GNDA" H 3575 1600 50  0000 C CNN
+F 2 "" H 3400 1650 50  0001 C CNN
+F 3 "" H 3400 1650 50  0001 C CNN
+	1    3400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD89E65
+P 2300 1600
+AR Path="/5CD89E65" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CD89E65" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E65" Ref="#PWR0405"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E65" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2300 1350 50  0001 C CNN
+F 1 "GND" H 2450 1525 50  0000 C CNN
+F 2 "" H 2300 1600 50  0001 C CNN
+F 3 "" H 2300 1600 50  0001 C CNN
+	1    2300 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CD89E6B
+P 2775 1600
+AR Path="/5CD89E6B" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CD89E6B" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E6B" Ref="R402"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E6B" Ref="R?"  Part="1" 
+F 0 "R?" V 2568 1600 50  0000 C CNN
+F 1 "0R" V 2659 1600 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" V 2705 1600 50  0001 C CNN
+F 3 "~" H 2775 1600 50  0001 C CNN
+	1    2775 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD89E75
+P 4450 1375
+AR Path="/5CD89E75" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5CD89E75" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E75" Ref="C406"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E75" Ref="C?"  Part="1" 
+F 0 "C?" H 4325 1500 50  0000 L CNN
+F 1 "100n" H 4350 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4488 1225 50  0001 C CNN
+F 3 "~" H 4450 1375 50  0001 C CNN
+	1    4450 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD89E7B
+P 4225 1375
+AR Path="/5CD89E7B" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5CD89E7B" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E7B" Ref="C405"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E7B" Ref="C?"  Part="1" 
+F 0 "C?" H 4100 1500 50  0000 L CNN
+F 1 "1u" H 4100 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4263 1225 50  0001 C CNN
+F 3 "~" H 4225 1375 50  0001 C CNN
+	1    4225 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
+U 1 1 5CD89E8A
+P 4350 650
+AR Path="/5CD89E8A" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CD89E8A" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E8A" Ref="#PWR0411"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E8A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 500 50  0001 C CNN
+F 1 "+12V" H 4475 725 50  0000 C CNN
+F 2 "" H 4350 650 50  0001 C CNN
+F 3 "" H 4350 650 50  0001 C CNN
+	1    4350 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD89E92
+P 4450 800
+AR Path="/5CD89E92" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5CD89E92" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E92" Ref="C408"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E92" Ref="C?"  Part="1" 
+F 0 "C?" H 4325 925 50  0000 L CNN
+F 1 "100n" H 4350 725 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4488 650 50  0001 C CNN
+F 3 "~" H 4450 800 50  0001 C CNN
+	1    4450 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD89E98
+P 4225 800
+AR Path="/5CD89E98" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5CD89E98" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5CD89E98" Ref="C407"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89E98" Ref="C?"  Part="1" 
+F 0 "C?" H 4100 925 50  0000 L CNN
+F 1 "1u" H 4100 725 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4263 650 50  0001 C CNN
+F 3 "~" H 4225 800 50  0001 C CNN
+	1    4225 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5CD89EA7
+P 4350 1525
+AR Path="/5CD89EA7" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CD89EA7" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CD89EA7" Ref="#PWR0412"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD89EA7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 1625 50  0001 C CNN
+F 1 "-12V" H 4175 1600 50  0000 C CNN
+F 2 "" H 4350 1525 50  0001 C CNN
+F 3 "" H 4350 1525 50  0001 C CNN
+	1    4350 1525
+	-1   0    0    1   
+$EndComp
+$Comp
+L UMX1N:UMX1N Q?
+U 1 1 5CD8A589
+P 3875 4450
+F 0 "Q?" H 4019 4496 50  0000 L CNN
+F 1 "UMX1N" H 4000 4400 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 3875 4450 50  0001 L BNN
+F 3 "" H 3875 4450 50  0001 L BNN
+F 4 "None" H 3875 4450 50  0001 L BNN "Field4"
+F 5 "None" H 3875 4450 50  0001 L BNN "Field5"
+F 6 "UMX1N" H 3875 4450 50  0001 L BNN "Field6"
+F 7 "" H 3875 4450 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 3875 4450 50  0001 L BNN "Field8"
+	1    3875 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L UMX1N:UMX1N Q?
+U 2 1 5CD8B1A0
+P 4675 4450
+F 0 "Q?" H 4818 4496 50  0000 L CNN
+F 1 "UMX1N" H 4800 4400 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 4675 4450 50  0001 L BNN
+F 3 "" H 4675 4450 50  0001 L BNN
+F 4 "None" H 4675 4450 50  0001 L BNN "Field4"
+F 5 "None" H 4675 4450 50  0001 L BNN "Field5"
+F 6 "UMX1N" H 4675 4450 50  0001 L BNN "Field6"
+F 7 "" H 4675 4450 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 4675 4450 50  0001 L BNN "Field8"
+	2    4675 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CD90DD5
+P 3775 5925
+AR Path="/5CD90DD5" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CD90DD5" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CD90DD5" Ref="R403"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD90DD5" Ref="R?"  Part="1" 
+F 0 "R?" V 3568 5925 50  0000 C CNN
+F 1 "100k" V 3659 5925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3705 5925 50  0001 C CNN
+F 3 "~" H 3775 5925 50  0001 C CNN
+	1    3775 5925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CD94749
+P 3900 6875
+AR Path="/5CD94749" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CD94749" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CD94749" Ref="R405"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD94749" Ref="R?"  Part="1" 
+F 0 "R?" V 3800 7050 50  0000 C CNN
+F 1 "1k" V 3800 6900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 6875 50  0001 C CNN
+F 3 "~" H 3900 6875 50  0001 C CNN
+	1    3900 6875
+	0    1    1    0   
+$EndComp
+Text Label 3475 4450 0    50   ~ 0
+b1
+Text Label 3975 4225 0    50   ~ 0
+c1
+Text Label 4050 4650 0    50   ~ 0
+e1
+$Comp
+L Device:R_POT RV?
+U 1 1 5CD9C3D3
+P 3525 6475
+AR Path="/5CD9C3D3" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CD9C3D3" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CD9C3D3" Ref="RV?"  Part="1" 
+AR Path="/5CEBAECA/5CD9C3D3" Ref="RV403"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD9C3D3" Ref="RV?"  Part="1" 
+F 0 "RV?" H 3525 6600 50  0000 R CNN
+F 1 "100k_FM" H 3950 6375 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 3525 6475 50  0001 C CNN
+F 3 "~" H 3525 6475 50  0001 C CNN
+	1    3525 6475
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5CD9C3E5
+P 3525 6875
+AR Path="/5CD9C3E5" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CD9C3E5" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CD9C3E5" Ref="RV?"  Part="1" 
+AR Path="/5CEBAECA/5CD9C3E5" Ref="RV404"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CD9C3E5" Ref="RV?"  Part="1" 
+F 0 "RV?" H 3525 7000 50  0000 R CNN
+F 1 "100k_Trig" H 3875 6750 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 3525 6875 50  0001 C CNN
+F 3 "~" H 3525 6875 50  0001 C CNN
+	1    3525 6875
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5CDA6FA6
+P 3075 5925
+AR Path="/5CDA6FA6" Ref="J?"  Part="1" 
+AR Path="/5D60ED9A/5CDA6FA6" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5CDA6FA6" Ref="J?"  Part="1" 
+AR Path="/5CEBAECA/5CDA6FA6" Ref="J401"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDA6FA6" Ref="J?"  Part="1" 
+F 0 "J?" H 2842 5996 50  0000 R CNN
+F 1 "CV" H 2842 5905 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 3075 5925 50  0001 C CNN
+F 3 "~" H 3075 5925 50  0001 C CNN
+	1    3075 5925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5CDA6FAC
+P 3075 6325
+AR Path="/5CDA6FAC" Ref="J?"  Part="1" 
+AR Path="/5D60ED9A/5CDA6FAC" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5CDA6FAC" Ref="J?"  Part="1" 
+AR Path="/5CEBAECA/5CDA6FAC" Ref="J402"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDA6FAC" Ref="J?"  Part="1" 
+F 0 "J?" H 2842 6396 50  0000 R CNN
+F 1 "FM" H 2842 6305 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 3075 6325 50  0001 C CNN
+F 3 "~" H 3075 6325 50  0001 C CNN
+	1    3075 6325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3525 6325 3275 6325
+Wire Wire Line
+	3275 5825 3425 5825
+Wire Wire Line
+	3275 6225 3425 6225
+Connection ~ 3425 6225
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CDA6FB7
+P 3425 7200
+AR Path="/5CD6EBF4/5CDA6FB7" Ref="#PWR?"  Part="1" 
+AR Path="/5CDA6FB7" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CDA6FB7" Ref="#PWR0422"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDA6FB7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3425 6950 50  0001 C CNN
+F 1 "GNDA" H 3430 7027 50  0000 C CNN
+F 2 "" H 3425 7200 50  0001 C CNN
+F 3 "" H 3425 7200 50  0001 C CNN
+	1    3425 7200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5CDA6FBD
+P 3075 6725
+AR Path="/5CDA6FBD" Ref="J?"  Part="1" 
+AR Path="/5D60ED9A/5CDA6FBD" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5CDA6FBD" Ref="J?"  Part="1" 
+AR Path="/5CEBAECA/5CDA6FBD" Ref="J403"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDA6FBD" Ref="J?"  Part="1" 
+F 0 "J?" H 2842 6796 50  0000 R CNN
+F 1 "Trigger" H 2842 6705 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 3075 6725 50  0001 C CNN
+F 3 "~" H 3075 6725 50  0001 C CNN
+	1    3075 6725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3525 6725 3275 6725
+Wire Wire Line
+	3275 6625 3425 6625
+Connection ~ 3425 6625
+Wire Wire Line
+	10725 4475 10575 4475
+Wire Wire Line
+	10425 4575 10725 4575
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5CDA6FCA
+P 10925 4575
+AR Path="/5CDA6FCA" Ref="J?"  Part="1" 
+AR Path="/5D60ED9A/5CDA6FCA" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5CDA6FCA" Ref="J?"  Part="1" 
+AR Path="/5CEBAECA/5CDA6FCA" Ref="J404"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDA6FCA" Ref="J?"  Part="1" 
+F 0 "J?" H 10692 4646 50  0000 R CNN
+F 1 "Out" H 10692 4555 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 10925 4575 50  0001 C CNN
+F 3 "~" H 10925 4575 50  0001 C CNN
+	1    10925 4575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3425 5825 3425 6225
+Wire Wire Line
+	3425 6225 3425 6625
+Wire Wire Line
+	3425 6625 3425 7025
+Wire Wire Line
+	3525 6625 3425 6625
+Wire Wire Line
+	3525 7025 3425 7025
+$Comp
+L Device:R R?
+U 1 1 5CDB4AD3
+P 3900 6475
+AR Path="/5CDB4AD3" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CDB4AD3" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CDB4AD3" Ref="R412"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDB4AD3" Ref="R?"  Part="1" 
+F 0 "R?" V 3775 6275 50  0000 C CNN
+F 1 "100k" V 3784 6475 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 6475 50  0001 C CNN
+F 3 "~" H 3900 6475 50  0001 C CNN
+	1    3900 6475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CDB4FA2
+P 1950 3800
+AR Path="/5CDB4FA2" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CDB4FA2" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CDB4FA2" Ref="R413"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDB4FA2" Ref="R?"  Part="1" 
+F 0 "R?" V 1743 3800 50  0000 C CNN
+F 1 "2k4" V 1834 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1880 3800 50  0001 C CNN
+F 3 "~" H 1950 3800 50  0001 C CNN
+	1    1950 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3675 6475 3750 6475
+Wire Wire Line
+	3675 6875 3750 6875
+Wire Wire Line
+	4050 5925 4050 6475
+$Comp
+L Device:R_POT RV?
+U 1 1 5CDB8E52
+P 1600 7000
+AR Path="/5CDB8E52" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CDB8E52" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CDB8E52" Ref="RV?"  Part="1" 
+AR Path="/5CEBAECA/5CDB8E52" Ref="RV402"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDB8E52" Ref="RV?"  Part="1" 
+F 0 "RV?" H 1600 7125 50  0000 R CNN
+F 1 "100k_Coarse" H 2150 6850 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 1600 7000 50  0001 C CNN
+F 3 "~" H 1600 7000 50  0001 C CNN
+	1    1600 7000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5CDB94A6
+P 1600 6450
+AR Path="/5CDB94A6" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CDB94A6" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CDB94A6" Ref="RV?"  Part="1" 
+AR Path="/5CEBAECA/5CDB94A6" Ref="RV401"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDB94A6" Ref="RV?"  Part="1" 
+F 0 "RV?" H 1600 6575 50  0000 R CNN
+F 1 "100k_fine" H 2050 6325 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 1600 6450 50  0001 C CNN
+F 3 "~" H 1600 6450 50  0001 C CNN
+	1    1600 6450
+	1    0    0    1   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
+U 1 1 5CDBA8FA
+P 1150 6300
+AR Path="/5CDBA8FA" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CDBA8FA" Ref="#PWR0419"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDBA8FA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1150 6150 50  0001 C CNN
+F 1 "+12V" V 1165 6428 50  0000 L CNN
+F 2 "" H 1150 6300 50  0001 C CNN
+F 3 "" H 1150 6300 50  0001 C CNN
+	1    1150 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5CDBB367
+P 1600 7225
+AR Path="/5CDBB367" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CDBB367" Ref="#PWR0420"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDBB367" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1600 7325 50  0001 C CNN
+F 1 "-12V" V 1615 7353 50  0000 L CNN
+F 2 "" H 1600 7225 50  0001 C CNN
+F 3 "" H 1600 7225 50  0001 C CNN
+	1    1600 7225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 6300 1200 6300
+Wire Wire Line
+	1600 6600 1500 6600
+$Comp
+L Device:R R?
+U 1 1 5CDC3141
+P 1350 6300
+AR Path="/5CDC3141" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CDC3141" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CDC3141" Ref="R407"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDC3141" Ref="R?"  Part="1" 
+F 0 "R?" V 1143 6300 50  0000 C CNN
+F 1 "100k" V 1234 6300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 6300 50  0001 C CNN
+F 3 "~" H 1350 6300 50  0001 C CNN
+	1    1350 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 6300 1600 6300
+$Comp
+L Device:R R?
+U 1 1 5CDC3716
+P 1350 6600
+AR Path="/5CDC3716" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CDC3716" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CDC3716" Ref="R409"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDC3716" Ref="R?"  Part="1" 
+F 0 "R?" V 1143 6600 50  0000 C CNN
+F 1 "100k" V 1234 6600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 6600 50  0001 C CNN
+F 3 "~" H 1350 6600 50  0001 C CNN
+	1    1350 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 6600 1100 6600
+Wire Wire Line
+	1750 7000 1800 7000
+Connection ~ 4050 5925
+Wire Wire Line
+	1750 6450 1800 6450
+Wire Wire Line
+	2225 6450 2225 7000
+$Comp
+L Device:R R?
+U 1 1 5CDC7AA7
+P 1950 7000
+AR Path="/5CDC7AA7" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CDC7AA7" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CDC7AA7" Ref="R410"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDC7AA7" Ref="R?"  Part="1" 
+F 0 "R?" V 1743 7000 50  0000 C CNN
+F 1 "100k" V 1834 7000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1880 7000 50  0001 C CNN
+F 3 "~" H 1950 7000 50  0001 C CNN
+	1    1950 7000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2100 7000 2225 7000
+$Comp
+L Device:R R?
+U 1 1 5CDC7E83
+P 1950 6450
+AR Path="/5CDC7E83" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CDC7E83" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CDC7E83" Ref="R408"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDC7E83" Ref="R?"  Part="1" 
+F 0 "R?" V 1743 6450 50  0000 C CNN
+F 1 "100k" V 1834 6450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1880 6450 50  0001 C CNN
+F 3 "~" H 1950 6450 50  0001 C CNN
+	1    1950 6450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2100 6450 2225 6450
+$Comp
+L power:-12V #PWR?
+U 1 1 5CDC839B
+P 975 5875
+AR Path="/5CDC839B" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CDC839B" Ref="#PWR0418"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDC839B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 975 5975 50  0001 C CNN
+F 1 "-12V" V 990 6003 50  0000 L CNN
+F 2 "" H 975 5875 50  0001 C CNN
+F 3 "" H 975 5875 50  0001 C CNN
+	1    975  5875
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push_SPDT SW?
+U 1 1 5CDC97B8
+P 1400 5850
+F 0 "SW?" H 1400 6135 50  0000 C CNN
+F 1 "LFO" H 1400 6044 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:SP1MS1" H 1400 5850 50  0001 C CNN
+F 3 "~" H 1400 5850 50  0001 C CNN
+	1    1400 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2225 6450
+$Comp
+L Device:R R?
+U 1 1 5CDCF96D
+P 1900 5750
+AR Path="/5CDCF96D" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CDCF96D" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CDCF96D" Ref="R406"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDCF96D" Ref="R?"  Part="1" 
+F 0 "R?" V 1693 5750 50  0000 C CNN
+F 1 "100k" V 1784 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1830 5750 50  0001 C CNN
+F 3 "~" H 1900 5750 50  0001 C CNN
+	1    1900 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3275 5925 3625 5925
+Wire Wire Line
+	3925 5925 4050 5925
+Text GLabel 10425 4575 0    50   Input ~ 0
+VCO_Out
+Text GLabel 4225 5925 2    50   Input ~ 0
+VCO_Control
+Wire Wire Line
+	4050 5925 4225 5925
+$Comp
+L MMBT2222A:MMBT2222A Q?
+U 1 1 5CDD6EE3
+P 4475 6875
+F 0 "Q?" H 4619 6921 50  0000 L CNN
+F 1 "MMBT2222A" H 4619 6830 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4475 6875 50  0001 L BNN
+F 3 "" H 4475 6875 50  0001 L BNN
+F 4 "None" H 4475 6875 50  0001 L BNN "Field4"
+F 5 "ON" H 4475 6875 50  0001 L BNN "Field5"
+F 6 "" H 4475 6875 50  0001 L BNN "Field6"
+F 7 "MMBT2222A" H 4475 6875 50  0001 L BNN "Field7"
+F 8 "TO-236-3 Taitron" H 4475 6875 50  0001 L BNN "Field8"
+	1    4475 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CDD77AD
+P 4575 6400
+AR Path="/5CDD77AD" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CDD77AD" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CDD77AD" Ref="R411"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CDD77AD" Ref="R?"  Part="1" 
+F 0 "R?" V 4368 6400 50  0000 C CNN
+F 1 "1k" V 4459 6400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4505 6400 50  0001 C CNN
+F 3 "~" H 4575 6400 50  0001 C CNN
+	1    4575 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 6875 4375 6875
+Wire Wire Line
+	4575 6550 4575 6625
+Wire Wire Line
+	4575 6250 4575 6175
+Text GLabel 4800 6625 2    50   Input ~ 0
+VCO_Sync
+Wire Wire Line
+	4575 6625 4800 6625
+Connection ~ 4575 6625
+Wire Wire Line
+	4575 6625 4575 6675
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
+U 1 1 5CE14183
+P 1600 6800
+AR Path="/5CE14183" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CE14183" Ref="#PWR0433"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE14183" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1600 6650 50  0001 C CNN
+F 1 "+12V" V 1615 6928 50  0000 L CNN
+F 2 "" H 1600 6800 50  0001 C CNN
+F 3 "" H 1600 6800 50  0001 C CNN
+	1    1600 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5CE144C6
+P 1100 6600
+AR Path="/5CE144C6" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CE144C6" Ref="#PWR0432"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE144C6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1100 6700 50  0001 C CNN
+F 1 "-12V" V 1115 6728 50  0000 L CNN
+F 2 "" H 1100 6600 50  0001 C CNN
+F 3 "" H 1100 6600 50  0001 C CNN
+	1    1100 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 7150 1600 7225
+Wire Wire Line
+	1600 6800 1600 6850
+Wire Wire Line
+	3425 7200 3425 7150
+Connection ~ 3425 7025
+Wire Wire Line
+	4575 7075 4575 7150
+Wire Wire Line
+	4575 7150 3425 7150
+Connection ~ 3425 7150
+Wire Wire Line
+	3425 7150 3425 7025
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CE20133
+P 10575 4725
+AR Path="/5CD6EBF4/5CE20133" Ref="#PWR?"  Part="1" 
+AR Path="/5CE20133" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CE20133" Ref="#PWR0425"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE20133" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10575 4475 50  0001 C CNN
+F 1 "GNDA" H 10580 4552 50  0000 C CNN
+F 2 "" H 10575 4725 50  0001 C CNN
+F 3 "" H 10575 4725 50  0001 C CNN
+	1    10575 4725
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10575 4475 10575 4725
+$Comp
+L Amplifier_Operational:TL074 U?
+U 1 1 5CE2D531
+P 1900 4450
+F 0 "U?" H 1925 4250 50  0000 C CNN
+F 1 "TL074" H 1900 4174 50  0000 C CNN
+F 2 "" H 1850 4550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1950 4650 50  0001 C CNN
+	1    1900 4450
+	1    0    0    1   
+$EndComp
+Text GLabel 1175 4350 0    50   Input ~ 0
+VCO_Control
+Wire Wire Line
+	1175 4350 1500 4350
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CE39FF4
+P 1500 4600
+AR Path="/5CD6EBF4/5CE39FF4" Ref="#PWR?"  Part="1" 
+AR Path="/5CE39FF4" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CE39FF4" Ref="#PWR0427"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE39FF4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1500 4350 50  0001 C CNN
+F 1 "GNDA" H 1505 4427 50  0000 C CNN
+F 2 "" H 1500 4600 50  0001 C CNN
+F 3 "" H 1500 4600 50  0001 C CNN
+	1    1500 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4600 1500 4550
+Wire Wire Line
+	1500 4550 1600 4550
+Wire Wire Line
+	1500 4350 1500 3800
+Wire Wire Line
+	1500 3800 1800 3800
+Connection ~ 1500 4350
+Wire Wire Line
+	1500 4350 1600 4350
+Wire Wire Line
+	2100 3800 2350 3800
+Wire Wire Line
+	2350 3800 2350 4450
+Wire Wire Line
+	2350 4450 2200 4450
+$Comp
+L Device:R R?
+U 1 1 5CE45CFB
+P 2500 4450
+AR Path="/5CE45CFB" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CE45CFB" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CE45CFB" Ref="R417"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE45CFB" Ref="R?"  Part="1" 
+F 0 "R?" V 2293 4450 50  0000 C CNN
+F 1 "82R" V 2384 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2430 4450 50  0001 C CNN
+F 3 "~" H 2500 4450 50  0001 C CNN
+	1    2500 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE466AC
+P 2725 4675
+AR Path="/5CE466AC" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CE466AC" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CE466AC" Ref="R418"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE466AC" Ref="R?"  Part="1" 
+F 0 "R?" V 2518 4675 50  0000 C CNN
+F 1 "910R" V 2609 4675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2655 4675 50  0001 C CNN
+F 3 "~" H 2725 4675 50  0001 C CNN
+	1    2725 4675
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CE46B8F
+P 2725 4925
+AR Path="/5CD6EBF4/5CE46B8F" Ref="#PWR?"  Part="1" 
+AR Path="/5CE46B8F" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CE46B8F" Ref="#PWR0429"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE46B8F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2725 4675 50  0001 C CNN
+F 1 "GNDA" H 2730 4752 50  0000 C CNN
+F 2 "" H 2725 4925 50  0001 C CNN
+F 3 "" H 2725 4925 50  0001 C CNN
+	1    2725 4925
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2725 4925 2725 4825
+Wire Wire Line
+	2725 4525 2725 4450
+Wire Wire Line
+	2725 4450 2650 4450
+Connection ~ 2725 4450
+$Comp
+L Amplifier_Operational:TL074 U?
+U 2 1 5CE51C57
+P 3425 5075
+F 0 "U?" H 3450 4875 50  0000 C CNN
+F 1 "TL074" H 3425 4799 50  0000 C CNN
+F 2 "" H 3375 5175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3475 5275 50  0001 C CNN
+	2    3425 5075
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3975 4650 4275 4650
+Wire Wire Line
+	3125 4975 3125 4650
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
+U 1 1 5CE69F92
+P 3125 3750
+AR Path="/5CE69F92" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CE69F92" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CE69F92" Ref="#PWR0426"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE69F92" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3125 3600 50  0001 C CNN
+F 1 "+12V" H 3250 3825 50  0000 C CNN
+F 2 "" H 3125 3750 50  0001 C CNN
+F 3 "" H 3125 3750 50  0001 C CNN
+	1    3125 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 3800 3125 3750
+$Comp
+L Device:C C?
+U 1 1 5CE6DD45
+P 3500 4650
+AR Path="/5CE6DD45" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5CE6DD45" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5CE6DD45" Ref="C403"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE6DD45" Ref="C?"  Part="1" 
+F 0 "C?" V 3600 4500 50  0000 L CNN
+F 1 "100p" V 3550 4725 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3538 4500 50  0001 C CNN
+F 3 "~" H 3500 4650 50  0001 C CNN
+	1    3500 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 4650 3125 4650
+Connection ~ 3125 4650
+Wire Wire Line
+	2725 4450 3775 4450
+Wire Wire Line
+	3725 5075 3800 5075
+Wire Wire Line
+	3800 5075 3800 4650
+Wire Wire Line
+	3800 4650 3650 4650
+$Comp
+L Device:R R?
+U 1 1 5CE8D0B5
+P 4275 4825
+AR Path="/5CE8D0B5" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CE8D0B5" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CE8D0B5" Ref="R419"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE8D0B5" Ref="R?"  Part="1" 
+F 0 "R?" V 4068 4825 50  0000 C CNN
+F 1 "56k" V 4159 4825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4205 4825 50  0001 C CNN
+F 3 "~" H 4275 4825 50  0001 C CNN
+	1    4275 4825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4275 4675 4275 4650
+Connection ~ 4275 4650
+Wire Wire Line
+	4275 4650 4575 4650
+Wire Wire Line
+	3800 5075 4275 5075
+Wire Wire Line
+	4275 5075 4275 4975
+Connection ~ 3800 5075
+Wire Wire Line
+	3075 5200 3075 5175
+Wire Wire Line
+	3075 5175 3125 5175
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CE96E78
+P 4950 4600
+AR Path="/5CE96E78" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CE96E78" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CE96E78" Ref="#PWR0428"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CE96E78" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4950 4350 50  0001 C CNN
+F 1 "GNDA" H 5125 4550 50  0000 C CNN
+F 2 "" H 4950 4600 50  0001 C CNN
+F 3 "" H 4950 4600 50  0001 C CNN
+	1    4950 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4775 4450 4950 4450
+Wire Wire Line
+	4950 4450 4950 4600
+Text GLabel 4700 4150 2    50   Input ~ 0
+VCO_Exp
+Wire Wire Line
+	2300 1600 2450 1600
+Wire Notes Line
+	600  3375 5325 3375
+Wire Notes Line
+	5325 3375 5325 5400
+Wire Notes Line
+	5325 5400 600  5400
+Wire Notes Line
+	600  5400 600  3375
+Wire Wire Line
+	975  5875 975  5850
+Wire Wire Line
+	975  5850 1200 5850
+Wire Wire Line
+	1600 5750 1750 5750
+Wire Wire Line
+	2050 5750 2225 5750
+Wire Wire Line
+	2225 5750 2225 6450
+Wire Wire Line
+	2225 5750 4050 5750
+Wire Wire Line
+	4050 5750 4050 5925
+Connection ~ 2225 5750
+Wire Notes Line
+	600  5450 5325 5450
+Wire Notes Line
+	5325 5450 5325 7625
+Wire Notes Line
+	5325 7625 600  7625
+Wire Notes Line
+	600  7625 600  5450
+Wire Wire Line
+	3975 4150 3125 4150
+Wire Wire Line
+	3975 4150 3975 4250
+Wire Wire Line
+	3125 4150 3125 4650
+Wire Wire Line
+	3125 4100 3125 4150
+Connection ~ 3125 4150
+Wire Wire Line
+	4575 4150 4700 4150
+Wire Wire Line
+	4575 4150 4575 4250
+$Comp
+L Amplifier_Operational:TL074 U?
+U 3 1 5CF66C85
+P 6525 5750
+F 0 "U?" H 6550 5550 50  0000 C CNN
+F 1 "TL074" H 6525 5474 50  0000 C CNN
+F 2 "" H 6475 5850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6575 5950 50  0001 C CNN
+	3    6525 5750
+	1    0    0    1   
+$EndComp
+$Comp
+L MMBT2222A:MMBT2222A Q?
+U 1 1 5CF6A445
+P 7425 5750
+F 0 "Q?" H 7569 5796 50  0000 L CNN
+F 1 "MMBT2222A" H 7569 5705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 7425 5750 50  0001 L BNN
+F 3 "" H 7425 5750 50  0001 L BNN
+F 4 "None" H 7425 5750 50  0001 L BNN "Field4"
+F 5 "ON" H 7425 5750 50  0001 L BNN "Field5"
+F 6 "" H 7425 5750 50  0001 L BNN "Field6"
+F 7 "MMBT2222A" H 7425 5750 50  0001 L BNN "Field7"
+F 8 "TO-236-3 Taitron" H 7425 5750 50  0001 L BNN "Field8"
+	1    7425 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CF6BFDD
+P 7100 5750
+AR Path="/5CF6BFDD" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CF6BFDD" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CF6BFDD" Ref="R425"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CF6BFDD" Ref="R?"  Part="1" 
+F 0 "R?" V 7000 5825 50  0000 C CNN
+F 1 "1k" V 7000 5675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7030 5750 50  0001 C CNN
+F 3 "~" H 7100 5750 50  0001 C CNN
+	1    7100 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6825 5750 6900 5750
+$Comp
+L Device:R R?
+U 1 1 5CF7307D
+P 7525 5350
+AR Path="/5CF7307D" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CF7307D" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CF7307D" Ref="R420"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CF7307D" Ref="R?"  Part="1" 
+F 0 "R?" V 7425 5525 50  0000 C CNN
+F 1 "10k" V 7425 5375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7455 5350 50  0001 C CNN
+F 3 "~" H 7525 5350 50  0001 C CNN
+	1    7525 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7525 5550 7525 5525
+$Comp
+L Device:R R?
+U 1 1 5CF76A25
+P 7850 5525
+AR Path="/5CF76A25" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CF76A25" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CF76A25" Ref="R424"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CF76A25" Ref="R?"  Part="1" 
+F 0 "R?" V 7750 5700 50  0000 C CNN
+F 1 "1k" V 7750 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7780 5525 50  0001 C CNN
+F 3 "~" H 7850 5525 50  0001 C CNN
+	1    7850 5525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7525 5525 7700 5525
+Connection ~ 7525 5525
+Wire Wire Line
+	7525 5525 7525 5500
+$Comp
+L MMBT2222A:MMBT2222A Q?
+U 1 1 5CF7A62E
+P 8200 5750
+F 0 "Q?" H 8344 5796 50  0000 L CNN
+F 1 "MMBT2222A" H 8344 5705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 8200 5750 50  0001 L BNN
+F 3 "" H 8200 5750 50  0001 L BNN
+F 4 "None" H 8200 5750 50  0001 L BNN "Field4"
+F 5 "ON" H 8200 5750 50  0001 L BNN "Field5"
+F 6 "" H 8200 5750 50  0001 L BNN "Field6"
+F 7 "MMBT2222A" H 8200 5750 50  0001 L BNN "Field7"
+F 8 "TO-236-3 Taitron" H 8200 5750 50  0001 L BNN "Field8"
+	1    8200 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5525 8075 5525
+Wire Wire Line
+	8075 5525 8075 5750
+Wire Wire Line
+	8075 5750 8100 5750
+$Comp
+L Device:R R?
+U 1 1 5CF82BC7
+P 8300 5350
+AR Path="/5CF82BC7" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CF82BC7" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CF82BC7" Ref="R421"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CF82BC7" Ref="R?"  Part="1" 
+F 0 "R?" V 8200 5525 50  0000 C CNN
+F 1 "10k" V 8200 5375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8230 5350 50  0001 C CNN
+F 3 "~" H 8300 5350 50  0001 C CNN
+	1    8300 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 5550 8300 5525
+$Comp
+L Device:D D?
+U 1 1 5CF8C670
+P 7300 5900
+AR Path="/5CF8C670" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5CF8C670" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5CF8C670" Ref="D?"  Part="1" 
+AR Path="/5CEBAECA/5CF8C670" Ref="D402"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CF8C670" Ref="D?"  Part="1" 
+F 0 "D?" V 7254 5979 50  0000 L CNN
+F 1 "1N4148" V 7300 5550 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7300 5900 50  0001 C CNN
+F 3 "~" H 7300 5900 50  0001 C CNN
+	1    7300 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5CF8C676
+P 7300 5600
+AR Path="/5CF8C676" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5CF8C676" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5CF8C676" Ref="D?"  Part="1" 
+AR Path="/5CEBAECA/5CF8C676" Ref="D401"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CF8C676" Ref="D?"  Part="1" 
+F 0 "D?" V 7254 5679 50  0000 L CNN
+F 1 "1N4148" V 7225 5275 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7300 5600 50  0001 C CNN
+F 3 "~" H 7300 5600 50  0001 C CNN
+	1    7300 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CF8C685
+P 7300 6100
+AR Path="/5CF8C685" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CF8C685" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CF8C685" Ref="#PWR0431"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CF8C685" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7300 5850 50  0001 C CNN
+F 1 "GNDA" H 7475 6050 50  0000 C CNN
+F 2 "" H 7300 6100 50  0001 C CNN
+F 3 "" H 7300 6100 50  0001 C CNN
+	1    7300 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR?
+U 1 1 5CF8FF47
+P 7300 5125
+AR Path="/5CF8FF47" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5CF8FF47" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5CF8FF47" Ref="#PWR0430"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CF8FF47" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7300 4975 50  0001 C CNN
+F 1 "+5VA" H 7315 5298 50  0000 C CNN
+F 2 "" H 7300 5125 50  0001 C CNN
+F 3 "" H 7300 5125 50  0001 C CNN
+	1    7300 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5450 7300 5175
+Wire Wire Line
+	7300 5175 7525 5175
+Wire Wire Line
+	8300 5175 8300 5200
+Connection ~ 7300 5175
+Wire Wire Line
+	7300 5175 7300 5125
+Wire Wire Line
+	7525 5200 7525 5175
+Connection ~ 7525 5175
+Wire Wire Line
+	7525 5175 8300 5175
+Wire Wire Line
+	7300 6100 7300 6075
+Wire Wire Line
+	7300 6075 7525 6075
+Wire Wire Line
+	8300 6075 8300 5950
+Connection ~ 7300 6075
+Wire Wire Line
+	7300 6075 7300 6050
+Wire Wire Line
+	7525 5950 7525 6075
+Connection ~ 7525 6075
+Wire Wire Line
+	7525 6075 8300 6075
+Text GLabel 8875 5375 0    50   Input ~ 0
+VCO_Sync
+$Comp
+L 74xx:74HC00 U?
+U 1 1 5CFA9EF7
+P 9300 5475
+F 0 "U?" H 9300 5800 50  0000 C CNN
+F 1 "74HC00" H 9300 5709 50  0000 C CNN
+F 2 "" H 9300 5475 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9300 5475 50  0001 C CNN
+	1    9300 5475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8875 5375 9000 5375
+Wire Wire Line
+	8300 5525 9000 5525
+Wire Wire Line
+	9000 5525 9000 5575
+Connection ~ 8300 5525
+Wire Wire Line
+	8300 5525 8300 5500
+$Comp
+L Device:R R?
+U 1 1 5CFB701E
+P 9825 5475
+AR Path="/5CFB701E" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CFB701E" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CFB701E" Ref="R423"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CFB701E" Ref="R?"  Part="1" 
+F 0 "R?" V 9650 5475 50  0000 C CNN
+F 1 "220R" V 9725 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9755 5475 50  0001 C CNN
+F 3 "~" H 9825 5475 50  0001 C CNN
+	1    9825 5475
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9600 5475 9675 5475
+$Comp
+L MMBT2222A:MMBT2222A Q?
+U 1 1 5CFBC646
+P 10350 5750
+F 0 "Q?" H 10494 5796 50  0000 L CNN
+F 1 "MMBT2222A" H 9975 5900 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10350 5750 50  0001 L BNN
+F 3 "" H 10350 5750 50  0001 L BNN
+F 4 "None" H 10350 5750 50  0001 L BNN "Field4"
+F 5 "ON" H 10350 5750 50  0001 L BNN "Field5"
+F 6 "" H 10350 5750 50  0001 L BNN "Field6"
+F 7 "MMBT2222A" H 10350 5750 50  0001 L BNN "Field7"
+F 8 "TO-236-3 Taitron" H 10350 5750 50  0001 L BNN "Field8"
+	1    10350 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CFBC651
+P 10450 5350
+AR Path="/5CFBC651" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CFBC651" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CFBC651" Ref="R422"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CFBC651" Ref="R?"  Part="1" 
+F 0 "R?" H 10350 5525 50  0000 C CNN
+F 1 "10k" H 10350 5375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10380 5350 50  0001 C CNN
+F 3 "~" H 10450 5350 50  0001 C CNN
+	1    10450 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10450 5550 10450 5525
+Wire Wire Line
+	10450 5175 10450 5200
+Wire Wire Line
+	10450 5525 10775 5525
+Connection ~ 10450 5525
+Wire Wire Line
+	10450 5525 10450 5500
+Wire Wire Line
+	8300 5175 10450 5175
+Connection ~ 8300 5175
+Wire Wire Line
+	9975 5750 10250 5750
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5CFD32A3
+P 10125 6100
+F 0 "RV?" V 9918 6100 50  0000 C CNN
+F 1 "5K_OSC_TRIM" V 10009 6100 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 10125 6100 50  0001 C CNN
+F 3 "~" H 10125 6100 50  0001 C CNN
+	1    10125 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10275 6100 10450 6100
+Wire Wire Line
+	10450 5950 10450 6100
+Wire Wire Line
+	10450 6100 10450 6250
+Wire Wire Line
+	10450 6250 10125 6250
+Connection ~ 10450 6100
+Text GLabel 9825 6100 0    50   Input ~ 0
+VCO_Exp
+Wire Wire Line
+	9825 6100 9975 6100
+Text GLabel 6100 5850 0    50   Input ~ 0
+VCO_Exp
+Wire Wire Line
+	6100 5850 6225 5850
+Wire Wire Line
+	6225 5650 6150 5650
+Wire Wire Line
+	6150 5650 6150 5350
+Wire Wire Line
+	6150 5350 6900 5350
+Wire Wire Line
+	6900 5350 6900 5750
+Connection ~ 6900 5750
+Wire Wire Line
+	6900 5750 6950 5750
+$Comp
+L Device:C C?
+U 1 1 5CFF014B
+P 10775 5775
+AR Path="/5CFF014B" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5CFF014B" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5CFF014B" Ref="C409"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5CFF014B" Ref="C?"  Part="1" 
+F 0 "C?" H 10950 5725 50  0000 L CNN
+F 1 "1n" H 10925 5850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10813 5625 50  0001 C CNN
+F 3 "~" H 10775 5775 50  0001 C CNN
+	1    10775 5775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 6100 10775 6100
+Wire Wire Line
+	10775 5625 10775 5525
+Wire Wire Line
+	10775 5925 10775 6100
+Text Notes 10600 6075 0    50   ~ 0
+470p to 4n7\ndecides freq
+$Comp
+L 74xx:74HC00 U?
+U 2 1 5D02B7EE
+P 8875 1350
+F 0 "U?" H 8875 1675 50  0000 C CNN
+F 1 "74HC00" H 8875 1584 50  0000 C CNN
+F 2 "" H 8875 1350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 8875 1350 50  0001 C CNN
+	2    8875 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U?
+U 3 1 5D02D6EB
+P 8000 975
+F 0 "U?" H 8000 1300 50  0000 C CNN
+F 1 "74HC00" H 8000 1209 50  0000 C CNN
+F 2 "" H 8000 975 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 8000 975 50  0001 C CNN
+	3    8000 975 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U?
+U 4 1 5D02DFF3
+P 8000 1725
+F 0 "U?" H 8000 2050 50  0000 C CNN
+F 1 "74HC00" H 8000 1959 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 8000 1725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 8000 1725 50  0001 C CNN
+	4    8000 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U?
+U 5 1 5D02F522
+P 3400 1150
+F 0 "U?" H 3630 1196 50  0000 L CNN
+F 1 "74HC00" H 3630 1105 50  0000 L CNN
+F 2 "" H 3400 1150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3400 1150 50  0001 C CNN
+	5    3400 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2925 1600 3000 1600
+Wire Wire Line
+	3400 1600 3400 1650
+Wire Wire Line
+	3000 1325 3000 1600
+Connection ~ 3000 1600
+Wire Wire Line
+	3000 1600 3400 1600
+Wire Wire Line
+	3000 1025 3000 650 
+Wire Wire Line
+	3000 650  3400 650 
+Wire Wire Line
+	2850 650  3000 650 
+Connection ~ 3000 650 
+$Comp
+L Device:C C?
+U 1 1 5D07F4CC
+P 2450 1175
+AR Path="/5D07F4CC" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5D07F4CC" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5D07F4CC" Ref="C401"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D07F4CC" Ref="C?"  Part="1" 
+F 0 "C?" H 2325 1300 50  0000 L CNN
+F 1 "1u" H 2325 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2488 1025 50  0001 C CNN
+F 3 "~" H 2450 1175 50  0001 C CNN
+	1    2450 1175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 1025 2450 650 
+Connection ~ 2450 650 
+Wire Wire Line
+	2450 1325 2450 1600
+Connection ~ 2450 1600
+Wire Wire Line
+	2450 1600 2625 1600
+$Comp
+L Amplifier_Operational:TL074 U?
+U 4 1 5D094665
+P 1750 3025
+F 0 "U?" H 1775 2825 50  0000 C CNN
+F 1 "TL074" H 1850 2900 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1700 3125 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1800 3225 50  0001 C CNN
+	4    1750 3025
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 5 1 5D09676E
+P 4700 1100
+F 0 "U?" H 4725 900 50  0000 C CNN
+F 1 "TL074" H 4700 824 50  0000 C CNN
+F 2 "" H 4650 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4750 1300 50  0001 C CNN
+	5    4700 1100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 650  4800 800 
+Wire Wire Line
+	4800 1525 4800 1400
+Text GLabel 1250 3125 0    50   Input ~ 0
+VCO_Exp
+Wire Wire Line
+	1250 3125 1450 3125
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5D0CB8F8
+P 1250 2125
+F 0 "RV?" V 1043 2125 50  0000 C CNN
+F 1 "10k_Offset_out" V 1150 2150 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 1250 2125 50  0001 C CNN
+F 3 "~" H 1250 2125 50  0001 C CNN
+	1    1250 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D0D9BD1
+P 1250 2475
+AR Path="/5D0D9BD1" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D0D9BD1" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D0D9BD1" Ref="R414"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D0D9BD1" Ref="R?"  Part="1" 
+F 0 "R?" V 1043 2475 50  0000 C CNN
+F 1 "100R" V 1134 2475 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1180 2475 50  0001 C CNN
+F 3 "~" H 1250 2475 50  0001 C CNN
+	1    1250 2475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 2925 1250 2925
+Wire Wire Line
+	1250 2275 1250 2325
+Wire Wire Line
+	1250 2625 1250 2650
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
+U 1 1 5D0E9DD6
+P 975 2075
+AR Path="/5D0E9DD6" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D0E9DD6" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D0E9DD6" Ref="#PWR0423"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D0E9DD6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 975 1925 50  0001 C CNN
+F 1 "+12V" H 850 2075 50  0000 C CNN
+F 2 "" H 975 2075 50  0001 C CNN
+F 3 "" H 975 2075 50  0001 C CNN
+	1    975  2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5D0EA344
+P 1500 2150
+AR Path="/5D0EA344" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D0EA344" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D0EA344" Ref="#PWR0424"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D0EA344" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1500 2250 50  0001 C CNN
+F 1 "-12V" H 1325 2225 50  0000 C CNN
+F 2 "" H 1500 2150 50  0001 C CNN
+F 3 "" H 1500 2150 50  0001 C CNN
+	1    1500 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 2125 975  2125
+Wire Wire Line
+	975  2125 975  2075
+Wire Wire Line
+	1400 2125 1500 2125
+Wire Wire Line
+	1500 2125 1500 2150
+$Comp
+L Device:C C?
+U 1 1 5D0FA339
+P 1725 2475
+AR Path="/5D0FA339" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5D0FA339" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5D0FA339" Ref="C402"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D0FA339" Ref="C?"  Part="1" 
+F 0 "C?" V 1775 2300 50  0000 L CNN
+F 1 "12p" V 1775 2550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1763 2325 50  0001 C CNN
+F 3 "~" H 1725 2475 50  0001 C CNN
+	1    1725 2475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D0FA881
+P 1725 2650
+AR Path="/5D0FA881" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D0FA881" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D0FA881" Ref="R415"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D0FA881" Ref="R?"  Part="1" 
+F 0 "R?" V 1725 2650 50  0000 C CNN
+F 1 "4k7" V 1650 2875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1655 2650 50  0001 C CNN
+F 3 "~" H 1725 2650 50  0001 C CNN
+	1    1725 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1250 2650 1575 2650
+Connection ~ 1250 2650
+Wire Wire Line
+	1250 2650 1250 2925
+Wire Wire Line
+	1575 2650 1575 2475
+Wire Wire Line
+	1875 2650 2125 2650
+Wire Wire Line
+	2125 2650 2125 3025
+Wire Wire Line
+	2125 3025 2050 3025
+Wire Wire Line
+	1875 2475 1875 2650
+Wire Wire Line
+	2125 3025 2225 3025
+Connection ~ 2125 3025
+Text GLabel 2700 3025 2    50   Input ~ 0
+VCO_Out
+Wire Wire Line
+	2525 3025 2700 3025
+$Comp
+L Amplifier_Operational:TL072 U?
+U 1 1 5D142962
+P 9675 1250
+F 0 "U?" H 9675 883 50  0000 C CNN
+F 1 "TL072" H 9675 974 50  0000 C CNN
+F 2 "" H 9675 1250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9675 1250 50  0001 C CNN
+	1    9675 1250
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U?
+U 2 1 5D1441A7
+P 8500 3750
+F 0 "U?" H 8500 3383 50  0000 C CNN
+F 1 "TL072" H 8500 3474 50  0000 C CNN
+F 2 "AJ:AJ_SO-8_5.3x6.2mm_P1.27mm" H 8500 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8500 3750 50  0001 C CNN
+	2    8500 3750
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U?
+U 3 1 5D1453A5
+P 5250 1100
+F 0 "U?" H 5208 1146 50  0000 L CNN
+F 1 "TL072" H 5208 1055 50  0000 L CNN
+F 2 "" H 5250 1100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5250 1100 50  0001 C CNN
+	3    5250 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 650  5150 800 
+Wire Wire Line
+	4800 650  5150 650 
+Connection ~ 4800 650 
+Wire Wire Line
+	4800 1525 5150 1525
+Wire Wire Line
+	5150 1525 5150 1400
+Connection ~ 4800 1525
+Wire Wire Line
+	10725 3350 10575 3350
+Wire Wire Line
+	10425 3450 10725 3450
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5D188D08
+P 10925 3450
+AR Path="/5D188D08" Ref="J?"  Part="1" 
+AR Path="/5D60ED9A/5D188D08" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5D188D08" Ref="J?"  Part="1" 
+AR Path="/5CEBAECA/5D188D08" Ref="J405"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D188D08" Ref="J?"  Part="1" 
+F 0 "J?" H 10692 3521 50  0000 R CNN
+F 1 "SQ Out" H 11075 3700 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 10925 3450 50  0001 C CNN
+F 3 "~" H 10925 3450 50  0001 C CNN
+	1    10925 3450
+	-1   0    0    -1  
+$EndComp
+Text GLabel 10425 3450 0    50   Input ~ 0
+VCO_SQ_Out
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D188D13
+P 10575 3600
+AR Path="/5CD6EBF4/5D188D13" Ref="#PWR?"  Part="1" 
+AR Path="/5D188D13" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D188D13" Ref="#PWR0436"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D188D13" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10575 3350 50  0001 C CNN
+F 1 "GNDA" H 10580 3427 50  0000 C CNN
+F 2 "" H 10575 3600 50  0001 C CNN
+F 3 "" H 10575 3600 50  0001 C CNN
+	1    10575 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10575 3350 10575 3600
+Wire Wire Line
+	10725 3925 10575 3925
+Wire Wire Line
+	10425 4025 10725 4025
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5D193F3B
+P 10925 4025
+AR Path="/5D193F3B" Ref="J?"  Part="1" 
+AR Path="/5D60ED9A/5D193F3B" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5D193F3B" Ref="J?"  Part="1" 
+AR Path="/5CEBAECA/5D193F3B" Ref="J406"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D193F3B" Ref="J?"  Part="1" 
+F 0 "J?" H 10692 4096 50  0000 R CNN
+F 1 "Sine Out" H 11075 4275 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 10925 4025 50  0001 C CNN
+F 3 "~" H 10925 4025 50  0001 C CNN
+	1    10925 4025
+	-1   0    0    -1  
+$EndComp
+Text GLabel 10425 4025 0    50   Input ~ 0
+VCO_SIN_Out
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D193F46
+P 10575 4175
+AR Path="/5CD6EBF4/5D193F46" Ref="#PWR?"  Part="1" 
+AR Path="/5D193F46" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D193F46" Ref="#PWR0438"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D193F46" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10575 3925 50  0001 C CNN
+F 1 "GNDA" H 10580 4002 50  0000 C CNN
+F 2 "" H 10575 4175 50  0001 C CNN
+F 3 "" H 10575 4175 50  0001 C CNN
+	1    10575 4175
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10575 3925 10575 4175
+Wire Wire Line
+	8300 975  8300 1250
+Wire Wire Line
+	8300 1250 8575 1250
+Wire Wire Line
+	8300 1725 8300 1450
+Wire Wire Line
+	8300 1450 8575 1450
+Text GLabel 9975 5300 1    50   Input ~ 0
+VCO_Nand
+Text GLabel 6525 975  0    50   Input ~ 0
+VCO_Nand
+Wire Wire Line
+	7625 875  7700 875 
+Wire Wire Line
+	7700 1075 7625 1075
+$Comp
+L Switch:SW_Push_SPDT SW?
+U 1 1 5D23B097
+P 6825 1475
+F 0 "SW?" H 6825 1150 50  0000 C CNN
+F 1 "SQ_Source" H 6825 1241 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:SP1MS1" H 6825 1475 50  0001 C CNN
+F 3 "~" H 6825 1475 50  0001 C CNN
+	1    6825 1475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7625 1625 7700 1625
+Wire Wire Line
+	7625 1825 7700 1825
+Text GLabel 6525 1575 0    50   Input ~ 0
+VCO_Out
+$Comp
+L Device:R_POT RV?
+U 1 1 5D25E10D
+P 7025 1725
+AR Path="/5D25E10D" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5D25E10D" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5D25E10D" Ref="RV?"  Part="1" 
+AR Path="/5CEBAECA/5D25E10D" Ref="RV407"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D25E10D" Ref="RV?"  Part="1" 
+F 0 "RV?" H 7025 1850 50  0000 R CNN
+F 1 "100k_Sq" H 6900 1775 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 7025 1725 50  0001 C CNN
+F 3 "~" H 7025 1725 50  0001 C CNN
+	1    7025 1725
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6525 1575 6625 1575
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D281F5B
+P 7025 2325
+AR Path="/5D281F5B" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D281F5B" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D281F5B" Ref="#PWR0435"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D281F5B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7025 2075 50  0001 C CNN
+F 1 "GNDA" H 7200 2275 50  0000 C CNN
+F 2 "" H 7025 2325 50  0001 C CNN
+F 3 "" H 7025 2325 50  0001 C CNN
+	1    7025 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7025 1575 7025 1475
+Wire Wire Line
+	6525 975  6625 975 
+Wire Wire Line
+	6625 1375 6625 975 
+Connection ~ 6625 975 
+$Comp
+L Device:C C?
+U 1 1 5D2E97EE
+P 7625 2025
+AR Path="/5D2E97EE" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5D2E97EE" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5D2E97EE" Ref="C410"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D2E97EE" Ref="C?"  Part="1" 
+F 0 "C?" H 7500 2150 50  0000 L CNN
+F 1 "100n" H 7525 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7663 1875 50  0001 C CNN
+F 3 "~" H 7625 2025 50  0001 C CNN
+	1    7625 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7625 1825 7625 1875
+Connection ~ 7625 1825
+Wire Wire Line
+	7025 2175 7025 2325
+Wire Wire Line
+	7025 1875 7025 2175
+Connection ~ 7025 2175
+Wire Wire Line
+	9175 1350 9375 1350
+Text GLabel 10500 1250 2    50   Input ~ 0
+VCO_SQ_Out
+Wire Wire Line
+	9975 1250 10000 1250
+Wire Wire Line
+	9375 1150 9300 1150
+Wire Wire Line
+	9300 1150 9300 650 
+Wire Wire Line
+	9300 650  9675 650 
+Wire Wire Line
+	10350 650  10350 1250
+Connection ~ 10350 1250
+Wire Wire Line
+	10350 1250 10500 1250
+$Comp
+L Device:R R?
+U 1 1 5D334869
+P 10150 1250
+AR Path="/5D334869" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D334869" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D334869" Ref="R426"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D334869" Ref="R?"  Part="1" 
+F 0 "R?" V 9975 1250 50  0000 C CNN
+F 1 "220R" V 10050 1275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10080 1250 50  0001 C CNN
+F 3 "~" H 10150 1250 50  0001 C CNN
+	1    10150 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10300 1250 10350 1250
+$Comp
+L Device:R R?
+U 1 1 5D334EBE
+P 2375 3025
+AR Path="/5D334EBE" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D334EBE" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D334EBE" Ref="R427"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D334EBE" Ref="R?"  Part="1" 
+F 0 "R?" V 2200 3025 50  0000 C CNN
+F 1 "220R" V 2275 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2305 3025 50  0001 C CNN
+F 3 "~" H 2375 3025 50  0001 C CNN
+	1    2375 3025
+	0    1    1    0   
+$EndComp
+Text GLabel 5950 3850 0    50   Input ~ 0
+VCO_Out
+$Comp
+L Device:R R?
+U 1 1 5D37F81B
+P 6300 3850
+AR Path="/5D37F81B" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D37F81B" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D37F81B" Ref="R429"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D37F81B" Ref="R?"  Part="1" 
+F 0 "R?" V 6125 3850 50  0000 C CNN
+F 1 "220R" V 6200 3875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6230 3850 50  0001 C CNN
+F 3 "~" H 6300 3850 50  0001 C CNN
+	1    6300 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5D37FE2F
+P 6775 3850
+AR Path="/5D37FE2F" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5D37FE2F" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5D37FE2F" Ref="RV?"  Part="1" 
+AR Path="/5CEBAECA/5D37FE2F" Ref="RV408"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D37FE2F" Ref="RV?"  Part="1" 
+F 0 "RV?" H 6775 3975 50  0000 R CNN
+F 1 "10k_Sine" H 7325 3700 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 6775 3850 50  0001 C CNN
+F 3 "~" H 6775 3850 50  0001 C CNN
+	1    6775 3850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 3850 6150 3850
+Wire Wire Line
+	6450 3850 6550 3850
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D3B3BCB
+P 7100 4325
+AR Path="/5D3B3BCB" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D3B3BCB" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D3B3BCB" Ref="#PWR0437"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D3B3BCB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7100 4075 50  0001 C CNN
+F 1 "GNDA" H 7275 4275 50  0000 C CNN
+F 2 "" H 7100 4325 50  0001 C CNN
+F 3 "" H 7100 4325 50  0001 C CNN
+	1    7100 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3650 8075 3650
+Wire Wire Line
+	8075 3650 8075 3075
+Wire Wire Line
+	9225 3075 9225 3750
+Wire Wire Line
+	9225 3750 9150 3750
+Wire Wire Line
+	8075 3075 8425 3075
+$Comp
+L Device:R R?
+U 1 1 5D3D102E
+P 8575 3075
+AR Path="/5D3D102E" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D3D102E" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D3D102E" Ref="R428"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D3D102E" Ref="R?"  Part="1" 
+F 0 "R?" V 8575 3075 50  0000 C CNN
+F 1 "10k" V 8500 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8505 3075 50  0001 C CNN
+F 3 "~" H 8575 3075 50  0001 C CNN
+	1    8575 3075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8725 3075 9225 3075
+Wire Wire Line
+	9975 650  10350 650 
+$Comp
+L Device:R R?
+U 1 1 5D3D2612
+P 9000 3750
+AR Path="/5D3D2612" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D3D2612" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D3D2612" Ref="R430"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D3D2612" Ref="R?"  Part="1" 
+F 0 "R?" V 8825 3750 50  0000 C CNN
+F 1 "220R" V 8900 3775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8930 3750 50  0001 C CNN
+F 3 "~" H 9000 3750 50  0001 C CNN
+	1    9000 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 3750 8800 3750
+Text GLabel 9400 3750 2    50   Input ~ 0
+VCO_SIN_Out
+Wire Wire Line
+	9225 3750 9400 3750
+Connection ~ 9225 3750
+Wire Wire Line
+	7625 875  7625 975 
+Wire Wire Line
+	7625 1625 7625 1725
+$Comp
+L Device:D D?
+U 1 1 5D3F480F
+P 7425 1900
+AR Path="/5D3F480F" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5D3F480F" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5D3F480F" Ref="D?"  Part="1" 
+AR Path="/5CEBAECA/5D3F480F" Ref="D404"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D3F480F" Ref="D?"  Part="1" 
+F 0 "D?" V 7379 1979 50  0000 L CNN
+F 1 "1N4148" V 7425 1550 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7425 1900 50  0001 C CNN
+F 3 "~" H 7425 1900 50  0001 C CNN
+	1    7425 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D3F4815
+P 7425 1525
+AR Path="/5D3F4815" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5D3F4815" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5D3F4815" Ref="D?"  Part="1" 
+AR Path="/5CEBAECA/5D3F4815" Ref="D403"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D3F4815" Ref="D?"  Part="1" 
+F 0 "D?" V 7379 1604 50  0000 L CNN
+F 1 "1N4148" V 7350 1200 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7425 1525 50  0001 C CNN
+F 3 "~" H 7425 1525 50  0001 C CNN
+	1    7425 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5VA #PWR?
+U 1 1 5D3F4823
+P 7425 1350
+AR Path="/5D3F4823" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D3F4823" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D3F4823" Ref="#PWR0434"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D3F4823" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7425 1200 50  0001 C CNN
+F 1 "+5VA" H 7440 1523 50  0000 C CNN
+F 2 "" H 7425 1350 50  0001 C CNN
+F 3 "" H 7425 1350 50  0001 C CNN
+	1    7425 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7425 1350 7425 1375
+Wire Wire Line
+	7425 1675 7425 1725
+Wire Wire Line
+	7025 2175 7425 2175
+Wire Wire Line
+	7425 2050 7425 2175
+Connection ~ 7425 2175
+Wire Wire Line
+	7425 2175 7625 2175
+Wire Wire Line
+	7175 1725 7425 1725
+Connection ~ 7425 1725
+Wire Wire Line
+	7425 1725 7425 1750
+Wire Wire Line
+	7425 1725 7625 1725
+Connection ~ 7625 1725
+Wire Wire Line
+	7625 1725 7625 1825
+Wire Wire Line
+	6625 975  7625 975 
+Connection ~ 7625 975 
+Wire Wire Line
+	7625 975  7625 1075
+$Comp
+L Device:D D?
+U 1 1 5D4A0B6D
+P 7350 4150
+AR Path="/5D4A0B6D" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5D4A0B6D" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5D4A0B6D" Ref="D?"  Part="1" 
+AR Path="/5CEBAECA/5D4A0B6D" Ref="D405"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D4A0B6D" Ref="D?"  Part="1" 
+F 0 "D?" V 7304 4229 50  0000 L CNN
+F 1 "1N4148" V 7350 3800 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7350 4150 50  0001 C CNN
+F 3 "~" H 7350 4150 50  0001 C CNN
+	1    7350 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D4A1588
+P 7525 4150
+AR Path="/5D4A1588" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5D4A1588" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5D4A1588" Ref="D?"  Part="1" 
+AR Path="/5CEBAECA/5D4A1588" Ref="D406"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D4A1588" Ref="D?"  Part="1" 
+F 0 "D?" V 7479 4229 50  0000 L CNN
+F 1 "1N4148" V 7525 3800 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7525 4150 50  0001 C CNN
+F 3 "~" H 7525 4150 50  0001 C CNN
+	1    7525 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7100 4300 7100 4325
+Connection ~ 7100 4300
+$Comp
+L Device:R R?
+U 1 1 5D53E59B
+P 7100 4100
+AR Path="/5D53E59B" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D53E59B" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D53E59B" Ref="R434"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D53E59B" Ref="R?"  Part="1" 
+F 0 "R?" V 6925 4100 50  0000 C CNN
+F 1 "1k" V 7250 4125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7030 4100 50  0001 C CNN
+F 3 "~" H 7100 4100 50  0001 C CNN
+	1    7100 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 4250 7100 4300
+$Comp
+L Device:C C?
+U 1 1 5D54E559
+P 8575 2825
+AR Path="/5D54E559" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5D54E559" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5D54E559" Ref="C411"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D54E559" Ref="C?"  Part="1" 
+F 0 "C?" H 8450 2950 50  0000 L CNN
+F 1 "10n" H 8475 2750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8613 2675 50  0001 C CNN
+F 3 "~" H 8575 2825 50  0001 C CNN
+	1    8575 2825
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D54EAA7
+P 7800 3075
+AR Path="/5D54EAA7" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D54EAA7" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D54EAA7" Ref="R431"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D54EAA7" Ref="R?"  Part="1" 
+F 0 "R?" V 7625 3075 50  0000 C CNN
+F 1 "1k" V 7950 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 3075 50  0001 C CNN
+F 3 "~" H 7800 3075 50  0001 C CNN
+	1    7800 3075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D54F18A
+P 7550 3100
+AR Path="/5D54F18A" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D54F18A" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D54F18A" Ref="#PWR0137"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D54F18A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7550 2850 50  0001 C CNN
+F 1 "GNDA" H 7725 3050 50  0000 C CNN
+F 2 "" H 7550 3100 50  0001 C CNN
+F 3 "" H 7550 3100 50  0001 C CNN
+	1    7550 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3100 7550 3075
+Wire Wire Line
+	7550 3075 7650 3075
+Wire Wire Line
+	7950 3075 8075 3075
+Connection ~ 8075 3075
+Wire Wire Line
+	8425 2825 8075 2825
+Wire Wire Line
+	8075 2825 8075 3075
+Wire Wire Line
+	8725 2825 9225 2825
+Wire Wire Line
+	9225 2825 9225 3075
+Connection ~ 9225 3075
+Wire Wire Line
+	7525 3850 7525 4000
+Connection ~ 7525 3850
+Wire Wire Line
+	7100 3950 7100 3850
+Wire Wire Line
+	6925 3850 7100 3850
+Connection ~ 7100 3850
+Wire Wire Line
+	7100 3850 7350 3850
+Wire Wire Line
+	7350 3850 7350 4000
+Connection ~ 7350 3850
+Wire Wire Line
+	7350 3850 7525 3850
+Wire Wire Line
+	7525 3850 7650 3850
+$Comp
+L Device:R R?
+U 1 1 5D5E6712
+P 7800 3850
+AR Path="/5D5E6712" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D5E6712" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D5E6712" Ref="R432"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D5E6712" Ref="R?"  Part="1" 
+F 0 "R?" V 7625 3850 50  0000 C CNN
+F 1 "1k" V 7950 3875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 3850 50  0001 C CNN
+F 3 "~" H 7800 3850 50  0001 C CNN
+	1    7800 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 3850 8025 3850
+$Comp
+L Device:R R?
+U 1 1 5D5E6A4C
+P 8025 4075
+AR Path="/5D5E6A4C" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D5E6A4C" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D5E6A4C" Ref="R433"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D5E6A4C" Ref="R?"  Part="1" 
+F 0 "R?" V 7925 4250 50  0000 C CNN
+F 1 "10k" V 7925 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7955 4075 50  0001 C CNN
+F 3 "~" H 8025 4075 50  0001 C CNN
+	1    8025 4075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8025 4300 8025 4225
+Wire Wire Line
+	8025 3925 8025 3850
+Connection ~ 8025 3850
+Wire Wire Line
+	8025 3850 8200 3850
+Wire Wire Line
+	6775 3700 6550 3700
+Wire Wire Line
+	6550 3700 6550 3850
+Connection ~ 6550 3850
+Wire Wire Line
+	6550 3850 6625 3850
+$Comp
+L power:+5VA #PWR?
+U 1 1 5D6D3453
+P 4575 6175
+AR Path="/5D6D3453" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D6D3453" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D6D3453" Ref="#PWR0138"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D6D3453" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4575 6025 50  0001 C CNN
+F 1 "+5VA" H 4590 6348 50  0000 C CNN
+F 2 "" H 4575 6175 50  0001 C CNN
+F 3 "" H 4575 6175 50  0001 C CNN
+	1    4575 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D8318A6
+P 4650 800
+AR Path="/5D8318A6" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5D8318A6" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5D8318A6" Ref="C412"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D8318A6" Ref="C?"  Part="1" 
+F 0 "C?" H 4525 925 50  0000 L CNN
+F 1 "100n" H 4550 725 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4688 650 50  0001 C CNN
+F 3 "~" H 4650 800 50  0001 C CNN
+	1    4650 800 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 950  4650 950 
+Wire Wire Line
+	4650 1225 4450 1225
+$Comp
+L Device:C C?
+U 1 1 5D85826B
+P 4650 1375
+AR Path="/5D85826B" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5D85826B" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5D85826B" Ref="C413"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D85826B" Ref="C?"  Part="1" 
+F 0 "C?" H 4525 1500 50  0000 L CNN
+F 1 "100n" H 4550 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4688 1225 50  0001 C CNN
+F 3 "~" H 4650 1375 50  0001 C CNN
+	1    4650 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D861721
+P 9825 650
+AR Path="/5D861721" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D861721" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D861721" Ref="R435"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D861721" Ref="R?"  Part="1" 
+F 0 "R?" V 9825 650 50  0000 C CNN
+F 1 "10k" V 9750 875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9755 650 50  0001 C CNN
+F 3 "~" H 9825 650 50  0001 C CNN
+	1    9825 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D862DED
+P 9100 650
+AR Path="/5D862DED" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D862DED" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D862DED" Ref="R416"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D862DED" Ref="R?"  Part="1" 
+F 0 "R?" V 9125 600 50  0000 C CNN
+F 1 "10k" V 9025 875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9030 650 50  0001 C CNN
+F 3 "~" H 9100 650 50  0001 C CNN
+	1    9100 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D863884
+P 8875 675
+AR Path="/5D863884" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D863884" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D863884" Ref="#PWR0421"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D863884" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8875 425 50  0001 C CNN
+F 1 "GNDA" H 9050 625 50  0000 C CNN
+F 2 "" H 8875 675 50  0001 C CNN
+F 3 "" H 8875 675 50  0001 C CNN
+	1    8875 675 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8875 675  8875 650 
+Wire Wire Line
+	8875 650  8950 650 
+Connection ~ 9300 650 
+Wire Wire Line
+	9250 650  9300 650 
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D8A2BD9
+P 4450 950
+AR Path="/5D8A2BD9" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D8A2BD9" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D8A2BD9" Ref="#PWR0139"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D8A2BD9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4450 700 50  0001 C CNN
+F 1 "GNDA" H 4625 900 50  0000 C CNN
+F 2 "" H 4450 950 50  0001 C CNN
+F 3 "" H 4450 950 50  0001 C CNN
+	1    4450 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4225 950  4225 1075
+Wire Wire Line
+	4650 950  4650 1225
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5D8C9F2A
+P 4125 1075
+AR Path="/5D8C9F2A" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D8C9F2A" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D8C9F2A" Ref="#PWR0140"  Part="1" 
+AR Path="/5DD87D87/5DDB8911/5D8C9F2A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4125 825 50  0001 C CNN
+F 1 "GND" H 4275 1000 50  0000 C CNN
+F 2 "" H 4125 1075 50  0001 C CNN
+F 3 "" H 4125 1075 50  0001 C CNN
+	1    4125 1075
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 1075 4225 1075
+Connection ~ 4225 1075
+Wire Wire Line
+	4225 1075 4225 1225
+Wire Wire Line
+	7250 5750 7325 5750
+Wire Wire Line
+	9975 5300 9975 5750
+Wire Wire Line
+	7100 4300 8025 4300
+Wire Wire Line
+	4225 1525 4800 1525
+Wire Wire Line
+	4225 650  4800 650 
+$EndSCHEMATC
