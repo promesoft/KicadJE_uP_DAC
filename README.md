@@ -4,7 +4,7 @@ Eurorack DAC output
 # Purpose
 Use for DDS/DCO - LFO - ADSR - Effects unit
 
-# Status - Preliminary SCH/PCB In the mail
+# Status - Preliminary SCH/PCB Being mounted
 ## Initial 
 | Stage  | Detail | Status |
 | ------------- | ------------- | ------------- |
@@ -12,14 +12,14 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | | gerber | OK |
 | production  |   | Ordered |
 |  | produced | Pending |
-|  | delivered | in the mail |
+|  | delivered | ok |
 ## Preliminary validation
 | Test  | Detail | Status |
 | ------------- | ------------- | ------------- |
 | Initial Inspection | |  |
 | Initial Technical Test | ATMega32A DAC |  |
 | Initial Technical Test | STM32 DAC |  |
-| Initial Technical Test | VCO555 |  |
+| Initial Technical Test | VCO555 | Initial version not oscillating |
 | Initial Product Test | ATMega32A DAC |  |
 | Initial Product Test | STM32 DAC |  |
 | Initial Product Test | VCO555 |  |
