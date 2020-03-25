@@ -20,6 +20,7 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | Initial Technical Test | ATMega32A DAC |  |
 | Initial Technical Test | STM32 DAC |  |
 | Initial Technical Test | VCO555 | Initial version not oscillating |
+|  |  | TL074 warm |
 | Initial Product Test | ATMega32A DAC |  |
 | Initial Product Test | STM32 DAC |  |
 | Initial Product Test | VCO555 |  |
