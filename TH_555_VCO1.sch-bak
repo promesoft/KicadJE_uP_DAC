@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:KicadJE_uP_DAC-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -797,11 +798,9 @@ Wire Wire Line
 	2575 1100 2275 1100
 Connection ~ 2575 1100
 $Comp
-L KicadJE_uP_DAC-rescue:TLC555-Timer U601
+L Timer:TLC555 U601
 U 1 1 5DDEBF0A
 P 5350 4700
-AR Path="/5DDEBF0A" Ref="U601"  Part="1" 
-AR Path="/5DD87D87/5DDEBF0A" Ref="U601"  Part="1" 
 F 0 "U601" H 5100 5050 50  0000 C CNN
 F 1 "TLC555" H 5125 5125 50  0000 C CNN
 F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 5400 4450 50  0001 L CNN

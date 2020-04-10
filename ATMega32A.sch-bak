@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:KicadJE_uP_DAC-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L KicadJE_uP_DAC-rescue:ATmega32A-AU-MCU_Microchip_ATmega U?
+L MCU_Microchip_ATmega:ATmega32A-AU U?
 U 1 1 5CD50179
 P 6250 3700
 AR Path="/5CD50179" Ref="U?"  Part="1" 
@@ -28,7 +29,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontr
 	1    0    0    -1  
 $EndComp
 $Comp
-L KicadJE_uP_DAC-rescue:AVR-ISP-6-Connector J?
+L Connector:AVR-ISP-6 J?
 U 1 1 5CD5017F
 P 5225 3925
 AR Path="/5CD5017F" Ref="J?"  Part="1" 
