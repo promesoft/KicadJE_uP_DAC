@@ -56,7 +56,7 @@ int main(void)
     //PORTB &= ~(1 << PB0);
     //SetPinLow(&PORTB, 0);
 
-    for (int column = 0; column < 3; column++) {
+    for (int column = 0; column < 4; column++) {
       if (column == 0) SetPinLow(&PORTC, 6);
       else SetPinHigh(&PORTC, 6);
       if (column == 1) SetPinLow(&PORTC, 7);
