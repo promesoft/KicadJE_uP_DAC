@@ -17,7 +17,7 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | Test  | Detail | Status |
 | ------------- | ------------- | ------------- |
 | Initial Inspection | |  |
-| Initial Technical Test | ATMega32A DAC |  |
+| Initial Technical Test | ATMega32A DAC | ADC not working due to GND conn to Aref |
 | Initial Technical Test | STM32 DAC |  |
 | Initial Technical Test | VCO555 | Initial version not oscillating |
 |  |  | TL074 warm |
@@ -36,7 +36,10 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | Power Draw |  | 
 
 ## Errata
-### Errata -
+### Errata - VCO 555
+### Errata - ADSR Mega32
+1 - ADC not working due to GND conn to Aref
+### Errata - STM32 DAC
 
 ## Issues and Notes
 ### 
