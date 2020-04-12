@@ -12,8 +12,8 @@
 #define leftsel 2
 
 //POTs
-#define topleft A3  // Wave
-#define topright A4 // Duty
+#define topleft 3  // Wave
+#define topright 4 // Duty
 
 int state = 0;
 
@@ -55,8 +55,8 @@ void setup()
   pinMode(rightsel, INPUT_PULLUP); 
 
 // POTs
-  pinMode(topleft, INPUT); 
-  pinMode(topright, INPUT); 
+//  pinMode(topleft, INPUT); 
+//  pinMode(topright, INPUT); 
   
 /* ===========LED Setup=================================*/
   LEDRowPin[0] = row0;
@@ -102,14 +102,36 @@ void loop() {
 ==============Check pot ================================
 ======================================================*/ 
 void checkpot(){
-  Left_potval = analogRead(topleft) >> 9;
-  Right_potval = analogRead(topright) >> 9;
+//  Left_potval = analogRead(topleft);
+//  Right_potval = analogRead(topright);
+  Left_potval = 500;
+  Left_potval = analogRead(A4);
+
   for (int j=0; j <= 3; j++){
     LEDData[1][j] = LOW;
     LEDData[2][j] = LOW;
   }
-  LEDData[1][Left_potval] = HIGH;
-  LEDData[2][Right_potval] = HIGH;
+
+  if (Left_potval <= 255) LEDData[2][0] = HIGH;
+  else if (Left_potval <= 511) LEDData[2][1] = HIGH;
+  else if (Left_potval <= 767) LEDData[2][2] = HIGH;
+  else if (Left_potval >= 768) LEDData[2][3] = HIGH;
+  
+/*  switch (Right_potval) {
+  case 1:
+    LEDData[2][0] = HIGH;
+    break;
+  case 2:
+    LEDData[2][1] = HIGH;
+    break;
+  case 3:
+    LEDData[2][2] = HIGH;
+    break;
+  default:
+    LEDData[2][3] = HIGH;
+    break;
+  }*/
+
 }
 
 
