@@ -12,8 +12,8 @@
 #define leftsel 2
 
 //POTs
-#define topleft 3  // Wave
-#define topright 4 // Duty
+#define topleft A3  // Wave = A3 = 27 = PA3
+#define topright A4 // Duty = A4 = 28 = PA4
 
 int state = 0;
 
@@ -104,9 +104,10 @@ void loop() {
 void checkpot(){
 //  Left_potval = analogRead(topleft);
 //  Right_potval = analogRead(topright);
-  Left_potval = 500;
   Left_potval = analogRead(A4);
-
+/*  if (digitalRead(28)) Left_potval = 500;
+  else Left_potval = 0;
+*/  
   for (int j=0; j <= 3; j++){
     LEDData[1][j] = LOW;
     LEDData[2][j] = LOW;
