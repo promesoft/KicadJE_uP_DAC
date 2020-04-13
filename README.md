@@ -24,7 +24,7 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | Initial Product Test | ATMega32A DAC |  |
 | Initial Product Test | STM32 DAC |  |
 | Initial Product Test | VCO555 |  |
-| Power Draw | ATMega32A DAC | Proto - no DAC: 2mA +12V 30mA +5V |
+| Power Draw | ATMega32A DAC | Proto - no DAC: 2mA -12V, 2mA +12V, 30mA +5V |
 | Power Draw | STM32 DAC |  |
 | Power Draw | VCO555 |  |
 
