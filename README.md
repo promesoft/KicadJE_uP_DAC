@@ -33,7 +33,9 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | Quality | | |
 | Quality | | |
 | Long Term Product Test |  |  |
-| Power Draw |  | 
+| Power Draw | ATMega32A DAC | Proto - no DAC: 2mA +12V 30mA +5V |
+| Power Draw | STM32 DAC |  |
+| Power Draw | VCO555 |  |
 
 ## Errata
 ### Errata - VCO 555
