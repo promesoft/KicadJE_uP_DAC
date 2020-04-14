@@ -15,6 +15,19 @@
 #define topleft A3  // Wave = A3 = 27 = PA3
 #define topright A4 // Duty = A4 = 28 = PA4
 
+//CV
+#define leftCV A0  // left = A0 = 24 = PA0 - J201 CV1 - left in
+#define rightCV A6 // right = A6 = 30 = PA6 - J202 CV2 - right in
+
+//Output
+#define leftout   // left = 12 - J203 OUT1 - PWM12/DACA - left out
+#define rightout  // right = 15 - J204 OUT2 - PWM15/DACB - right out
+
+//Input
+#define leftin A1  // left = A1 = 25 = PA1 - J205 IN1 - left in
+#define rightin A7 // right = A7 = 31 = PA7 - J206 IN2 - right in
+
+
 int sw_state = 0; // What should the pot's do? 0 = Left 1 = Right 2 = Center
 // Right/Left
 // Top - show which side is selected
