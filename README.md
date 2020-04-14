@@ -16,7 +16,7 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 ## Preliminary validation
 | Test  | Detail | Status |
 | ------------- | ------------- | ------------- |
-| Initial Inspection | |  |
+| Initial Inspection | | OK |
 | Initial Technical Test | ATMega32A DAC | ADC not working due to GND conn to Aref |
 | Initial Technical Test | STM32 DAC |  |
 | Initial Technical Test | VCO555 | Initial version not oscillating |
@@ -24,6 +24,9 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | Initial Product Test | ATMega32A DAC |  |
 | Initial Product Test | STM32 DAC |  |
 | Initial Product Test | VCO555 |  |
+| Power Draw | ATMega32A DAC | Proto - no DAC: 2mA -12V, 2mA +12V, 30mA +5V |
+| Power Draw | STM32 DAC |  |
+| Power Draw | VCO555 |  |
 
 ## Secondary validation
 | Test  | Detail | Status |
@@ -33,7 +36,9 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | Quality | | |
 | Quality | | |
 | Long Term Product Test |  |  |
-| Power Draw |  | 
+| Power Draw | ATMega32A DAC |  |
+| Power Draw | STM32 DAC |  |
+| Power Draw | VCO555 |  |
 
 ## Errata
 ### Errata - VCO 555
