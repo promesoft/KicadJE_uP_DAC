@@ -18,21 +18,25 @@
 int sw_state = 0; // What should the pot's do? 0 = Left 1 = Right 2 = Center
 // Right/Left
 // Top - show which side is selected
-// Input - CV - Output - shows value over 511 
-// Output - shows value over 127
-// Center shows digital value of 0-15 as selected by wave knob
+// Input - Bank 1 (sine, half sine, sine^2, Sharkfin)
+// CV - Bank 2 (Saw, inv Saw, tri, saw+inv saw)
+// Output - Bank 3 (Square 10%, 25%, 10%..40%, noise)
+// Center shows selected waveform (1,2,3,4)
+// Pot left selects bank
+// Pot right selects waveform
 
 // Center 
 // L/R Input - CV - Output - shows value over 511 
 // L/R Output - shows value over 127
-// Center shows 
- 
+// Center shows ??
+// Pot left selects left pause (duty)
+// Pot right selects right pause (duty)
 
 int Left_potval = 0;
 int Right_potval = 0;
 
-int LEDColPin[3]; // Left Center Right
-int LEDRowPin[4]; // 
+int LEDColPin[3]; // Left Right Center 
+int LEDRowPin[4]; // bottom...top
 boolean LEDData[3][4]; // Left Center Right
 boolean left_sel, right_sel = false;
   
@@ -57,10 +61,7 @@ void setup()
   Serial.println(F(__FILE__));
   Serial.print(F("Build date: "));
   Serial.println(F(__DATE__));
-  delay(500); 
-  Serial.println(F(__DATE__));
-  delay(500); 
-  Serial.println(F(__DATE__));
+  delay(50); 
   
   setupDataStruct();
   
