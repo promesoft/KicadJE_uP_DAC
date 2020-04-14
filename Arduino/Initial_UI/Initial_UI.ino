@@ -15,7 +15,7 @@
 #define topleft A3  // Wave = A3 = 27 = PA3
 #define topright A4 // Duty = A4 = 28 = PA4
 
-int state = 0; // What should the pot's do? 0 = Left 1 = Right 2 = Center
+int sw_state = 0; // What should the pot's do? 0 = Left 1 = Right 2 = Center
 // Right/Left
 // Top - show which side is selected
 // Input - CV - Output - shows value over 511 
@@ -51,13 +51,16 @@ void setupDataStruct(){
 ======================================================*/  
 void setup()
 { 
-  Serial.begin(38400);
+  Serial.begin(115200);
   Serial.println();
   Serial.println("");
   Serial.println(F(__FILE__));
   Serial.print(F("Build date: "));
   Serial.println(F(__DATE__));
-  delay(50); 
+  delay(500); 
+  Serial.println(F(__DATE__));
+  delay(500); 
+  Serial.println(F(__DATE__));
   
   setupDataStruct();
   
@@ -124,10 +127,10 @@ void checkpot(){
     LEDData[2][j] = LOW;
   }
 
-  if (Left_potval <= 255) LEDData[2][0] = HIGH;
-  else if (Left_potval <= 511) LEDData[2][1] = HIGH;
-  else if (Left_potval <= 767) LEDData[2][2] = HIGH;
-  else if (Left_potval >= 768) LEDData[2][3] = HIGH;
+  if (Left_potval <= 255) LEDData[2][3] = HIGH;
+  else if (Left_potval <= 511) LEDData[2][2] = HIGH;
+  else if (Left_potval <= 767) LEDData[2][1] = HIGH;
+  else if (Left_potval >= 768) LEDData[2][0] = HIGH;
   
 /*  switch (Right_potval) {
   case 1:
@@ -196,31 +199,8 @@ void clearLED(){
     // statements
     break;
   default:
-    LEDLEFT[0] = 
-    LEDLEFT[1] = 
-    LEDLEFT[2] = 
-    LEDLEFT[3] = 
+
     break;
 }
-  
-  digitalWrite(row0, LOW);
-  digitalWrite(row1, LOW);
-  digitalWrite(row2, LOW);
-  digitalWrite(row3, LOW);
-
-  digitalWrite(row0, HIGH);
-  digitalWrite(row1, HIGH);
-  digitalWrite(row2, HIGH);
-  digitalWrite(row3, HIGH);
-
-  digitalWrite(col0, HIGH);
-  digitalWrite(col1, HIGH);
-  digitalWrite(col2, HIGH);
-  state = state + 1;
-
-  if (state == 3) digitalWrite(col2, LOW);
-  if (state >= 4) state = 0;
-  
-  delay(300);
 
 }*/
