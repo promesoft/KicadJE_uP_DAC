@@ -16,19 +16,20 @@
 #define topright A4 // Duty = A4 = 28 = PA4
 
 //CV
-#define leftCV A0  // left = A0 = 24 = PA0 - J201 CV1 - left in
-#define rightCV A6 // right = A6 = 30 = PA6 - J202 CV2 - right in
+#define leftcv A0  // left = A0 = 24 = PA0 - J201 CV1 - left in
+#define rightcv A6 // right = A6 = 30 = PA6 - J202 CV2 - right in
+int right_cv, left_cv = 0;
 
 //Output
-#define leftout   // left = 12 - J203 OUT1 - PWM12/DACA - left out
-#define rightout  // right = 15 - J204 OUT2 - PWM15/DACB - right out
+#define leftout 12  // left = 12 - J203 OUT1 - PWM12/DACA - left out
+#define rightout 15 // right = 15 - J204 OUT2 - PWM15/DACB - right out
 
 //Input
 #define leftin A1  // left = A1 = 25 = PA1 - J205 IN1 - left in
 #define rightin A7 // right = A7 = 31 = PA7 - J206 IN2 - right in
+int right_in, left_in = 0;
 
-
-int sw_state = 0; // What should the pot's do? 0 = Left 1 = Right 2 = Center
+int sw_state = 0; // What should the pot's do? 0 = Left 1 = Right 2 = Center 
 // Right/Left
 // Top - show which side is selected
 // Input - Bank 1 (sine, half sine, sine^2, Sharkfin)
@@ -45,13 +46,15 @@ int sw_state = 0; // What should the pot's do? 0 = Left 1 = Right 2 = Center
 // Pot left selects left pause (duty)
 // Pot right selects right pause (duty)
 
-int Left_potval = 0;
-int Right_potval = 0;
+int left_potval = 0;
+int right_potval = 0;
 
 int LEDColPin[3]; // Left Right Center 
 int LEDRowPin[4]; // bottom...top
 boolean LEDData[3][4]; // Left Center Right
 boolean left_sel, right_sel = false;
+
+unsigned long lastupdate = 0;
   
 /* =====================================================
 ==============INIT DATA STRUCTURES======================
@@ -111,6 +114,8 @@ void setup()
 // CV
 
 // PWM Output
+  pinMode(leftout, OUTPUT);
+  pinMode(rightout, OUTPUT);
 }
 
 /* =====================================================
@@ -119,50 +124,143 @@ void setup()
 void loop() { 
   checkpot();
   checkswitch();
+
+  sampleinputs();
   
   updateLED();                     //LED on for active state    
   clearLED();                      //LED off (dim light)
 
 //  updatewave();
+  if (millis() > (lastupdate +1000)) {
+    Serial.println("");
+
+    Serial.print("state - ");
+    Serial.println(sw_state);
+    Serial.println("");
+
+    Serial.print("left_potval: ");
+    Serial.print(left_potval);
+    Serial.print(" - left: ");
+    Serial.println(analogRead(topleft));
+    
+    Serial.print("right_potval: ");
+    Serial.print(right_potval);
+    Serial.print(" - right: ");
+    Serial.println(analogRead(topright));
+
+    Serial.print("left_in: ");
+    Serial.println(left_in);
+    Serial.print("right_in: ");
+    Serial.println(right_in);
+
+    Serial.print("left_cv: ");
+    Serial.println(left_cv);
+    Serial.print("right_cv: ");
+    Serial.println(right_cv);
+    
+    lastupdate = millis();
+  }
 }
 
 /* =====================================================
 ==============Check pot ================================
 ======================================================*/ 
 void checkpot(){
-//  Left_potval = analogRead(topleft);
-//  Right_potval = analogRead(topright);
-  Left_potval = analogRead(A4);
-/*  if (digitalRead(28)) Left_potval = 500;
-  else Left_potval = 0;
-*/  
-  for (int j=0; j <= 3; j++){
-    LEDData[1][j] = LOW;
-    LEDData[2][j] = LOW;
+//  int left_potval_local = analogRead(topleft);
+//  int right_potval_local = analogRead(topright);
+//  if (abs(left_potval - left_potval_local) > 2) left_potval = left_potval_local;
+//  if (abs(right_potval - right_potval_local) > 2) right_potval = right_potval_local;
+
+left_potval = analogRead(topleft) >> 2;
+right_potval = analogRead(topright) >> 2;
+
+  if (sw_state == 0){
+    //Handle left bank selection
+    if (left_potval < 84){
+      LEDData[0][2] = 1;
+      LEDData[0][1] = 0;
+      LEDData[0][0] = 0;
+    }
+    else if (left_potval < 168){
+      LEDData[0][2] = 0;
+      LEDData[0][1] = 1;
+      LEDData[0][0] = 0;
+    }
+    else{
+      LEDData[0][2] = 0;
+      LEDData[0][1] = 0;
+      LEDData[0][0] = 1;
+    }
+    // clear right side while operating left 
+    LEDData[1][2] = 0;
+    LEDData[1][1] = 0;
+    LEDData[1][0] = 0;
   }
 
-  if (Left_potval <= 255) LEDData[2][3] = HIGH;
-  else if (Left_potval <= 511) LEDData[2][2] = HIGH;
-  else if (Left_potval <= 767) LEDData[2][1] = HIGH;
-  else if (Left_potval >= 768) LEDData[2][0] = HIGH;
-  
-/*  switch (Right_potval) {
-  case 1:
-    LEDData[2][0] = HIGH;
-    break;
-  case 2:
-    LEDData[2][1] = HIGH;
-    break;
-  case 3:
-    LEDData[2][2] = HIGH;
-    break;
-  default:
-    LEDData[2][3] = HIGH;
-    break;
-  }*/
+  if (sw_state == 1){
+    //Handle right bank selection
+    if (left_potval < 84){
+      LEDData[1][2] = 1;
+      LEDData[1][1] = 0;
+      LEDData[1][0] = 0;
+    }
+    else if (left_potval < 168){
+      LEDData[1][2] = 0;
+      LEDData[1][1] = 1;
+      LEDData[1][0] = 0;
+    }
+    else{
+      LEDData[1][2] = 0;
+      LEDData[1][1] = 0;
+      LEDData[1][0] = 1;
+    }
+    // clear left side while operating right 
+    LEDData[0][2] = 0;
+    LEDData[0][1] = 0;
+    LEDData[0][0] = 0;
+  }
 
+  if (sw_state == 2){
+    // present input values on LED's if state=2
+    LEDData[0][2] = left_in >> 9;
+    LEDData[1][2] = right_in >> 9;
+    LEDData[0][1] = left_cv >> 9;
+    LEDData[1][1] = right_cv >> 9;
+
+    // clear center LED until something useful turns up
+    LEDData[2][3] = 0;
+    LEDData[2][2] = 0;
+    LEDData[2][1] = 0;
+    LEDData[2][0] = 0;
+  }
+  else {
+    //Handle waveform selection - center if not state=2
+    if (right_potval < 64){
+      LEDData[2][3] = 1;
+      LEDData[2][2] = 0;
+      LEDData[2][1] = 0;
+      LEDData[2][0] = 0;
+    }
+    else if (right_potval < 128){
+      LEDData[2][3] = 0;
+      LEDData[2][2] = 1;
+      LEDData[2][1] = 0;
+      LEDData[2][0] = 0;
+    }
+    else if (right_potval < 192){
+      LEDData[2][3] = 0;
+      LEDData[2][2] = 0;
+      LEDData[2][1] = 1;
+      LEDData[2][0] = 0;
+    }
+    else{
+      LEDData[2][3] = 0;
+      LEDData[2][2] = 0;
+      LEDData[2][1] = 0;
+      LEDData[2][0] = 1;
+    }
+  }
 }
-
 
 /* =====================================================
 ==============Check switch =============================
@@ -173,6 +271,21 @@ void checkswitch(){
 
   LEDData[0][3] = left_sel;
   LEDData[1][3] = right_sel;
+
+  if (left_sel) sw_state = 0;
+  else if (right_sel) sw_state = 1;
+  else sw_state = 2;
+}
+
+/* =====================================================
+==============Sample Inputs=============================
+======================================================*/ 
+void sampleinputs(){
+  left_in = analogRead(leftin);
+  right_in = analogRead(rightin);
+
+  left_cv = analogRead(leftcv);
+  right_cv = analogRead(rightcv);
 }
 
 /* =====================================================
@@ -197,24 +310,26 @@ void clearLED(){
    }
 }
 
-  
-/*  for (i = 0; i < 5; i++){
-    sval = sval + analogRead(0);    // sensor on analog pin 0
-  }*/
-/*  int potval = analogRead(topleft) >> 8;
-  switch (potval) {
+
+/*  
+  for (int j=0; j <= 3; j++){
+    LEDData[1][j] = LOW;
+    LEDData[2][j] = LOW;
+  }
+*/
+/*  
+  switch (right_potval) {
+  case 0:
+    LEDData[2][0] = HIGH;
+    break;
   case 1:
-    // statements
+    LEDData[2][1] = HIGH;
     break;
   case 2:
-    // statements
-    break;
-  case 2:
-    // statements
+    LEDData[2][2] = HIGH;
     break;
   default:
-
+    LEDData[2][3] = HIGH;
     break;
-}
-
-}*/
+  }
+*/
