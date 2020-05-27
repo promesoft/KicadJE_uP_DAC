@@ -48,7 +48,12 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 ### Errata - STM32 DAC
 
 ## Issues and Notes
-### 
+### VCO 555
+
+### ADSR Mega32
+ADC not fast enough for audio
+
+### STM32 DAC
 
 # Pictures
 ![](555_VCO_Sch.png)
