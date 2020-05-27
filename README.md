@@ -51,6 +51,7 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 ### 
 
 # Pictures
+![](555_VCO_Sch.png)
 
 ![](KicadJE_uP_DAC_Top4.png)
 
