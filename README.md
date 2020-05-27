@@ -42,6 +42,7 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 
 ## Errata
 ### Errata - VCO 555
+1 - No oscillation fixed by replacing C603 w resistor (tested w 270R)
 ### Errata - ADSR Mega32
 1 - ADC not working due to GND conn to Aref
 ### Errata - STM32 DAC
