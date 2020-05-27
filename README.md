@@ -4,14 +4,14 @@ Eurorack DAC output
 # Purpose
 Use for DDS/DCO - LFO - ADSR - Effects unit
 
-# Status - Preliminary SCH/PCB Being mounted
+# Status - Preliminary mounted
 ## Initial 
 | Stage  | Detail | Status |
 | ------------- | ------------- | ------------- |
 | create material  | sch/pcb | OK  |
 | | gerber | OK |
-| production  |   | Ordered |
-|  | produced | Pending |
+| production  |   | ok |
+|  | produced | ok |
 |  | delivered | ok |
 ## Preliminary validation
 | Test  | Detail | Status |
@@ -19,7 +19,7 @@ Use for DDS/DCO - LFO - ADSR - Effects unit
 | Initial Inspection | | OK |
 | Initial Technical Test | ATMega32A DAC | ADC not working due to GND conn to Aref |
 | Initial Technical Test | STM32 DAC |  |
-| Initial Technical Test | VCO555 | Initial version not oscillating |
+| Initial Technical Test | VCO555 | Initial version not oscillating - add 270R across C603 to make it work |
 |  |  | TL074 warm |
 | Initial Product Test | ATMega32A DAC |  |
 | Initial Product Test | STM32 DAC |  |
