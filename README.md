@@ -82,6 +82,3 @@ https://github.com/promesoft/KicadJE_LFO_1
 https://www.electronics-tutorials.ws/waveforms/555_oscillator.html
 
 ### Thomas Henry 555 VCO
-Nice comprehensive VCO
-
-![](TH_vco555_0001.jpg)
