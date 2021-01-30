@@ -60,7 +60,7 @@ ADC not fast enough for audio
 
 ![](KicadJE_uP_DAC_Top4.png)
 
-
+![](DDS1_VCO3.jpeg)
 
 # Other components
 ![](stm32f103c8cb-pinlayout-wp01.jpg)
