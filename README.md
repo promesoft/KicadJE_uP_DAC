@@ -58,7 +58,7 @@ ADC not fast enough for audio
 # Pictures
 ![](555_VCO_Sch.png)
 
-![](KicadJE_uP_STM32_SCH.png)
+![](KicadJE_uP_DAC_STM32_SCH.png)
 ![](KicadJE_uP_STM32_SCH.png)
 ![](KicadJE_uP_DAC_Top4.png)
 
