@@ -25,7 +25,7 @@ F 3 "" H 1100 1025 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR0204
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR0204
 U 1 1 5CCBDE12
 P 1450 825
 F 0 "#PWR0204" H 1450 675 50  0001 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 1450 825 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR0203
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR0203
 U 1 1 5CCBE57E
 P 750 825
 F 0 "#PWR0203" H 750 675 50  0001 C CNN
@@ -47,7 +47,7 @@ F 3 "" H 750 825 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+12V #PWR0207
+L KicadJE_uP_DAC-rescue:+12V-Envelope-cache-2018-08-04-13-00-04 #PWR0207
 U 1 1 5CCD20BF
 P 1450 925
 F 0 "#PWR0207" H 1450 775 50  0001 C CNN
@@ -58,7 +58,7 @@ F 3 "" H 1450 925 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+12V #PWR0206
+L KicadJE_uP_DAC-rescue:+12V-Envelope-cache-2018-08-04-13-00-04 #PWR0206
 U 1 1 5CCD2B9B
 P 750 925
 F 0 "#PWR0206" H 750 775 50  0001 C CNN
@@ -91,7 +91,7 @@ F 3 "" H 750 1325 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0212
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0212
 U 1 1 5CCD4047
 P 1600 1125
 F 0 "#PWR0212" H 1600 875 50  0001 C CNN
@@ -102,7 +102,7 @@ F 3 "" H 1600 1125 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0211
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0211
 U 1 1 5CCD4479
 P 600 1125
 F 0 "#PWR0211" H 600 875 50  0001 C CNN
@@ -436,7 +436,7 @@ F 3 "~" H 9075 750 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR0201
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR0201
 U 1 1 5CCA9495
 P 9075 600
 F 0 "#PWR0201" H 9075 450 50  0001 C CNN
@@ -556,7 +556,7 @@ F 3 "~" H 10825 3675 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR0226
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR0226
 U 1 1 5CD38BA5
 P 10825 3525
 F 0 "#PWR0226" H 10825 3375 50  0001 C CNN
@@ -567,7 +567,7 @@ F 3 "" H 10825 3525 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0228
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0228
 U 1 1 5CD394AD
 P 10825 3825
 F 0 "#PWR0228" H 10825 3575 50  0001 C CNN
@@ -593,7 +593,7 @@ F 3 "~" H 9775 1350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0218
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0218
 U 1 1 5CD42921
 P 9775 1500
 F 0 "#PWR0218" H 9775 1250 50  0001 C CNN
@@ -621,7 +621,7 @@ F 3 "~" H 9775 900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0210
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0210
 U 1 1 5CD6263C
 P 9775 1050
 F 0 "#PWR0210" H 9775 800 50  0001 C CNN
@@ -647,7 +647,7 @@ F 3 "~" H 10150 3675 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR0225
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR0225
 U 1 1 5CD62650
 P 10150 3525
 F 0 "#PWR0225" H 10150 3375 50  0001 C CNN
@@ -658,7 +658,7 @@ F 3 "" H 10150 3525 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0227
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0227
 U 1 1 5CD6265A
 P 10150 3825
 F 0 "#PWR0227" H 10150 3575 50  0001 C CNN
@@ -782,7 +782,7 @@ F 3 "~" H 2525 800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5CE712C2
 P 2400 950
 AR Path="/5CE712C2" Ref="#PWR?"  Part="1" 
@@ -796,7 +796,7 @@ F 3 "" H 2400 950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
+L KicadJE_uP_DAC-rescue:+12V-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5CE712C8
 P 2725 650
 AR Path="/5CE712C8" Ref="#PWR?"  Part="1" 
@@ -1487,7 +1487,7 @@ F 3 "~" H 9475 1350 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR0209
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR0209
 U 1 1 5D605324
 P 9275 1050
 F 0 "#PWR0209" H 9275 900 50  0001 C CNN
@@ -1558,7 +1558,7 @@ F 3 "~" H 9725 2250 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR0220
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR0220
 U 1 1 5D63BB72
 P 9725 2100
 F 0 "#PWR0220" H 9725 1950 50  0001 C CNN
@@ -1625,7 +1625,7 @@ F 3 "" H 9925 3150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR0221
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR0221
 U 1 1 5D63BBD0
 P 9925 2550
 F 0 "#PWR0221" H 9925 2400 50  0001 C CNN
@@ -1715,7 +1715,7 @@ F 3 "~" H 2650 5250 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0236
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0236
 U 1 1 5D76C79C
 P 1950 7250
 F 0 "#PWR0236" H 1950 7000 50  0001 C CNN
@@ -1726,7 +1726,7 @@ F 3 "" H 1950 7250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0232
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0232
 U 1 1 5D76D5EC
 P 2375 5300
 F 0 "#PWR0232" H 2375 5050 50  0001 C CNN
@@ -2018,7 +2018,7 @@ Wire Wire Line
 Connection ~ 2525 950 
 Connection ~ 2525 1250
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0102
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0102
 U 1 1 5D4C4D4B
 P 9275 1650
 F 0 "#PWR0102" H 9275 1400 50  0001 C CNN
@@ -2029,7 +2029,7 @@ F 3 "" H 9275 1650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0103
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0103
 U 1 1 5D4C4F62
 P 9075 1200
 F 0 "#PWR0103" H 9075 950 50  0001 C CNN
@@ -2105,7 +2105,7 @@ F 3 "~" H 2750 7125 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR0108
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR0108
 U 1 1 5DD00F40
 P 2500 7475
 F 0 "#PWR0108" H 2500 7225 50  0001 C CNN

@@ -60,7 +60,7 @@ F 3 "~" H 5750 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5CEECDC2
 P 5375 4850
 AR Path="/5CEECDC2" Ref="#PWR?"  Part="1" 
@@ -98,7 +98,7 @@ F 3 "~" H 2325 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5CEECDFC
 P 1875 2700
 AR Path="/5CEECDFC" Ref="#PWR?"  Part="1" 
@@ -179,7 +179,7 @@ $EndComp
 Wire Wire Line
 	7650 1350 7750 1350
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5CEECE25
 P 8200 1375
 AR Path="/5CEECE25" Ref="#PWR?"  Part="1" 
@@ -207,7 +207,7 @@ Wire Notes Line
 Wire Wire Line
 	1875 2700 1875 2650
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5CEECE43
 P 6275 2225
 AR Path="/5CEECE43" Ref="#PWR?"  Part="1" 
@@ -317,7 +317,7 @@ F 3 "" H 8225 2575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5CEECE76
 P 7500 2575
 AR Path="/5CEECE76" Ref="#PWR?"  Part="1" 
@@ -400,7 +400,7 @@ F 3 "" H 3625 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5CEF56B4
 P 3425 4950
 AR Path="/5CEF56B4" Ref="#PWR?"  Part="1" 
@@ -722,7 +722,7 @@ SWCLK
 Text Label 5300 4450 0    50   ~ 0
 SWDIO
 $Comp
-L Connector:USB_B_Micro J503
+L KicadJE_uP_DAC-rescue:USB_B_Micro-Connector J503
 U 1 1 5CF75CE4
 P 7975 4450
 F 0 "J503" H 7745 4439 50  0000 R CNN
@@ -770,7 +770,7 @@ F 3 "" H 7250 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5CF80739
 P 7475 3875
 AR Path="/5CF80739" Ref="#PWR?"  Part="1" 
@@ -802,7 +802,7 @@ $EndComp
 Wire Wire Line
 	7475 4175 7475 4250
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5CF835AC
 P 8025 4900
 AR Path="/5CF835AC" Ref="#PWR?"  Part="1" 
@@ -933,7 +933,7 @@ $EndComp
 Wire Wire Line
 	7650 975  7750 975 
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+L KicadJE_uP_DAC-rescue:GND-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5D225372
 P 8200 1000
 AR Path="/5D225372" Ref="#PWR?"  Part="1" 
@@ -952,7 +952,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 975  8200 1000
 $Comp
-L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+L KicadJE_uP_DAC-rescue:+5V-Envelope-cache-2018-08-04-13-00-04 #PWR?
 U 1 1 5D22F628
 P 7200 950
 AR Path="/5D22F628" Ref="#PWR?"  Part="1" 
