@@ -1,3 +1,9 @@
+/*
+https://mcudude.github.io/MightyCore/package_MCUdude_MightyCore_index.json
+https://github.com/promesoft/KicadJE_uP_DAC
+USBasp
+*/
+
 //LEDs
 #define row0 18
 #define row1 19

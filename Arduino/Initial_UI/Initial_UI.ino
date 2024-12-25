@@ -1,3 +1,32 @@
+/************************************************
+https://mcudude.github.io/MightyCore/package_MCUdude_MightyCore_index.json
+https://github.com/promesoft/KicadJE_uP_DAC
+Program via USBasp
+
+Purpose of the Board: CV controlled DDS generator
+Operation of controls:
+Top selector sw: left - center - right
+Top LEDs: led - right (based on selector)
+Top POT: left - selects bank
+Top POT: right - selects waveform
+// Center shows selected waveform (1,2,3,4)
+
+// Top LED - Bank 1 (sine, half sine, sine^2, Sharkfin)
+// Center LED - Bank 2 (Saw, inv Saw, tri, saw+inv saw)
+// Bottom LED - Bank 3 (Square 10%, 25%, 10%..40%, noise)
+
+
+Bottom POT: left - select CV sensitivity (analogue)
+Bottom POT: right - select CV sensitivity (analogue)
+
+top jack L/R: Input
+middle jack L/R: CV
+bottom jack L/R: Out
+
+To do: only change the output if the pot has been changed
+Introduce L/R states that can be changed if the pot val has changed
+************************************************/
+
 //LEDs
 #define row0 18
 #define row1 19
@@ -48,6 +77,8 @@ int sw_state = 0; // What should the pot's do? 0 = Left 1 = Right 2 = Center
 
 int left_potval = 0;
 int right_potval = 0;
+int left_old_potval = 0;
+int right_old_potval = 0;
 
 int LEDColPin[3]; // Left Right Center 
 int LEDRowPin[4]; // bottom...top
